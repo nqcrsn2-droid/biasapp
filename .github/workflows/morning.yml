@@ -56,5 +56,12 @@ jobs:
           git add docs/data
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Report $(date -u +%Y-%m-%d\ %H:%M)Z"
-          git pull --rebase
-          git push
+          # Data files are regenerated every run, so if another commit landed meanwhile,
+          # keep this run's fresh data on conflict ("theirs" = our commit during a rebase) and retry.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase -X theirs origin/main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "Publish failed after retries"; exit 1
