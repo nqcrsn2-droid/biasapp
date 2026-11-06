@@ -1,0 +1,8383 @@
+{
+ "view": "overnight",
+ "session": "overnight",
+ "date": "2026-11-06",
+ "window": {
+  "name": "Asia",
+  "start": "2026-11-08T19:00:00-05:00",
+  "end": "2026-11-09T01:00:00-05:00"
+ },
+ "mode": "live",
+ "as_of": "2026-11-06T01:00:46-05:00",
+ "generated": "2026-11-06T01:00:46-05:00",
+ "events": [],
+ "macro": {},
+ "markets": {
+  "NQ": {
+   "name": "Nasdaq-100 futures",
+   "group": "US indices",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.249,
+    "raw_score": -0.249,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.249,
+    "conviction": "Medium",
+    "ups": 9,
+    "downs": 10,
+    "total": 23,
+    "overall": "For: VIX term structure, VIX today, Real 10-year yield. Against: Fed pressure (official data), High-yield spreads. Dealers short gamma: moves can run. ES agrees.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 92,
+    "conv_cuts": [
+     0.063,
+     0.164,
+     0.254
+    ],
+    "conv_basis": 237,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1.3909,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.39).",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.3909
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1.05,
+     "weight": 1.0,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close.",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.05
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 1,
+     "raw": 0.75,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.75).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.75
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1.0122,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.0122
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 1,
+     "raw": 0.2,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.2
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 1,
+     "raw": 0.05,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.05
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 0.2143,
+     "weight": 0.4,
+     "text": "Implied vol 38.3 vs realized 30.9 over the past month: premium +7.3 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought. This input has leaned bullish most days lately, so only the change from its usual level counts (+0.21).",
+     "group": "Volatility",
+     "level": 1,
+     "norm": 0.7857
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": -1,
+     "raw": -0.4667,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.47).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4667
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": 1,
+     "raw": 0.7778,
+     "weight": 0.3,
+     "text": "Front VIX future 17.74 vs VIX 16.61, 10 sessions to settlement: roll +0.11 a day. Steep contango: vol is priced to drift lower, the calm backdrop.",
+     "group": "Volatility",
+     "level": 1,
+     "norm": 0.2222
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1.3828,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.38).",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.3828
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": -1,
+     "raw": -0.1,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility",
+     "level": 0,
+     "norm": 0.1
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1.3,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.30).",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.3
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": -1,
+     "raw": -0.4562,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.46).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4562
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": -1,
+     "raw": -0.3,
+     "weight": 1.0,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.30).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.3
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 1,
+     "raw": 0.25,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.25).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.25
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 1,
+     "raw": 0.2,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.2
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0.0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0
+    },
+    {
+     "key": "megacap",
+     "label": "Megacaps (earnings & pre-market)",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "The biggest NQ stocks alone are worth +0.14% on the index: NVDA +1.2%, AVGO +1.9%, AMZN -0.9%. No big megacap move.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1.0515,
+     "weight": 0.5,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.0515
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.36. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 26,675 / call wall 28,350: 1,386 pts up vs 289 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $2.20B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.246,
+    "delta": -0.003
+   },
+   "expected_range": {
+    "move": 740.94,
+    "low": 26223.06,
+    "high": 27704.94
+   },
+   "levels": {
+    "price": 26964.0,
+    "flip": null,
+    "flip_close": null,
+    "call_wall": 28350,
+    "put_wall": 26675,
+    "majors": [
+     {
+      "level": 27075,
+      "net_gex": -439075018.629485
+     },
+     {
+      "level": 27350,
+      "net_gex": -438622397.9230494
+     },
+     {
+      "level": 27925,
+      "net_gex": -290504373.89885443
+     },
+     {
+      "level": 28325,
+      "net_gex": -548985097.2174991
+     },
+     {
+      "level": 28350,
+      "net_gex": -280876381.22937775
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -6.446,
+    "call_put_gamma": 0.36,
+    "dealer_delta_bn": 262.29,
+    "charm_bn": 2.197,
+    "vanna_bn_per_pt": 0.359,
+    "chains": [
+     "NDX",
+     "QQQ"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 25346.16,
+     "gex": -5463681990.196667
+    },
+    {
+     "px": 25400.09,
+     "gex": -5526220977.098356
+    },
+    {
+     "px": 25454.02,
+     "gex": -5588171149.138865
+    },
+    {
+     "px": 25507.94,
+     "gex": -5649406712.745312
+    },
+    {
+     "px": 25561.87,
+     "gex": -5709796074.294281
+    },
+    {
+     "px": 25615.8,
+     "gex": -5769201972.370285
+    },
+    {
+     "px": 25669.73,
+     "gex": -5827481633.162838
+    },
+    {
+     "px": 25723.66,
+     "gex": -5884486948.356715
+    },
+    {
+     "px": 25777.58,
+     "gex": -5940064674.872656
+    },
+    {
+     "px": 25831.51,
+     "gex": -5994056655.856221
+    },
+    {
+     "px": 25885.44,
+     "gex": -6046300062.390293
+    },
+    {
+     "px": 25939.37,
+     "gex": -6096627655.519245
+    },
+    {
+     "px": 25993.3,
+     "gex": -6144868068.3160095
+    },
+    {
+     "px": 26047.22,
+     "gex": -6190846107.892903
+    },
+    {
+     "px": 26101.15,
+     "gex": -6234383077.446218
+    },
+    {
+     "px": 26155.08,
+     "gex": -6275297118.626368
+    },
+    {
+     "px": 26209.01,
+     "gex": -6313403574.731423
+    },
+    {
+     "px": 26262.94,
+     "gex": -6348515375.423198
+    },
+    {
+     "px": 26316.86,
+     "gex": -6380443443.851794
+    },
+    {
+     "px": 26370.79,
+     "gex": -6408997127.237091
+    },
+    {
+     "px": 26424.72,
+     "gex": -6433984652.0839
+    },
+    {
+     "px": 26478.65,
+     "gex": -6455213605.291687
+    },
+    {
+     "px": 26532.58,
+     "gex": -6472491442.450745
+    },
+    {
+     "px": 26586.5,
+     "gex": -6485626024.586356
+    },
+    {
+     "px": 26640.43,
+     "gex": -6494426184.513555
+    },
+    {
+     "px": 26694.36,
+     "gex": -6498702323.792034
+    },
+    {
+     "px": 26748.29,
+     "gex": -6498267041.020027
+    },
+    {
+     "px": 26802.22,
+     "gex": -6492935791.87527
+    },
+    {
+     "px": 26856.14,
+     "gex": -6482527580.901454
+    },
+    {
+     "px": 26910.07,
+     "gex": -6466865684.552135
+    },
+    {
+     "px": 26964.0,
+     "gex": -6445778404.446237
+    },
+    {
+     "px": 27017.93,
+     "gex": -6419099849.167812
+    },
+    {
+     "px": 27071.86,
+     "gex": -6386670742.267092
+    },
+    {
+     "px": 27125.78,
+     "gex": -6348339253.402752
+    },
+    {
+     "px": 27179.71,
+     "gex": -6303961848.820518
+    },
+    {
+     "px": 27233.64,
+     "gex": -6253404156.606859
+    },
+    {
+     "px": 27287.57,
+     "gex": -6196541841.405775
+    },
+    {
+     "px": 27341.5,
+     "gex": -6133261482.55982
+    },
+    {
+     "px": 27395.42,
+     "gex": -6063461448.952223
+    },
+    {
+     "px": 27449.35,
+     "gex": -5987052763.204349
+    },
+    {
+     "px": 27503.28,
+     "gex": -5903959947.339498
+    },
+    {
+     "px": 27557.21,
+     "gex": -5814121841.577989
+    },
+    {
+     "px": 27611.14,
+     "gex": -5717492387.595144
+    },
+    {
+     "px": 27665.06,
+     "gex": -5614041367.366768
+    },
+    {
+     "px": 27718.99,
+     "gex": -5503755088.657415
+    },
+    {
+     "px": 27772.92,
+     "gex": -5386637008.283726
+    },
+    {
+     "px": 27826.85,
+     "gex": -5262708284.513478
+    },
+    {
+     "px": 27880.78,
+     "gex": -5132008250.342596
+    },
+    {
+     "px": 27934.7,
+     "gex": -4994594799.926114
+    },
+    {
+     "px": 27988.63,
+     "gex": -4850544681.119407
+    },
+    {
+     "px": 28042.56,
+     "gex": -4699953687.90432
+    },
+    {
+     "px": 28096.49,
+     "gex": -4542936747.419945
+    },
+    {
+     "px": 28150.42,
+     "gex": -4379627897.373627
+    },
+    {
+     "px": 28204.34,
+     "gex": -4210180150.757971
+    },
+    {
+     "px": 28258.27,
+     "gex": -4034765246.023307
+    },
+    {
+     "px": 28312.2,
+     "gex": -3853573282.131192
+    },
+    {
+     "px": 28366.13,
+     "gex": -3666812239.219342
+    },
+    {
+     "px": 28420.06,
+     "gex": -3474707386.9198675
+    },
+    {
+     "px": 28473.98,
+     "gex": -3277500583.6649227
+    },
+    {
+     "px": 28527.91,
+     "gex": -3075449471.5653825
+    },
+    {
+     "px": 28581.84,
+     "gex": -2868826572.636467
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "NDX",
+    "days": 0.62,
+    "spot": 26629.8,
+    "rows": [
+     {
+      "strike": 26000.0,
+      "fut": 26350.0,
+      "call_oi": 10,
+      "put_oi": 362
+     },
+     {
+      "strike": 26200.0,
+      "fut": 26550.0,
+      "call_oi": 0,
+      "put_oi": 138
+     },
+     {
+      "strike": 26300.0,
+      "fut": 26650.0,
+      "call_oi": 0,
+      "put_oi": 4
+     },
+     {
+      "strike": 26400.0,
+      "fut": 26750.0,
+      "call_oi": 0,
+      "put_oi": 217
+     },
+     {
+      "strike": 26500.0,
+      "fut": 26850.0,
+      "call_oi": 0,
+      "put_oi": 59
+     },
+     {
+      "strike": 26600.0,
+      "fut": 26950.0,
+      "call_oi": 0,
+      "put_oi": 44
+     },
+     {
+      "strike": 26700.0,
+      "fut": 27050.0,
+      "call_oi": 0,
+      "put_oi": 17
+     },
+     {
+      "strike": 26750.0,
+      "fut": 27100.0,
+      "call_oi": 0,
+      "put_oi": 7
+     },
+     {
+      "strike": 26800.0,
+      "fut": 27150.0,
+      "call_oi": 0,
+      "put_oi": 32
+     },
+     {
+      "strike": 26850.0,
+      "fut": 27200.0,
+      "call_oi": 0,
+      "put_oi": 3
+     },
+     {
+      "strike": 26900.0,
+      "fut": 27250.0,
+      "call_oi": 0,
+      "put_oi": 51
+     },
+     {
+      "strike": 26950.0,
+      "fut": 27300.0,
+      "call_oi": 0,
+      "put_oi": 3
+     },
+     {
+      "strike": 27000.0,
+      "fut": 27350.0,
+      "call_oi": 0,
+      "put_oi": 50
+     },
+     {
+      "strike": 27050.0,
+      "fut": 27400.0,
+      "call_oi": 0,
+      "put_oi": 3
+     },
+     {
+      "strike": 27100.0,
+      "fut": 27450.0,
+      "call_oi": 0,
+      "put_oi": 34
+     },
+     {
+      "strike": 27150.0,
+      "fut": 27500.0,
+      "call_oi": 0,
+      "put_oi": 1
+     },
+     {
+      "strike": 27200.0,
+      "fut": 27550.0,
+      "call_oi": 6,
+      "put_oi": 63
+     },
+     {
+      "strike": 27250.0,
+      "fut": 27600.0,
+      "call_oi": 0,
+      "put_oi": 5
+     }
+    ],
+    "max_pain": 28700.0,
+    "max_pain_fut": 29060.2
+   },
+   "gamma_diag": {
+    "NDX all": {
+     "flip": null,
+     "net_bn": -2.84,
+     "call_bn": 1.63,
+     "put_bn": 4.48,
+     "call_oi": 54519,
+     "put_oi": 69514
+    },
+    "NDX 0dte": {
+     "flip": 28578.402712189556,
+     "net_bn": -0.64,
+     "call_bn": 0.02,
+     "put_bn": 0.66,
+     "call_oi": 3114,
+     "put_oi": 7015
+    },
+    "NDX 1-7d": {
+     "flip": null,
+     "net_bn": -0.37,
+     "call_bn": 0.05,
+     "put_bn": 0.42,
+     "call_oi": 2791,
+     "put_oi": 3458
+    },
+    "NDX 8-30d": {
+     "flip": null,
+     "net_bn": -1.11,
+     "call_bn": 0.48,
+     "put_bn": 1.59,
+     "call_oi": 17603,
+     "put_oi": 27195
+    },
+    "NDX 31-60d": {
+     "flip": null,
+     "net_bn": -0.72,
+     "call_bn": 1.08,
+     "put_bn": 1.8,
+     "call_oi": 31011,
+     "put_oi": 31846
+    },
+    "QQQ all": {
+     "flip": null,
+     "net_bn": -5.12,
+     "call_bn": 2.13,
+     "put_bn": 7.25,
+     "call_oi": 3350743,
+     "put_oi": 4059282
+    },
+    "QQQ 0dte": {
+     "flip": null,
+     "net_bn": -0.88,
+     "call_bn": 0.06,
+     "put_bn": 0.94,
+     "call_oi": 468041,
+     "put_oi": 619034
+    },
+    "QQQ 1-7d": {
+     "flip": 28577.366194722435,
+     "net_bn": -0.35,
+     "call_bn": 0.07,
+     "put_bn": 0.41,
+     "call_oi": 122751,
+     "put_oi": 138393
+    },
+    "QQQ 8-30d": {
+     "flip": null,
+     "net_bn": -2.65,
+     "call_bn": 0.71,
+     "put_bn": 3.36,
+     "call_oi": 1219432,
+     "put_oi": 1525529
+    },
+    "QQQ 31-60d": {
+     "flip": null,
+     "net_bn": -1.24,
+     "call_bn": 1.3,
+     "put_bn": 2.54,
+     "call_oi": 1540519,
+     "put_oi": 1776326
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "ES": {
+   "name": "S&P 500 futures",
+   "group": "US indices",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.25,
+    "raw_score": -0.25,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.25,
+    "conviction": "Medium",
+    "ups": 9,
+    "downs": 10,
+    "total": 24,
+    "overall": "For: VIX term structure, VIX today, Policy gap (2Y \u2212 Fed funds). Against: Fed pressure (official data), High-yield spreads. Dealers short gamma: moves can run. NQ agrees.",
+    "invalidation": "A reclaim and hold of the gamma flip at 7,668",
+    "macro_share": 87,
+    "conv_cuts": [
+     0.062,
+     0.166,
+     0.251
+    ],
+    "conv_basis": 237,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1.3909,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.39).",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.3909
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1.05,
+     "weight": 1.0,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close.",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.05
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 1,
+     "raw": 0.75,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.75).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.75
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1.0122,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.0122
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 1,
+     "raw": 0.2,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.2
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 1,
+     "raw": 0.05,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.05
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 0.15,
+     "weight": 0.4,
+     "text": "Implied vol 28.2 vs realized 19.8 over the past month: premium +8.4 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought. This input has leaned bullish most days lately, so only the change from its usual level counts (+0.15).",
+     "group": "Volatility",
+     "level": 1,
+     "norm": 0.85
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": -1,
+     "raw": -0.4667,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.47).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4667
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": 1,
+     "raw": 0.7778,
+     "weight": 0.3,
+     "text": "Front VIX future 17.74 vs VIX 16.61, 10 sessions to settlement: roll +0.11 a day. Steep contango: vol is priced to drift lower, the calm backdrop.",
+     "group": "Volatility",
+     "level": 1,
+     "norm": 0.2222
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1.3828,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.38).",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.3828
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": -1,
+     "raw": -0.1,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility",
+     "level": 0,
+     "norm": 0.1
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1.3,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.30).",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.3
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": -1,
+     "raw": -0.4562,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.46).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4562
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": -1,
+     "raw": -0.3,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.30).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.3
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 1,
+     "raw": 0.25,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.25).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.25
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 1,
+     "raw": 0.2,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.2
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0.0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0
+    },
+    {
+     "key": "megacap",
+     "label": "Megacaps (earnings & pre-market)",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "The biggest ES stocks alone are worth +0.05% on the index: NVDA +1.2%, AVGO +1.9%, AMZN -0.9%. No big megacap move.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1.0515,
+     "weight": 0.5,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.0515
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 7,668, price 286 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.55. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 7,025 / call wall 7,730: 348 pts up vs 357 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $46.57B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.239,
+    "delta": -0.011
+   },
+   "expected_range": {
+    "move": 140.71,
+    "low": 7241.29,
+    "high": 7522.71
+   },
+   "levels": {
+    "price": 7382.0,
+    "flip": 7667.97,
+    "flip_close": 7679.08,
+    "call_wall": 7730,
+    "put_wall": 7025,
+    "majors": [
+     {
+      "level": 7230,
+      "net_gex": -2962099313.719271
+     },
+     {
+      "level": 7280,
+      "net_gex": -3460376298.5035763
+     },
+     {
+      "level": 7330,
+      "net_gex": -4520794234.924486
+     },
+     {
+      "level": 7430,
+      "net_gex": -4203116531.3752804
+     },
+     {
+      "level": 7530,
+      "net_gex": -4740878137.632311
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -81.237,
+    "call_put_gamma": 0.55,
+    "dealer_delta_bn": 3085.74,
+    "charm_bn": 46.569,
+    "vanna_bn_per_pt": 17.546,
+    "chains": [
+     "SPX",
+     "SPY"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 6939.08,
+     "gex": -82711563010.2143
+    },
+    {
+     "px": 6953.84,
+     "gex": -83379793472.09396
+    },
+    {
+     "px": 6968.61,
+     "gex": -84042620926.89658
+    },
+    {
+     "px": 6983.37,
+     "gex": -84697967210.45589
+    },
+    {
+     "px": 6998.14,
+     "gex": -85343480998.43451
+    },
+    {
+     "px": 7012.9,
+     "gex": -85976512820.27094
+    },
+    {
+     "px": 7027.66,
+     "gex": -86594088756.47514
+    },
+    {
+     "px": 7042.43,
+     "gex": -87192883077.22656
+    },
+    {
+     "px": 7057.19,
+     "gex": -87769190171.0701
+    },
+    {
+     "px": 7071.96,
+     "gex": -88318896210.79614
+    },
+    {
+     "px": 7086.72,
+     "gex": -88837451107.67963
+    },
+    {
+     "px": 7101.48,
+     "gex": -89319841413.12169
+    },
+    {
+     "px": 7116.25,
+     "gex": -89760564936.07008
+    },
+    {
+     "px": 7131.01,
+     "gex": -90153607952.69388
+    },
+    {
+     "px": 7145.78,
+     "gex": -90492425988.63531
+    },
+    {
+     "px": 7160.54,
+     "gex": -90769929250.3008
+    },
+    {
+     "px": 7175.3,
+     "gex": -90978473866.21283
+    },
+    {
+     "px": 7190.07,
+     "gex": -91109860168.04001
+    },
+    {
+     "px": 7204.83,
+     "gex": -91155339288.6489
+    },
+    {
+     "px": 7219.6,
+     "gex": -91105629375.94717
+    },
+    {
+     "px": 7234.36,
+     "gex": -90950942710.49094
+    },
+    {
+     "px": 7249.12,
+     "gex": -90681024965.55232
+    },
+    {
+     "px": 7263.89,
+     "gex": -90285207754.18411
+    },
+    {
+     "px": 7278.65,
+     "gex": -89752475462.59854
+    },
+    {
+     "px": 7293.42,
+     "gex": -89071547167.37364
+    },
+    {
+     "px": 7308.18,
+     "gex": -88230974171.33145
+    },
+    {
+     "px": 7322.94,
+     "gex": -87219253367.02664
+    },
+    {
+     "px": 7337.71,
+     "gex": -86024956247.88864
+    },
+    {
+     "px": 7352.47,
+     "gex": -84636872938.80678
+    },
+    {
+     "px": 7367.24,
+     "gex": -83044170117.96281
+    },
+    {
+     "px": 7382.0,
+     "gex": -81236561162.15453
+    },
+    {
+     "px": 7396.76,
+     "gex": -79204486285.60611
+    },
+    {
+     "px": 7411.53,
+     "gex": -76939299878.78601
+    },
+    {
+     "px": 7426.29,
+     "gex": -74433461714.52824
+    },
+    {
+     "px": 7441.06,
+     "gex": -71680728202.07211
+    },
+    {
+     "px": 7455.82,
+     "gex": -68676339465.06302
+    },
+    {
+     "px": 7470.58,
+     "gex": -65417197725.758385
+    },
+    {
+     "px": 7485.35,
+     "gex": -61902032320.119736
+    },
+    {
+     "px": 7500.11,
+     "gex": -58131546666.948715
+    },
+    {
+     "px": 7514.88,
+     "gex": -54108542680.6618
+    },
+    {
+     "px": 7529.64,
+     "gex": -49838018454.20615
+    },
+    {
+     "px": 7544.4,
+     "gex": -45327235538.147736
+    },
+    {
+     "px": 7559.17,
+     "gex": -40585752786.340805
+    },
+    {
+     "px": 7573.93,
+     "gex": -35625424501.259636
+    },
+    {
+     "px": 7588.7,
+     "gex": -30460361460.22667
+    },
+    {
+     "px": 7603.46,
+     "gex": -25106854301.06873
+    },
+    {
+     "px": 7618.22,
+     "gex": -19583259655.872864
+    },
+    {
+     "px": 7632.99,
+     "gex": -13909850310.876366
+    },
+    {
+     "px": 7647.75,
+     "gex": -8108631510.906409
+    },
+    {
+     "px": 7662.52,
+     "gex": -2203126296.387088
+    },
+    {
+     "px": 7677.28,
+     "gex": 3781866555.0633607
+    },
+    {
+     "px": 7692.04,
+     "gex": 9820537820.876266
+    },
+    {
+     "px": 7706.81,
+     "gex": 15886351707.266493
+    },
+    {
+     "px": 7721.57,
+     "gex": 21952343261.580925
+    },
+    {
+     "px": 7736.34,
+     "gex": 27991423990.864017
+    },
+    {
+     "px": 7751.1,
+     "gex": 33976690166.6505
+    },
+    {
+     "px": 7765.86,
+     "gex": 39881728212.56283
+    },
+    {
+     "px": 7780.63,
+     "gex": 45680911595.2459
+    },
+    {
+     "px": 7795.39,
+     "gex": 51349683774.55849
+    },
+    {
+     "px": 7810.16,
+     "gex": 56864822019.51588
+    },
+    {
+     "px": 7824.92,
+     "gex": 62204677264.92502
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "SPX",
+    "days": 0.62,
+    "spot": 7353.73,
+    "rows": [
+     {
+      "strike": 7170.0,
+      "fut": 7200.0,
+      "call_oi": 0,
+      "put_oi": 2400
+     },
+     {
+      "strike": 7180.0,
+      "fut": 7210.0,
+      "call_oi": 0,
+      "put_oi": 913
+     },
+     {
+      "strike": 7190.0,
+      "fut": 7220.0,
+      "call_oi": 1,
+      "put_oi": 883
+     },
+     {
+      "strike": 7200.0,
+      "fut": 7230.0,
+      "call_oi": 25,
+      "put_oi": 2847
+     },
+     {
+      "strike": 7210.0,
+      "fut": 7240.0,
+      "call_oi": 2,
+      "put_oi": 663
+     },
+     {
+      "strike": 7220.0,
+      "fut": 7250.0,
+      "call_oi": 204,
+      "put_oi": 2025
+     },
+     {
+      "strike": 7230.0,
+      "fut": 7260.0,
+      "call_oi": 5,
+      "put_oi": 738
+     },
+     {
+      "strike": 7240.0,
+      "fut": 7270.0,
+      "call_oi": 9,
+      "put_oi": 1997
+     },
+     {
+      "strike": 7250.0,
+      "fut": 7280.0,
+      "call_oi": 7,
+      "put_oi": 3894
+     },
+     {
+      "strike": 7260.0,
+      "fut": 7290.0,
+      "call_oi": 4,
+      "put_oi": 784
+     },
+     {
+      "strike": 7270.0,
+      "fut": 7300.0,
+      "call_oi": 47,
+      "put_oi": 2656
+     },
+     {
+      "strike": 7280.0,
+      "fut": 7310.0,
+      "call_oi": 3,
+      "put_oi": 2136
+     },
+     {
+      "strike": 7290.0,
+      "fut": 7320.0,
+      "call_oi": 31,
+      "put_oi": 2277
+     },
+     {
+      "strike": 7300.0,
+      "fut": 7330.0,
+      "call_oi": 9,
+      "put_oi": 7309
+     },
+     {
+      "strike": 7310.0,
+      "fut": 7340.0,
+      "call_oi": 5,
+      "put_oi": 742
+     },
+     {
+      "strike": 7320.0,
+      "fut": 7350.0,
+      "call_oi": 3,
+      "put_oi": 3415
+     },
+     {
+      "strike": 7330.0,
+      "fut": 7360.0,
+      "call_oi": 3,
+      "put_oi": 1192
+     },
+     {
+      "strike": 7340.0,
+      "fut": 7370.0,
+      "call_oi": 7,
+      "put_oi": 2036
+     },
+     {
+      "strike": 7350.0,
+      "fut": 7380.0,
+      "call_oi": 73,
+      "put_oi": 7043
+     },
+     {
+      "strike": 7360.0,
+      "fut": 7390.0,
+      "call_oi": 257,
+      "put_oi": 1882
+     },
+     {
+      "strike": 7370.0,
+      "fut": 7400.0,
+      "call_oi": 13,
+      "put_oi": 2666
+     },
+     {
+      "strike": 7380.0,
+      "fut": 7410.0,
+      "call_oi": 39,
+      "put_oi": 1429
+     },
+     {
+      "strike": 7390.0,
+      "fut": 7420.0,
+      "call_oi": 49,
+      "put_oi": 1994
+     },
+     {
+      "strike": 7400.0,
+      "fut": 7430.0,
+      "call_oi": 81,
+      "put_oi": 6718
+     },
+     {
+      "strike": 7410.0,
+      "fut": 7440.0,
+      "call_oi": 43,
+      "put_oi": 1174
+     },
+     {
+      "strike": 7420.0,
+      "fut": 7450.0,
+      "call_oi": 32,
+      "put_oi": 3454
+     },
+     {
+      "strike": 7430.0,
+      "fut": 7460.0,
+      "call_oi": 9,
+      "put_oi": 2125
+     },
+     {
+      "strike": 7440.0,
+      "fut": 7470.0,
+      "call_oi": 25,
+      "put_oi": 1557
+     },
+     {
+      "strike": 7450.0,
+      "fut": 7480.0,
+      "call_oi": 214,
+      "put_oi": 5597
+     },
+     {
+      "strike": 7460.0,
+      "fut": 7490.0,
+      "call_oi": 68,
+      "put_oi": 1740
+     },
+     {
+      "strike": 7470.0,
+      "fut": 7500.0,
+      "call_oi": 164,
+      "put_oi": 2191
+     },
+     {
+      "strike": 7480.0,
+      "fut": 7510.0,
+      "call_oi": 101,
+      "put_oi": 4325
+     },
+     {
+      "strike": 7490.0,
+      "fut": 7520.0,
+      "call_oi": 70,
+      "put_oi": 1747
+     },
+     {
+      "strike": 7500.0,
+      "fut": 7530.0,
+      "call_oi": 312,
+      "put_oi": 6669
+     },
+     {
+      "strike": 7510.0,
+      "fut": 7540.0,
+      "call_oi": 460,
+      "put_oi": 1880
+     },
+     {
+      "strike": 7520.0,
+      "fut": 7550.0,
+      "call_oi": 395,
+      "put_oi": 3547
+     },
+     {
+      "strike": 7530.0,
+      "fut": 7560.0,
+      "call_oi": 198,
+      "put_oi": 1944
+     }
+    ],
+    "max_pain": 7660.0,
+    "max_pain_fut": 7689.4
+   },
+   "gamma_diag": {
+    "SPX all": {
+     "flip": 7657.130269544915,
+     "net_bn": -84.89,
+     "call_bn": 94.67,
+     "put_bn": 179.56,
+     "call_oi": 5511816,
+     "put_oi": 7887108
+    },
+    "SPX 0dte": {
+     "flip": 7656.994417700056,
+     "net_bn": -15.38,
+     "call_bn": 1.4,
+     "put_bn": 16.78,
+     "call_oi": 207906,
+     "put_oi": 542771
+    },
+    "SPX 1-7d": {
+     "flip": 7729.564149923836,
+     "net_bn": -12.1,
+     "call_bn": 1.73,
+     "put_bn": 13.83,
+     "call_oi": 144795,
+     "put_oi": 289617
+    },
+    "SPX 8-30d": {
+     "flip": 7719.205163976439,
+     "net_bn": -45.75,
+     "call_bn": 23.05,
+     "put_bn": 68.8,
+     "call_oi": 1445622,
+     "put_oi": 2729638
+    },
+    "SPX 31-60d": {
+     "flip": 7514.995510315677,
+     "net_bn": -11.66,
+     "call_bn": 68.49,
+     "put_bn": 80.15,
+     "call_oi": 3713493,
+     "put_oi": 4325082
+    },
+    "SPY all": {
+     "flip": 7751.384980992465,
+     "net_bn": -14.47,
+     "call_bn": 4.41,
+     "put_bn": 18.88,
+     "call_oi": 2918306,
+     "put_oi": 7570115
+    },
+    "SPY 0dte": {
+     "flip": 7735.234922246228,
+     "net_bn": -2.75,
+     "call_bn": 0.15,
+     "put_bn": 2.9,
+     "call_oi": 260425,
+     "put_oi": 495595
+    },
+    "SPY 1-7d": {
+     "flip": 7695.139413386122,
+     "net_bn": -1.11,
+     "call_bn": 0.19,
+     "put_bn": 1.3,
+     "call_oi": 152841,
+     "put_oi": 242143
+    },
+    "SPY 8-30d": {
+     "flip": 7819.597103855848,
+     "net_bn": -8.97,
+     "call_bn": 1.84,
+     "put_bn": 10.81,
+     "call_oi": 1219029,
+     "put_oi": 4080564
+    },
+    "SPY 31-60d": {
+     "flip": 7615.210415180668,
+     "net_bn": -1.64,
+     "call_bn": 2.22,
+     "put_bn": 3.87,
+     "call_oi": 1286011,
+     "put_oi": 2751813
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "YM": {
+   "name": "Dow futures",
+   "group": "US indices",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.229,
+    "raw_score": -0.229,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "YM has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.217,
+    "conviction": "Medium",
+    "ups": 4,
+    "downs": 6,
+    "total": 23,
+    "overall": "For: VIX term structure, VIX today, Policy gap (2Y \u2212 Fed funds). Against: Volatility risk premium, Charm into close. Dealers short gamma: moves can run. ES agrees. Ym has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "A reclaim and hold of the gamma flip at 51,622",
+    "macro_share": 85,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol 28.2 vs realized 19.3 over the past month: premium +8.9 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "Front VIX future 17.74 vs VIX 16.61, 10 sessions to settlement: roll +0.11 a day. Steep contango: vol is priced to drift lower, the calm backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.6,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 51,622, price 489 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.84. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 50,700 / call wall 52,700: 1,567 pts up vs 433 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.14B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.219,
+    "delta": -0.01
+   },
+   "expected_range": {
+    "move": 902.61,
+    "low": 50230.39,
+    "high": 52035.61
+   },
+   "levels": {
+    "price": 51133.0,
+    "flip": 51621.54,
+    "flip_close": 51850.4,
+    "call_wall": 52700,
+    "put_wall": 50700,
+    "majors": [
+     {
+      "level": 49200,
+      "net_gex": -19651820.260734387
+     },
+     {
+      "level": 50300,
+      "net_gex": 16817989.206868544
+     },
+     {
+      "level": 50700,
+      "net_gex": -16142030.863015473
+     },
+     {
+      "level": 51200,
+      "net_gex": -28556539.33779437
+     },
+     {
+      "level": 51400,
+      "net_gex": -24383082.239219632
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -0.054,
+    "call_put_gamma": 0.84,
+    "dealer_delta_bn": 5.19,
+    "charm_bn": 0.141,
+    "vanna_bn_per_pt": 0.054,
+    "chains": [
+     "DJX",
+     "DIA"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 48065.02,
+     "gex": -146332079.98345602
+    },
+    {
+     "px": 48167.29,
+     "gex": -146953719.73952168
+    },
+    {
+     "px": 48269.55,
+     "gex": -147491392.26560196
+    },
+    {
+     "px": 48371.82,
+     "gex": -147937532.97139734
+    },
+    {
+     "px": 48474.08,
+     "gex": -148283192.80294588
+    },
+    {
+     "px": 48576.35,
+     "gex": -148517860.21153736
+    },
+    {
+     "px": 48678.62,
+     "gex": -148629294.15878618
+    },
+    {
+     "px": 48780.88,
+     "gex": -148603375.1445948
+    },
+    {
+     "px": 48883.15,
+     "gex": -148423981.68634993
+    },
+    {
+     "px": 48985.41,
+     "gex": -148072899.93218768
+    },
+    {
+     "px": 49087.68,
+     "gex": -147529774.12611058
+    },
+    {
+     "px": 49189.95,
+     "gex": -146772105.42959458
+    },
+    {
+     "px": 49292.21,
+     "gex": -145775306.11994296
+    },
+    {
+     "px": 49394.48,
+     "gex": -144512815.41384795
+    },
+    {
+     "px": 49496.74,
+     "gex": -142956282.09767964
+    },
+    {
+     "px": 49599.01,
+     "gex": -141075817.78603095
+    },
+    {
+     "px": 49701.28,
+     "gex": -138840322.99008802
+    },
+    {
+     "px": 49803.54,
+     "gex": -136217886.28243455
+    },
+    {
+     "px": 49905.81,
+     "gex": -133176254.73227105
+    },
+    {
+     "px": 50008.07,
+     "gex": -129683371.50452305
+    },
+    {
+     "px": 50110.34,
+     "gex": -125707974.12965499
+    },
+    {
+     "px": 50212.61,
+     "gex": -121220244.53076884
+    },
+    {
+     "px": 50314.87,
+     "gex": -116192499.52249609
+    },
+    {
+     "px": 50417.14,
+     "gex": -110599908.26074032
+    },
+    {
+     "px": 50519.4,
+     "gex": -104421221.1157411
+    },
+    {
+     "px": 50621.67,
+     "gex": -97639492.75567472
+    },
+    {
+     "px": 50723.94,
+     "gex": -90242780.95270713
+    },
+    {
+     "px": 50826.2,
+     "gex": -82224801.83882612
+    },
+    {
+     "px": 50928.47,
+     "gex": -73585522.1130093
+    },
+    {
+     "px": 51030.73,
+     "gex": -64331669.08626689
+    },
+    {
+     "px": 51133.0,
+     "gex": -54477140.4779972
+    },
+    {
+     "px": 51235.27,
+     "gex": -44043297.55394435
+    },
+    {
+     "px": 51337.53,
+     "gex": -33059127.504954435
+    },
+    {
+     "px": 51439.8,
+     "gex": -21561263.861996084
+    },
+    {
+     "px": 51542.06,
+     "gex": -9593857.155122578
+    },
+    {
+     "px": 51644.33,
+     "gex": 2791708.1444742754
+    },
+    {
+     "px": 51746.6,
+     "gex": 15537250.228453185
+    },
+    {
+     "px": 51848.86,
+     "gex": 28578375.63587682
+    },
+    {
+     "px": 51951.13,
+     "gex": 41845205.24522645
+    },
+    {
+     "px": 52053.39,
+     "gex": 55263227.636964455
+    },
+    {
+     "px": 52155.66,
+     "gex": 68754263.02588831
+    },
+    {
+     "px": 52257.93,
+     "gex": 82237517.5474171
+    },
+    {
+     "px": 52360.19,
+     "gex": 95630704.84986156
+    },
+    {
+     "px": 52462.46,
+     "gex": 108851209.8085993
+    },
+    {
+     "px": 52564.72,
+     "gex": 121817267.82451063
+    },
+    {
+     "px": 52666.99,
+     "gex": 134449132.65315425
+    },
+    {
+     "px": 52769.26,
+     "gex": 146670206.05470425
+    },
+    {
+     "px": 52871.52,
+     "gex": 158408103.7435937
+    },
+    {
+     "px": 52973.79,
+     "gex": 169595634.1033531
+    },
+    {
+     "px": 53076.05,
+     "gex": 180171668.83580634
+    },
+    {
+     "px": 53178.32,
+     "gex": 190081888.0260972
+    },
+    {
+     "px": 53280.59,
+     "gex": 199279385.8947391
+    },
+    {
+     "px": 53382.85,
+     "gex": 207725127.62697843
+    },
+    {
+     "px": 53485.12,
+     "gex": 215388251.96109414
+    },
+    {
+     "px": 53587.38,
+     "gex": 222246218.52130455
+    },
+    {
+     "px": 53689.65,
+     "gex": 228284803.04367036
+    },
+    {
+     "px": 53791.92,
+     "gex": 233497947.5224469
+    },
+    {
+     "px": 53894.18,
+     "gex": 237887475.77524108
+    },
+    {
+     "px": 53996.45,
+     "gex": 241462687.88625494
+    },
+    {
+     "px": 54098.71,
+     "gex": 244239849.36159173
+    },
+    {
+     "px": 54200.98,
+     "gex": 246241592.57114598
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "DJX",
+    "days": 0.62,
+    "spot": 533.56,
+    "rows": [
+     {
+      "strike": 525.0,
+      "fut": 50300.0,
+      "call_oi": 32,
+      "put_oi": 8
+     },
+     {
+      "strike": 526.0,
+      "fut": 50400.0,
+      "call_oi": 0,
+      "put_oi": 10
+     },
+     {
+      "strike": 530.0,
+      "fut": 50800.0,
+      "call_oi": 16,
+      "put_oi": 6
+     },
+     {
+      "strike": 532.0,
+      "fut": 51000.0,
+      "call_oi": 1,
+      "put_oi": 0
+     },
+     {
+      "strike": 534.0,
+      "fut": 51200.0,
+      "call_oi": 30,
+      "put_oi": 1
+     },
+     {
+      "strike": 535.0,
+      "fut": 51300.0,
+      "call_oi": 102,
+      "put_oi": 3
+     },
+     {
+      "strike": 536.0,
+      "fut": 51400.0,
+      "call_oi": 0,
+      "put_oi": 1
+     },
+     {
+      "strike": 540.0,
+      "fut": 51800.0,
+      "call_oi": 209,
+      "put_oi": 1
+     },
+     {
+      "strike": 545.0,
+      "fut": 52200.0,
+      "call_oi": 1,
+      "put_oi": 0
+     }
+    ],
+    "max_pain": 520.0,
+    "max_pain_fut": 49833.5
+   },
+   "gamma_diag": {
+    "DJX all": {
+     "flip": null,
+     "net_bn": 0.04,
+     "call_bn": 0.05,
+     "put_bn": 0.01,
+     "call_oi": 20546,
+     "put_oi": 8585
+    },
+    "DJX 0dte": {
+     "flip": 49404.6032105101,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 422,
+     "put_oi": 217
+    },
+    "DJX 1-7d": {
+     "flip": null,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 0,
+     "put_oi": 12
+    },
+    "DJX 8-30d": {
+     "flip": null,
+     "net_bn": 0.03,
+     "call_bn": 0.03,
+     "put_bn": 0.0,
+     "call_oi": 5687,
+     "put_oi": 1633
+    },
+    "DJX 31-60d": {
+     "flip": null,
+     "net_bn": 0.01,
+     "call_bn": 0.02,
+     "put_bn": 0.01,
+     "call_oi": 14437,
+     "put_oi": 6723
+    },
+    "DIA all": {
+     "flip": 51944.73993040057,
+     "net_bn": -0.12,
+     "call_bn": 0.3,
+     "put_bn": 0.42,
+     "call_oi": 148729,
+     "put_oi": 180216
+    },
+    "DIA 0dte": {
+     "flip": 52615.51611061408,
+     "net_bn": -0.03,
+     "call_bn": 0.07,
+     "put_bn": 0.09,
+     "call_oi": 20819,
+     "put_oi": 25979
+    },
+    "DIA 8-30d": {
+     "flip": 51798.27572515515,
+     "net_bn": -0.06,
+     "call_bn": 0.15,
+     "put_bn": 0.21,
+     "call_oi": 58187,
+     "put_oi": 60414
+    },
+    "DIA 31-60d": {
+     "flip": 52436.4693409997,
+     "net_bn": -0.03,
+     "call_bn": 0.09,
+     "put_bn": 0.12,
+     "call_oi": 69723,
+     "put_oi": 93823
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "RTY": {
+   "name": "Russell 2000 futures",
+   "group": "US indices",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.247,
+    "raw_score": -0.247,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "RTY has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.246,
+    "conviction": "Medium",
+    "ups": 3,
+    "downs": 6,
+    "total": 22,
+    "overall": "For: VIX term structure, VIX today, Policy gap (2Y \u2212 Fed funds). Against: Charm into close, VIX futures roll. Dealers short gamma: moves can run. ES agrees. Rty has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "A reclaim and hold of the gamma flip at 2,758",
+    "macro_share": 85,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "Front VIX future 17.74 vs VIX 16.61, 10 sessions to settlement: roll +0.11 a day. Steep contango: vol is priced to drift lower, the calm backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 2,758, price 28 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.83. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 2,595 / call wall 2,730: 1 pts up vs 134 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $5.03B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.214,
+    "delta": -0.033
+   },
+   "expected_range": null,
+   "levels": {
+    "price": 2729.3,
+    "flip": 2757.63,
+    "flip_close": 2744.97,
+    "call_wall": 2730,
+    "put_wall": 2595,
+    "majors": [
+     {
+      "level": 2595,
+      "net_gex": -373760695.63577807
+     },
+     {
+      "level": 2645,
+      "net_gex": -216651653.287693
+     },
+     {
+      "level": 2730,
+      "net_gex": 183775900.9253509
+     },
+     {
+      "level": 2780,
+      "net_gex": 138606141.5192883
+     },
+     {
+      "level": 2820,
+      "net_gex": 156139587.53135097
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -0.958,
+    "call_put_gamma": 0.83,
+    "dealer_delta_bn": 76.85,
+    "charm_bn": 5.035,
+    "vanna_bn_per_pt": 1.341,
+    "chains": [
+     "RUT",
+     "IWM"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 2565.54,
+     "gex": -5445868667.182041
+    },
+    {
+     "px": 2571.0,
+     "gex": -5395304345.198515
+    },
+    {
+     "px": 2576.46,
+     "gex": -5336555035.161404
+    },
+    {
+     "px": 2581.92,
+     "gex": -5269521351.14471
+    },
+    {
+     "px": 2587.38,
+     "gex": -5194132085.921255
+    },
+    {
+     "px": 2592.84,
+     "gex": -5110346495.807748
+    },
+    {
+     "px": 2598.29,
+     "gex": -5018156589.0561695
+    },
+    {
+     "px": 2603.75,
+     "gex": -4917589377.7209
+    },
+    {
+     "px": 2609.21,
+     "gex": -4808709044.72733
+    },
+    {
+     "px": 2614.67,
+     "gex": -4691618970.331499
+    },
+    {
+     "px": 2620.13,
+     "gex": -4566463555.80391
+    },
+    {
+     "px": 2625.59,
+     "gex": -4433429777.501035
+    },
+    {
+     "px": 2631.05,
+     "gex": -4292748401.9861674
+    },
+    {
+     "px": 2636.5,
+     "gex": -4144694792.9354405
+    },
+    {
+     "px": 2641.96,
+     "gex": -3989589243.532848
+    },
+    {
+     "px": 2647.42,
+     "gex": -3827796774.102165
+    },
+    {
+     "px": 2652.88,
+     "gex": -3659726343.880966
+    },
+    {
+     "px": 2658.34,
+     "gex": -3485829437.9767675
+    },
+    {
+     "px": 2663.8,
+     "gex": -3306598005.351576
+    },
+    {
+     "px": 2669.26,
+     "gex": -3122561740.6828227
+    },
+    {
+     "px": 2674.71,
+     "gex": -2934284721.515829
+    },
+    {
+     "px": 2680.17,
+     "gex": -2742361431.5082455
+    },
+    {
+     "px": 2685.63,
+     "gex": -2547412219.9267454
+    },
+    {
+     "px": 2691.09,
+     "gex": -2350078266.020974
+    },
+    {
+     "px": 2696.55,
+     "gex": -2151016133.596063
+    },
+    {
+     "px": 2702.01,
+     "gex": -1950892015.2372155
+    },
+    {
+     "px": 2707.47,
+     "gex": -1750375776.512051
+    },
+    {
+     "px": 2712.92,
+     "gex": -1550134917.5594692
+    },
+    {
+     "px": 2718.38,
+     "gex": -1350828572.420374
+    },
+    {
+     "px": 2723.84,
+     "gex": -1153101665.1458209
+    },
+    {
+     "px": 2729.3,
+     "gex": -957579336.2167487
+    },
+    {
+     "px": 2734.76,
+     "gex": -764861743.4270656
+    },
+    {
+     "px": 2740.22,
+     "gex": -575519328.6077173
+    },
+    {
+     "px": 2745.68,
+     "gex": -390088626.0542035
+    },
+    {
+     "px": 2751.13,
+     "gex": -209068671.0276649
+    },
+    {
+     "px": 2756.59,
+     "gex": -32918048.064091623
+    },
+    {
+     "px": 2762.05,
+     "gex": 137947400.1040691
+    },
+    {
+     "px": 2767.51,
+     "gex": 303156200.6207326
+    },
+    {
+     "px": 2772.97,
+     "gex": 462382230.33352345
+    },
+    {
+     "px": 2778.43,
+     "gex": 615345077.4135945
+    },
+    {
+     "px": 2783.89,
+     "gex": 761809827.7282741
+    },
+    {
+     "px": 2789.34,
+     "gex": 901586329.1767701
+    },
+    {
+     "px": 2794.8,
+     "gex": 1034527994.6190711
+    },
+    {
+     "px": 2800.26,
+     "gex": 1160530208.6194587
+    },
+    {
+     "px": 2805.72,
+     "gex": 1279528405.1270018
+    },
+    {
+     "px": 2811.18,
+     "gex": 1391495882.684356
+    },
+    {
+     "px": 2816.64,
+     "gex": 1496441421.135195
+    },
+    {
+     "px": 2822.1,
+     "gex": 1594406759.494452
+    },
+    {
+     "px": 2827.55,
+     "gex": 1685463989.079206
+    },
+    {
+     "px": 2833.01,
+     "gex": 1769712909.6026535
+    },
+    {
+     "px": 2838.47,
+     "gex": 1847278389.107017
+    },
+    {
+     "px": 2843.93,
+     "gex": 1918307761.71328
+    },
+    {
+     "px": 2849.39,
+     "gex": 1982968290.4937797
+    },
+    {
+     "px": 2854.85,
+     "gex": 2041444716.5624447
+    },
+    {
+     "px": 2860.31,
+     "gex": 2093936909.8939152
+    },
+    {
+     "px": 2865.77,
+     "gex": 2140657632.5292578
+    },
+    {
+     "px": 2871.22,
+     "gex": 2181830420.747796
+    },
+    {
+     "px": 2876.68,
+     "gex": 2217687589.477133
+    },
+    {
+     "px": 2882.14,
+     "gex": 2248468359.6354723
+    },
+    {
+     "px": 2887.6,
+     "gex": 2274417107.180402
+    },
+    {
+     "px": 2893.06,
+     "gex": 2295781731.290706
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "RUT",
+    "days": 0.62,
+    "spot": 2856.95,
+    "rows": [
+     {
+      "strike": 2790.0,
+      "fut": 2670.0,
+      "call_oi": 749,
+      "put_oi": 607
+     },
+     {
+      "strike": 2805.0,
+      "fut": 2680.0,
+      "call_oi": 459,
+      "put_oi": 291
+     },
+     {
+      "strike": 2815.0,
+      "fut": 2690.0,
+      "call_oi": 209,
+      "put_oi": 448
+     },
+     {
+      "strike": 2825.0,
+      "fut": 2700.0,
+      "call_oi": 391,
+      "put_oi": 240
+     },
+     {
+      "strike": 2835.0,
+      "fut": 2710.0,
+      "call_oi": 449,
+      "put_oi": 126
+     },
+     {
+      "strike": 2845.0,
+      "fut": 2720.0,
+      "call_oi": 4381,
+      "put_oi": 128
+     },
+     {
+      "strike": 2855.0,
+      "fut": 2730.0,
+      "call_oi": 4223,
+      "put_oi": 180
+     },
+     {
+      "strike": 2865.0,
+      "fut": 2740.0,
+      "call_oi": 585,
+      "put_oi": 52
+     },
+     {
+      "strike": 2875.0,
+      "fut": 2750.0,
+      "call_oi": 421,
+      "put_oi": 136
+     },
+     {
+      "strike": 2885.0,
+      "fut": 2760.0,
+      "call_oi": 443,
+      "put_oi": 84
+     },
+     {
+      "strike": 2895.0,
+      "fut": 2770.0,
+      "call_oi": 1256,
+      "put_oi": 93
+     },
+     {
+      "strike": 2905.0,
+      "fut": 2780.0,
+      "call_oi": 1025,
+      "put_oi": 78
+     },
+     {
+      "strike": 2920.0,
+      "fut": 2790.0,
+      "call_oi": 356,
+      "put_oi": 22
+     }
+    ],
+    "max_pain": 2815.0,
+    "max_pain_fut": 2689.2
+   },
+   "gamma_diag": {
+    "RUT all": {
+     "flip": 2696.015641176404,
+     "net_bn": 0.89,
+     "call_bn": 3.76,
+     "put_bn": 2.87,
+     "call_oi": 237747,
+     "put_oi": 366561
+    },
+    "RUT 0dte": {
+     "flip": 2663.5320812999134,
+     "net_bn": 0.82,
+     "call_bn": 0.96,
+     "put_bn": 0.14,
+     "call_oi": 20038,
+     "put_oi": 36370
+    },
+    "RUT 1-7d": {
+     "flip": 2709.9964323648883,
+     "net_bn": 0.02,
+     "call_bn": 0.1,
+     "put_bn": 0.08,
+     "call_oi": 3441,
+     "put_oi": 5873
+    },
+    "RUT 8-30d": {
+     "flip": 2712.918912160462,
+     "net_bn": 0.21,
+     "call_bn": 1.68,
+     "put_bn": 1.47,
+     "call_oi": 92911,
+     "put_oi": 158624
+    },
+    "RUT 31-60d": {
+     "flip": 2784.6137243007925,
+     "net_bn": -0.16,
+     "call_bn": 1.01,
+     "put_bn": 1.18,
+     "call_oi": 121357,
+     "put_oi": 165694
+    },
+    "IWM all": {
+     "flip": 2756.0419736302683,
+     "net_bn": -0.71,
+     "call_bn": 2.54,
+     "put_bn": 3.25,
+     "call_oi": 1813644,
+     "put_oi": 4133764
+    },
+    "IWM 0dte": {
+     "flip": 2704.6512374347662,
+     "net_bn": 0.32,
+     "call_bn": 0.6,
+     "put_bn": 0.27,
+     "call_oi": 167910,
+     "put_oi": 298825
+    },
+    "IWM 1-7d": {
+     "flip": 2708.796837525542,
+     "net_bn": 0.04,
+     "call_bn": 0.19,
+     "put_bn": 0.15,
+     "call_oi": 58233,
+     "put_oi": 73917
+    },
+    "IWM 8-30d": {
+     "flip": 2789.554656973376,
+     "net_bn": -0.75,
+     "call_bn": 1.04,
+     "put_bn": 1.8,
+     "call_oi": 665367,
+     "put_oi": 1798738
+    },
+    "IWM 31-60d": {
+     "flip": 2823.575344720151,
+     "net_bn": -0.32,
+     "call_bn": 0.71,
+     "put_bn": 1.03,
+     "call_oi": 922134,
+     "put_oi": 1962284
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "NIKKEI": {
+   "name": "Nikkei 225 (Japan)",
+   "group": "International indices",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.312,
+    "raw_score": -0.312,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "NIKKEI has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.312,
+    "conviction": "Medium",
+    "ups": 2,
+    "downs": 6,
+    "total": 19,
+    "overall": "For: VIX term structure, VIX today, Policy gap (2Y \u2212 Fed funds). Against: VIX futures roll, VIX shock. Nikkei has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 9,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Implied vol 28.2 vs realized 25.6 over the past month: premium +2.6 pts. A normal premium.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "Front VIX future 17.74 vs VIX 16.61, 10 sessions to settlement: roll +0.11 a day. Steep contango: vol is priced to drift lower, the calm backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.256,
+    "delta": -0.056
+   },
+   "expected_range": {
+    "move": 982.27,
+    "low": 56610.84,
+    "high": 58575.38
+   },
+   "levels": {
+    "price": 57593.11
+   },
+   "dealer": null,
+   "flow": null,
+   "profile": [],
+   "big_trades": null,
+   "strikes": null,
+   "gamma_diag": null,
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "HSI": {
+   "name": "Hang Seng (Hong Kong)",
+   "group": "International indices",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.277,
+    "raw_score": -0.277,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "HSI has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.277,
+    "conviction": "Medium",
+    "ups": 3,
+    "downs": 6,
+    "total": 19,
+    "overall": "For: VIX term structure, VIX today, Policy gap (2Y \u2212 Fed funds). Against: Volatility risk premium, VIX futures roll. Hsi has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 9,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol 28.2 vs realized 22.2 over the past month: premium +6.0 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "Front VIX future 17.74 vs VIX 16.61, 10 sessions to settlement: roll +0.11 a day. Steep contango: vol is priced to drift lower, the calm backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.235,
+    "delta": -0.042
+   },
+   "expected_range": {
+    "move": 418.11,
+    "low": 24097.08,
+    "high": 24933.31
+   },
+   "levels": {
+    "price": 24515.2
+   },
+   "dealer": null,
+   "flow": null,
+   "profile": [],
+   "big_trades": null,
+   "strikes": null,
+   "gamma_diag": null,
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "GC": {
+   "name": "Gold futures",
+   "group": "Metals",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.253,
+    "raw_score": 0.253,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "GC has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": 0.253,
+    "conviction": "Medium",
+    "ups": 6,
+    "downs": 2,
+    "total": 19,
+    "overall": "For: VIX today, VIX term structure, Wall range. Against: Policy gap (2Y \u2212 Fed funds), VIX shock. Dealers long gamma: expect chop and fades. Gc has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "A 15-minute close below the gamma flip at 3,984",
+    "macro_share": 78,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.75,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For gold: higher yields, a firmer dollar and a hawkish Fed raise the cost of holding a metal that pays no interest.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.15,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.15,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.5,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.375,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 3,984, price 74 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 1.42. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "Put wall 4,030 / call wall 4,140: 82 pts up vs 28 down. Near support, and long-gamma dealers tend to defend it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.72B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bullish",
+    "prev_score": 0.173,
+    "delta": 0.08
+   },
+   "expected_range": {
+    "move": 59.02,
+    "low": 3998.48,
+    "high": 4116.52
+   },
+   "levels": {
+    "price": 4057.5,
+    "flip": 3983.76,
+    "flip_close": 3999.43,
+    "call_wall": 4140,
+    "put_wall": 4030,
+    "majors": [
+     {
+      "level": 3870,
+      "net_gex": -30407773.362208188
+     },
+     {
+      "level": 3920,
+      "net_gex": -30964605.767196752
+     },
+     {
+      "level": 4140,
+      "net_gex": 30632616.35864626
+     },
+     {
+      "level": 4190,
+      "net_gex": 36546916.70290293
+     },
+     {
+      "level": 4300,
+      "net_gex": 30141578.773710802
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": 0.315,
+    "call_put_gamma": 1.42,
+    "dealer_delta_bn": 12.19,
+    "charm_bn": 0.718,
+    "vanna_bn_per_pt": 0.288,
+    "chains": [
+     "GLD"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 3814.05,
+     "gex": -528247722.21291643
+    },
+    {
+     "px": 3822.16,
+     "gex": -512309347.6870919
+    },
+    {
+     "px": 3830.28,
+     "gex": -495337553.66500974
+    },
+    {
+     "px": 3838.39,
+     "gex": -477335447.0155562
+    },
+    {
+     "px": 3846.51,
+     "gex": -458309102.82868373
+    },
+    {
+     "px": 3854.62,
+     "gex": -438267602.076895
+    },
+    {
+     "px": 3862.74,
+     "gex": -417223009.17364347
+    },
+    {
+     "px": 3870.85,
+     "gex": -395190294.08694756
+    },
+    {
+     "px": 3878.97,
+     "gex": -372187208.6330905
+    },
+    {
+     "px": 3887.08,
+     "gex": -348234130.69678193
+    },
+    {
+     "px": 3895.2,
+     "gex": -323353892.8937831
+    },
+    {
+     "px": 3903.31,
+     "gex": -297571613.25023264
+    },
+    {
+     "px": 3911.43,
+     "gex": -270914544.6580223
+    },
+    {
+     "px": 3919.54,
+     "gex": -243411957.24378747
+    },
+    {
+     "px": 3927.66,
+     "gex": -215095063.6465028
+    },
+    {
+     "px": 3935.77,
+     "gex": -185996992.007417
+    },
+    {
+     "px": 3943.89,
+     "gex": -156152805.82943696
+    },
+    {
+     "px": 3952.0,
+     "gex": -125599564.39653698
+    },
+    {
+     "px": 3960.12,
+     "gex": -94376412.75031483
+    },
+    {
+     "px": 3968.23,
+     "gex": -62524686.77452338
+    },
+    {
+     "px": 3976.35,
+     "gex": -30088017.037442803
+    },
+    {
+     "px": 3984.46,
+     "gex": 2887585.2208283544
+    },
+    {
+     "px": 3992.58,
+     "gex": 36353675.30547953
+    },
+    {
+     "px": 4000.69,
+     "gex": 70259368.33444205
+    },
+    {
+     "px": 4008.81,
+     "gex": 104551388.06750283
+    },
+    {
+     "px": 4016.92,
+     "gex": 139174177.1067688
+    },
+    {
+     "px": 4025.04,
+     "gex": 174070070.66036165
+    },
+    {
+     "px": 4033.15,
+     "gex": 209179532.9022718
+    },
+    {
+     "px": 4041.27,
+     "gex": 244441452.51653117
+    },
+    {
+     "px": 4049.38,
+     "gex": 279793492.3920877
+    },
+    {
+     "px": 4057.5,
+     "gex": 315172487.60197026
+    },
+    {
+     "px": 4065.61,
+     "gex": 350514885.5957824
+    },
+    {
+     "px": 4073.73,
+     "gex": 385757222.71423
+    },
+    {
+     "px": 4081.84,
+     "gex": 420836631.413361
+    },
+    {
+     "px": 4089.96,
+     "gex": 455691372.6939915
+    },
+    {
+     "px": 4098.07,
+     "gex": 490261387.9527769
+    },
+    {
+     "px": 4106.19,
+     "gex": 524488863.68172
+    },
+    {
+     "px": 4114.3,
+     "gex": 558318801.1281096
+    },
+    {
+     "px": 4122.42,
+     "gex": 591699581.2824169
+    },
+    {
+     "px": 4130.53,
+     "gex": 624583513.5821933
+    },
+    {
+     "px": 4138.65,
+     "gex": 656927354.7683244
+    },
+    {
+     "px": 4146.76,
+     "gex": 688692782.7044337
+    },
+    {
+     "px": 4154.88,
+     "gex": 719846808.963359
+    },
+    {
+     "px": 4162.99,
+     "gex": 750362113.8449954
+    },
+    {
+     "px": 4171.11,
+     "gex": 780217288.3911859
+    },
+    {
+     "px": 4179.22,
+     "gex": 809396969.9799676
+    },
+    {
+     "px": 4187.34,
+     "gex": 837891861.1800692
+    },
+    {
+     "px": 4195.45,
+     "gex": 865698625.584898
+    },
+    {
+     "px": 4203.57,
+     "gex": 892819659.0886476
+    },
+    {
+     "px": 4211.68,
+     "gex": 919262740.2080414
+    },
+    {
+     "px": 4219.8,
+     "gex": 945040568.2445033
+    },
+    {
+     "px": 4227.91,
+     "gex": 970170202.9650569
+    },
+    {
+     "px": 4236.03,
+     "gex": 994672423.7232491
+    },
+    {
+     "px": 4244.14,
+     "gex": 1018571029.261928
+    },
+    {
+     "px": 4252.26,
+     "gex": 1041892101.6316503
+    },
+    {
+     "px": 4260.38,
+     "gex": 1064663258.6037366
+    },
+    {
+     "px": 4268.49,
+     "gex": 1086912918.6329994
+    },
+    {
+     "px": 4276.6,
+     "gex": 1108669600.9001198
+    },
+    {
+     "px": 4284.72,
+     "gex": 1129961280.3864775
+    },
+    {
+     "px": 4292.84,
+     "gex": 1150814814.517249
+    },
+    {
+     "px": 4300.95,
+     "gex": 1171255453.9061866
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "GLD",
+    "days": 0.62,
+    "spot": 372.49,
+    "rows": [
+     {
+      "strike": 364.0,
+      "fut": 3960.0,
+      "call_oi": 407,
+      "put_oi": 324
+     },
+     {
+      "strike": 365.0,
+      "fut": 3980.0,
+      "call_oi": 3804,
+      "put_oi": 4569
+     },
+     {
+      "strike": 367.0,
+      "fut": 4000.0,
+      "call_oi": 1579,
+      "put_oi": 1473
+     },
+     {
+      "strike": 369.0,
+      "fut": 4020.0,
+      "call_oi": 1319,
+      "put_oi": 553
+     },
+     {
+      "strike": 370.0,
+      "fut": 4040.0,
+      "call_oi": 3678,
+      "put_oi": 1508
+     },
+     {
+      "strike": 372.0,
+      "fut": 4060.0,
+      "call_oi": 2895,
+      "put_oi": 455
+     },
+     {
+      "strike": 374.0,
+      "fut": 4080.0,
+      "call_oi": 3724,
+      "put_oi": 896
+     },
+     {
+      "strike": 376.0,
+      "fut": 4100.0,
+      "call_oi": 2297,
+      "put_oi": 205
+     },
+     {
+      "strike": 378.0,
+      "fut": 4120.0,
+      "call_oi": 1074,
+      "put_oi": 226
+     },
+     {
+      "strike": 380.0,
+      "fut": 4140.0,
+      "call_oi": 4116,
+      "put_oi": 396
+     },
+     {
+      "strike": 381.0,
+      "fut": 4160.0,
+      "call_oi": 2728,
+      "put_oi": 135
+     }
+    ],
+    "max_pain": 365.0,
+    "max_pain_fut": 3975.9
+   },
+   "gamma_diag": {
+    "GLD all": {
+     "flip": 3981.8861993778164,
+     "net_bn": 0.44,
+     "call_bn": 1.27,
+     "put_bn": 0.83,
+     "call_oi": 1712169,
+     "put_oi": 699530
+    },
+    "GLD 0dte": {
+     "flip": 3976.2869672582046,
+     "net_bn": 0.12,
+     "call_bn": 0.2,
+     "put_bn": 0.08,
+     "call_oi": 73450,
+     "put_oi": 50005
+    },
+    "GLD 1-7d": {
+     "flip": 3871.3589400229894,
+     "net_bn": 0.09,
+     "call_bn": 0.11,
+     "put_bn": 0.02,
+     "call_oi": 30998,
+     "put_oi": 9639
+    },
+    "GLD 8-30d": {
+     "flip": 4128.176992483179,
+     "net_bn": -0.15,
+     "call_bn": 0.37,
+     "put_bn": 0.52,
+     "call_oi": 609119,
+     "put_oi": 445584
+    },
+    "GLD 31-60d": {
+     "flip": null,
+     "net_bn": 0.38,
+     "call_bn": 0.59,
+     "put_bn": 0.21,
+     "call_oi": 998602,
+     "put_oi": 194302
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "SI": {
+   "name": "Silver futures",
+   "group": "Metals",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.16,
+    "raw_score": 0.16,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": 0.16,
+    "conviction": "Medium",
+    "ups": 5,
+    "downs": 3,
+    "total": 20,
+    "overall": "For: VIX today, VIX term structure, Charm into close. Against: Policy gap (2Y \u2212 Fed funds), Copper vs gold. Dealers long gamma: expect chop and fades.",
+    "invalidation": "A 15-minute close below the gamma flip at 50",
+    "macro_share": 75,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.6,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.45,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.45,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For silver: yields, the dollar and the Fed weigh on precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.24,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.12,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.2,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. For silver: yields, the dollar and the Fed weigh on precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.12,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Volatility"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.2,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 50, price 1 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 1.26. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 49 / call wall 54: 2 pts up vs 2 down. Mid-range.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.07B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bullish",
+    "prev_score": 0.167,
+    "delta": -0.007
+   },
+   "expected_range": {
+    "move": 0.77,
+    "low": 50.77,
+    "high": 52.3
+   },
+   "levels": {
+    "price": 51.53,
+    "flip": 50.06,
+    "flip_close": 50.62,
+    "call_wall": 53.5,
+    "put_wall": 49.25,
+    "majors": [
+     {
+      "level": 49.25,
+      "net_gex": -4830826.252231848
+     },
+     {
+      "level": 50.25,
+      "net_gex": -2207076.4297992894
+     },
+     {
+      "level": 51.25,
+      "net_gex": 535378.3960267119
+     },
+     {
+      "level": 53.5,
+      "net_gex": 2102280.5764229055
+     },
+     {
+      "level": 54.0,
+      "net_gex": -1357551.392843617
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": 0.013,
+    "call_put_gamma": 1.26,
+    "dealer_delta_bn": 1.82,
+    "charm_bn": 0.065,
+    "vanna_bn_per_pt": 0.011,
+    "chains": [
+     "SLV"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 48.44,
+     "gex": -10552840.68698727
+    },
+    {
+     "px": 48.55,
+     "gex": -10008609.524176862
+    },
+    {
+     "px": 48.65,
+     "gex": -9446241.09082723
+    },
+    {
+     "px": 48.75,
+     "gex": -8865818.486502897
+    },
+    {
+     "px": 48.86,
+     "gex": -8267454.895899249
+    },
+    {
+     "px": 48.96,
+     "gex": -7651293.817254407
+    },
+    {
+     "px": 49.06,
+     "gex": -7017509.157256871
+    },
+    {
+     "px": 49.16,
+     "gex": -6366305.192161778
+    },
+    {
+     "px": 49.27,
+     "gex": -5697916.395811209
+    },
+    {
+     "px": 49.37,
+     "gex": -5012607.136168567
+    },
+    {
+     "px": 49.47,
+     "gex": -4310671.242812335
+    },
+    {
+     "px": 49.58,
+     "gex": -3592431.4485819186
+    },
+    {
+     "px": 49.68,
+     "gex": -2858238.7092339336
+    },
+    {
+     "px": 49.78,
+     "gex": -2108471.4055390405
+    },
+    {
+     "px": 49.89,
+     "gex": -1343534.4327434106
+    },
+    {
+     "px": 49.99,
+     "gex": -563858.1827251816
+    },
+    {
+     "px": 50.09,
+     "gex": 230102.57548268506
+    },
+    {
+     "px": 50.2,
+     "gex": 1037869.9108640586
+    },
+    {
+     "px": 50.3,
+     "gex": 1858944.0351288286
+    },
+    {
+     "px": 50.4,
+     "gex": 2692804.690632959
+    },
+    {
+     "px": 50.5,
+     "gex": 3538912.615051204
+    },
+    {
+     "px": 50.61,
+     "gex": 4396711.076231526
+    },
+    {
+     "px": 50.71,
+     "gex": 5265627.470571966
+    },
+    {
+     "px": 50.81,
+     "gex": 6145074.978169655
+    },
+    {
+     "px": 50.92,
+     "gex": 7034454.267909169
+    },
+    {
+     "px": 51.02,
+     "gex": 7933155.245559122
+    },
+    {
+     "px": 51.12,
+     "gex": 8840558.837843314
+    },
+    {
+     "px": 51.23,
+     "gex": 9756038.80533129
+    },
+    {
+     "px": 51.33,
+     "gex": 10678963.576856762
+    },
+    {
+     "px": 51.43,
+     "gex": 11608698.09802621
+    },
+    {
+     "px": 51.53,
+     "gex": 12544605.686214998
+    },
+    {
+     "px": 51.64,
+     "gex": 13486049.884285338
+    },
+    {
+     "px": 51.74,
+     "gex": 14432396.3050884
+    },
+    {
+     "px": 51.84,
+     "gex": 15383014.458655959
+    },
+    {
+     "px": 51.95,
+     "gex": 16337279.55383759
+    },
+    {
+     "px": 52.05,
+     "gex": 17294574.266022574
+    },
+    {
+     "px": 52.15,
+     "gex": 18254290.46249556
+    },
+    {
+     "px": 52.26,
+     "gex": 19215830.876936853
+    },
+    {
+     "px": 52.36,
+     "gex": 20178610.72458773
+    },
+    {
+     "px": 52.46,
+     "gex": 21142059.249676332
+    },
+    {
+     "px": 52.57,
+     "gex": 22105621.19684799
+    },
+    {
+     "px": 52.67,
+     "gex": 23068758.198564492
+    },
+    {
+     "px": 52.77,
+     "gex": 24030950.0707487
+    },
+    {
+     "px": 52.87,
+     "gex": 24991696.00934203
+    },
+    {
+     "px": 52.98,
+     "gex": 25950515.680932157
+    },
+    {
+     "px": 53.08,
+     "gex": 26906950.20117841
+    },
+    {
+     "px": 53.18,
+     "gex": 27860562.99542945
+    },
+    {
+     "px": 53.29,
+     "gex": 28810940.536672838
+    },
+    {
+     "px": 53.39,
+     "gex": 29757692.95678015
+    },
+    {
+     "px": 53.49,
+     "gex": 30700454.527911387
+    },
+    {
+     "px": 53.6,
+     "gex": 31638884.011893537
+    },
+    {
+     "px": 53.7,
+     "gex": 32572664.87640012
+    },
+    {
+     "px": 53.8,
+     "gex": 33501505.37779792
+    },
+    {
+     "px": 53.91,
+     "gex": 34425138.51159902
+    },
+    {
+     "px": 54.01,
+     "gex": 35343321.83252929
+    },
+    {
+     "px": 54.11,
+     "gex": 36255837.147301026
+    },
+    {
+     "px": 54.21,
+     "gex": 37162490.08422344
+    },
+    {
+     "px": 54.32,
+     "gex": 38063109.544805564
+    },
+    {
+     "px": 54.42,
+     "gex": 38957547.04346827
+    },
+    {
+     "px": 54.52,
+     "gex": 39845675.942384765
+    },
+    {
+     "px": 54.63,
+     "gex": 40727390.589296624
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "SLV",
+    "days": 0.62,
+    "spot": 47.16,
+    "rows": [
+     {
+      "strike": 46.0,
+      "fut": 50.5,
+      "call_oi": 3557,
+      "put_oi": 2456
+     },
+     {
+      "strike": 46.5,
+      "fut": 51.0,
+      "call_oi": 1045,
+      "put_oi": 1042
+     },
+     {
+      "strike": 47.0,
+      "fut": 51.5,
+      "call_oi": 3606,
+      "put_oi": 2815
+     },
+     {
+      "strike": 47.5,
+      "fut": 52.0,
+      "call_oi": 3148,
+      "put_oi": 240
+     },
+     {
+      "strike": 48.0,
+      "fut": 52.5,
+      "call_oi": 4342,
+      "put_oi": 1444
+     }
+    ],
+    "max_pain": 47.0,
+    "max_pain_fut": 51.4
+   },
+   "gamma_diag": {
+    "SLV all": {
+     "flip": 50.13353970756688,
+     "net_bn": 0.02,
+     "call_bn": 0.08,
+     "put_bn": 0.06,
+     "call_oi": 1546210,
+     "put_oi": 590902
+    },
+    "SLV 0dte": {
+     "flip": 50.246667433103156,
+     "net_bn": 0.01,
+     "call_bn": 0.02,
+     "put_bn": 0.01,
+     "call_oi": 153243,
+     "put_oi": 45744
+    },
+    "SLV 1-7d": {
+     "flip": 49.90587620549754,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 22449,
+     "put_oi": 16919
+    },
+    "SLV 8-30d": {
+     "flip": 49.39957798445098,
+     "net_bn": 0.01,
+     "call_bn": 0.03,
+     "put_bn": 0.02,
+     "call_oi": 728345,
+     "put_oi": 207966
+    },
+    "SLV 31-60d": {
+     "flip": 51.89474858394183,
+     "net_bn": -0.0,
+     "call_bn": 0.02,
+     "put_bn": 0.02,
+     "call_oi": 642173,
+     "put_oi": 320273
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "HG": {
+   "name": "Copper futures",
+   "group": "Metals",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.308,
+    "raw_score": -0.308,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "HG has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.308,
+    "conviction": "Medium",
+    "ups": 1,
+    "downs": 3,
+    "total": 10,
+    "overall": "For: VIX term structure, VIX today, Funding stress. Against: VIX shock. Hg has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.15,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.15,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Volatility"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.216,
+    "delta": -0.092
+   },
+   "expected_range": {
+    "move": 0.11,
+    "low": 6.12,
+    "high": 6.33
+   },
+   "levels": {
+    "price": 6.23
+   },
+   "dealer": null,
+   "flow": null,
+   "profile": [],
+   "big_trades": null,
+   "strikes": null,
+   "gamma_diag": null,
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "CL": {
+   "name": "Crude oil futures",
+   "group": "Energy",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.043,
+    "raw_score": 0.043,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": 0.043,
+    "conviction": "Very low",
+    "ups": 3,
+    "downs": 4,
+    "total": 16,
+    "overall": "For: Oil headlines, Charm into close, VIX shock. Against: VIX term structure, VIX today. Close to a coin flip. Let price confirm. Dealers short gamma: moves can run.",
+    "invalidation": "A failure to reclaim 92, or a break of the put wall at 88",
+    "macro_share": 72,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.15,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Macro"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.15,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Volatility"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "commodnews",
+     "label": "Oil headlines",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.25,
+     "text": "2 oil headlines in the last 12 hours lean tight (supportive). Top: \u201cRenewed U.S.-Iran tension could push oil past $100: Rapidan Energy\u201d.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 92, price 1 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.95. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 88 / call wall 96: 5 pts up vs 4 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.15B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.179,
+    "delta": 0.222
+   },
+   "expected_range": {
+    "move": 3.38,
+    "low": 88.17,
+    "high": 94.93
+   },
+   "levels": {
+    "price": 91.55,
+    "flip": 92.34,
+    "flip_close": 93.33,
+    "call_wall": 96.5,
+    "put_wall": 88.0,
+    "majors": [
+     {
+      "level": 88.0,
+      "net_gex": -4699910.421789853
+     },
+     {
+      "level": 89.5,
+      "net_gex": -993337.0036881327
+     },
+     {
+      "level": 91.5,
+      "net_gex": -1830038.31797245
+     },
+     {
+      "level": 96.5,
+      "net_gex": 7753163.691337131
+     },
+     {
+      "level": 97.0,
+      "net_gex": 930182.848983155
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -0.003,
+    "call_put_gamma": 0.95,
+    "dealer_delta_bn": 2.19,
+    "charm_bn": 0.148,
+    "vanna_bn_per_pt": 0.013,
+    "chains": [
+     "USO"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 86.06,
+     "gex": -21108951.74246748
+    },
+    {
+     "px": 86.24,
+     "gex": -20630846.49597982
+    },
+    {
+     "px": 86.42,
+     "gex": -20143575.20567012
+    },
+    {
+     "px": 86.61,
+     "gex": -19647182.304194905
+    },
+    {
+     "px": 86.79,
+     "gex": -19141717.006395705
+    },
+    {
+     "px": 86.97,
+     "gex": -18627233.45100628
+    },
+    {
+     "px": 87.16,
+     "gex": -18103790.84345368
+    },
+    {
+     "px": 87.34,
+     "gex": -17571453.599186916
+    },
+    {
+     "px": 87.52,
+     "gex": -17030291.48692311
+    },
+    {
+     "px": 87.7,
+     "gex": -16480379.771159558
+    },
+    {
+     "px": 87.89,
+     "gex": -15921799.35326114
+    },
+    {
+     "px": 88.07,
+     "gex": -15354636.910397273
+    },
+    {
+     "px": 88.25,
+     "gex": -14778985.031569684
+    },
+    {
+     "px": 88.44,
+     "gex": -14194942.349945813
+    },
+    {
+     "px": 88.62,
+     "gex": -13602613.670687914
+    },
+    {
+     "px": 88.8,
+     "gex": -13002110.093449432
+    },
+    {
+     "px": 88.99,
+     "gex": -12393549.128696758
+    },
+    {
+     "px": 89.17,
+     "gex": -11777054.807005843
+    },
+    {
+     "px": 89.35,
+     "gex": -11152757.780479042
+    },
+    {
+     "px": 89.54,
+     "gex": -10520795.415432425
+    },
+    {
+     "px": 89.72,
+     "gex": -9881311.875509592
+    },
+    {
+     "px": 89.9,
+     "gex": -9234458.194394162
+    },
+    {
+     "px": 90.09,
+     "gex": -8580392.337311234
+    },
+    {
+     "px": 90.27,
+     "gex": -7919279.2505363235
+    },
+    {
+     "px": 90.45,
+     "gex": -7251290.898159223
+    },
+    {
+     "px": 90.63,
+     "gex": -6576606.285389305
+    },
+    {
+     "px": 90.82,
+     "gex": -5895411.46772998
+    },
+    {
+     "px": 91.0,
+     "gex": -5207899.545398684
+    },
+    {
+     "px": 91.18,
+     "gex": -4514270.642420663
+    },
+    {
+     "px": 91.37,
+     "gex": -3814731.869882159
+    },
+    {
+     "px": 91.55,
+     "gex": -3109497.272890765
+    },
+    {
+     "px": 91.73,
+     "gex": -2398787.7608540147
+    },
+    {
+     "px": 91.92,
+     "gex": -1682831.0207588864
+    },
+    {
+     "px": 92.1,
+     "gex": -961861.4132038031
+    },
+    {
+     "px": 92.28,
+     "gex": -236119.85101056984
+    },
+    {
+     "px": 92.47,
+     "gex": 494146.33968064305
+    },
+    {
+     "px": 92.65,
+     "gex": 1228683.5758524032
+    },
+    {
+     "px": 92.83,
+     "gex": 1967232.191527469
+    },
+    {
+     "px": 93.01,
+     "gex": 2709526.629024003
+    },
+    {
+     "px": 93.2,
+     "gex": 3455295.6473298413
+    },
+    {
+     "px": 93.38,
+     "gex": 4204262.547300414
+    },
+    {
+     "px": 93.56,
+     "gex": 4956145.413304555
+    },
+    {
+     "px": 93.75,
+     "gex": 5710657.370869403
+    },
+    {
+     "px": 93.93,
+     "gex": 6467506.859799417
+    },
+    {
+     "px": 94.11,
+     "gex": 7226397.922174685
+    },
+    {
+     "px": 94.3,
+     "gex": 7987030.504564157
+    },
+    {
+     "px": 94.48,
+     "gex": 8749100.773724843
+    },
+    {
+     "px": 94.66,
+     "gex": 9512301.444997486
+    },
+    {
+     "px": 94.85,
+     "gex": 10276322.12255002
+    },
+    {
+     "px": 95.03,
+     "gex": 11040849.65056929
+    },
+    {
+     "px": 95.21,
+     "gex": 11805568.474453233
+    },
+    {
+     "px": 95.4,
+     "gex": 12570161.0110109
+    },
+    {
+     "px": 95.58,
+     "gex": 13334308.026642162
+    },
+    {
+     "px": 95.76,
+     "gex": 14097689.022434412
+    },
+    {
+     "px": 95.94,
+     "gex": 14859982.625087824
+    },
+    {
+     "px": 96.13,
+     "gex": 15620866.982557941
+    },
+    {
+     "px": 96.31,
+     "gex": 16380020.163289156
+    },
+    {
+     "px": 96.49,
+     "gex": 17137120.55790212
+    },
+    {
+     "px": 96.68,
+     "gex": 17891847.282192394
+    },
+    {
+     "px": 96.86,
+     "gex": 18643880.580300324
+    },
+    {
+     "px": 97.04,
+     "gex": 19392902.226915207
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "USO",
+    "days": 0.62,
+    "spot": 145.41,
+    "rows": [
+     {
+      "strike": 142.0,
+      "fut": 89.0,
+      "call_oi": 160,
+      "put_oi": 876
+     },
+     {
+      "strike": 143.0,
+      "fut": 90.0,
+      "call_oi": 164,
+      "put_oi": 292
+     },
+     {
+      "strike": 144.0,
+      "fut": 91.0,
+      "call_oi": 860,
+      "put_oi": 4683
+     },
+     {
+      "strike": 145.5,
+      "fut": 92.0,
+      "call_oi": 1835,
+      "put_oi": 934
+     },
+     {
+      "strike": 147.0,
+      "fut": 93.0,
+      "call_oi": 1090,
+      "put_oi": 1517
+     },
+     {
+      "strike": 149.0,
+      "fut": 94.0,
+      "call_oi": 1588,
+      "put_oi": 382
+     }
+    ],
+    "max_pain": 151.0,
+    "max_pain_fut": 95.1
+   },
+   "gamma_diag": {
+    "USO all": {
+     "flip": 93.09231862411804,
+     "net_bn": -0.02,
+     "call_bn": 0.08,
+     "put_bn": 0.1,
+     "call_oi": 363463,
+     "put_oi": 341245
+    },
+    "USO 0dte": {
+     "flip": 93.44653706552158,
+     "net_bn": -0.02,
+     "call_bn": 0.02,
+     "put_bn": 0.04,
+     "call_oi": 112618,
+     "put_oi": 68198
+    },
+    "USO 1-7d": {
+     "flip": 96.08650848762029,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.01,
+     "call_oi": 15467,
+     "put_oi": 10354
+    },
+    "USO 8-30d": {
+     "flip": 91.08174002251046,
+     "net_bn": 0.0,
+     "call_bn": 0.04,
+     "put_bn": 0.04,
+     "call_oi": 156507,
+     "put_oi": 133925
+    },
+    "USO 31-60d": {
+     "flip": 95.3416262686596,
+     "net_bn": -0.0,
+     "call_bn": 0.01,
+     "put_bn": 0.02,
+     "call_oi": 78871,
+     "put_oi": 128768
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "NG": {
+   "name": "Natural gas futures",
+   "group": "Energy",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.444,
+    "raw_score": 0.444,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "NG has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": 0.444,
+    "conviction": "Medium",
+    "ups": 1,
+    "downs": 0,
+    "total": 3,
+    "overall": "For: Charm into close. Dealers long gamma: expect chop and fades. Ng has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 0,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 3.04. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 3 / call wall 3: 0 pts up vs 0 down. Mid-range.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.328,
+    "delta": 0.772
+   },
+   "expected_range": {
+    "move": 0.09,
+    "low": 2.9,
+    "high": 3.07
+   },
+   "levels": {
+    "price": 2.98,
+    "flip": null,
+    "flip_close": null,
+    "call_wall": 3.0500000000000003,
+    "put_wall": 2.9000000000000004,
+    "majors": [
+     {
+      "level": 2.9000000000000004,
+      "net_gex": -71967.97042230374
+     },
+     {
+      "level": 3.0500000000000003,
+      "net_gex": 34507.82695982234
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": 0.002,
+    "call_put_gamma": 3.04,
+    "dealer_delta_bn": 0.05,
+    "charm_bn": 0.003,
+    "vanna_bn_per_pt": 0.0,
+    "chains": [
+     "UNG"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 2.8,
+     "gex": 874013.3852927076
+    },
+    {
+     "px": 2.81,
+     "gex": 895394.6999690521
+    },
+    {
+     "px": 2.82,
+     "gex": 916967.539552525
+    },
+    {
+     "px": 2.82,
+     "gex": 938723.1855978594
+    },
+    {
+     "px": 2.83,
+     "gex": 960652.6383901403
+    },
+    {
+     "px": 2.83,
+     "gex": 982746.6224575546
+    },
+    {
+     "px": 2.84,
+     "gex": 1004995.5924973566
+    },
+    {
+     "px": 2.85,
+     "gex": 1027389.7397224121
+    },
+    {
+     "px": 2.85,
+     "gex": 1049918.9986358874
+    },
+    {
+     "px": 2.86,
+     "gex": 1072573.0542415706
+    },
+    {
+     "px": 2.86,
+     "gex": 1095341.3496972437
+    },
+    {
+     "px": 2.87,
+     "gex": 1118213.0944181187
+    },
+    {
+     "px": 2.88,
+     "gex": 1141177.272636989
+    },
+    {
+     "px": 2.88,
+     "gex": 1164222.65242708
+    },
+    {
+     "px": 2.89,
+     "gex": 1187337.7951927064
+    },
+    {
+     "px": 2.89,
+     "gex": 1210511.0656319743
+    },
+    {
+     "px": 2.9,
+     "gex": 1233730.6421744623
+    },
+    {
+     "px": 2.91,
+     "gex": 1256984.5278956187
+    },
+    {
+     "px": 2.91,
+     "gex": 1280260.5619078777
+    },
+    {
+     "px": 2.92,
+     "gex": 1303546.4312269911
+    },
+    {
+     "px": 2.92,
+     "gex": 1326829.6831100846
+    },
+    {
+     "px": 2.93,
+     "gex": 1350097.7378599274
+    },
+    {
+     "px": 2.94,
+     "gex": 1373337.9020877713
+    },
+    {
+     "px": 2.94,
+     "gex": 1396537.3824247676
+    },
+    {
+     "px": 2.95,
+     "gex": 1419683.299669582
+    },
+    {
+     "px": 2.95,
+     "gex": 1442762.7033572574
+    },
+    {
+     "px": 2.96,
+     "gex": 1465762.5867318707
+    },
+    {
+     "px": 2.97,
+     "gex": 1488669.902102724
+    },
+    {
+     "px": 2.97,
+     "gex": 1511471.5765612798
+    },
+    {
+     "px": 2.98,
+     "gex": 1534154.528033222
+    },
+    {
+     "px": 2.98,
+     "gex": 1556705.6816374015
+    },
+    {
+     "px": 2.99,
+     "gex": 1579111.9863207347
+    },
+    {
+     "px": 2.99,
+     "gex": 1601360.4317355198
+    },
+    {
+     "px": 3.0,
+     "gex": 1623438.0653231884
+    },
+    {
+     "px": 3.01,
+     "gex": 1645332.0095660242
+    },
+    {
+     "px": 3.01,
+     "gex": 1667029.4793661586
+    },
+    {
+     "px": 3.02,
+     "gex": 1688517.7995091015
+    },
+    {
+     "px": 3.02,
+     "gex": 1709784.4221670467
+    },
+    {
+     "px": 3.03,
+     "gex": 1730816.9443955359
+    },
+    {
+     "px": 3.04,
+     "gex": 1751603.1255755883
+    },
+    {
+     "px": 3.04,
+     "gex": 1772130.9047520705
+    },
+    {
+     "px": 3.05,
+     "gex": 1792388.4178181868
+    },
+    {
+     "px": 3.05,
+     "gex": 1812364.0144951544
+    },
+    {
+     "px": 3.06,
+     "gex": 1832046.2750557552
+    },
+    {
+     "px": 3.07,
+     "gex": 1851424.026740274
+    },
+    {
+     "px": 3.07,
+     "gex": 1870486.3598134622
+    },
+    {
+     "px": 3.08,
+     "gex": 1889222.6432117114
+    },
+    {
+     "px": 3.08,
+     "gex": 1907622.5397302234
+    },
+    {
+     "px": 3.09,
+     "gex": 1925676.020701192
+    },
+    {
+     "px": 3.1,
+     "gex": 1943373.3801152678
+    },
+    {
+     "px": 3.1,
+     "gex": 1960705.2481402552
+    },
+    {
+     "px": 3.11,
+     "gex": 1977662.6039929339
+    },
+    {
+     "px": 3.11,
+     "gex": 1994236.7881221212
+    },
+    {
+     "px": 3.12,
+     "gex": 2010419.513663549
+    },
+    {
+     "px": 3.13,
+     "gex": 2026202.8771298088
+    },
+    {
+     "px": 3.13,
+     "gex": 2041579.3683016223
+    },
+    {
+     "px": 3.14,
+     "gex": 2056541.87928979
+    },
+    {
+     "px": 3.14,
+     "gex": 2071083.7127404776
+    },
+    {
+     "px": 3.15,
+     "gex": 2085198.589160046
+    },
+    {
+     "px": 3.16,
+     "gex": 2098880.653339172
+    },
+    {
+     "px": 3.16,
+     "gex": 2112124.47985981
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "UNG",
+    "days": 0.62,
+    "spot": 9.27,
+    "rows": [
+     {
+      "strike": 9.5,
+      "fut": 3.1,
+      "call_oi": 2955,
+      "put_oi": 676
+     }
+    ],
+    "max_pain": 9.5,
+    "max_pain_fut": 3.1
+   },
+   "gamma_diag": {
+    "UNG all": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 136322,
+     "put_oi": 42300
+    },
+    "UNG 0dte": {
+     "flip": 2.9672835149560393,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 12926,
+     "put_oi": 5652
+    },
+    "UNG 1-7d": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 2203,
+     "put_oi": 608
+    },
+    "UNG 8-30d": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 99850,
+     "put_oi": 26782
+    },
+    "UNG 31-60d": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 21343,
+     "put_oi": 9258
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "6E": {
+   "name": "Euro futures",
+   "group": "Currencies",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.289,
+    "raw_score": -0.289,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "6E has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.289,
+    "conviction": "Medium",
+    "ups": 0,
+    "downs": 2,
+    "total": 8,
+    "overall": "For: Policy gap (2Y \u2212 Fed funds), Charm into close. Dealers short gamma: moves can run. 6e has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 68,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.33. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers sell, an afternoon offer.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.082,
+    "delta": -0.207
+   },
+   "expected_range": {
+    "move": 0.02,
+    "low": 1.1,
+    "high": 1.14
+   },
+   "levels": {
+    "price": 1.12,
+    "flip": null,
+    "flip_close": null,
+    "call_wall": 1.1375,
+    "put_wall": 1.115,
+    "majors": [
+     {
+      "level": 1.115,
+      "net_gex": -296772.2530063907
+     },
+     {
+      "level": 1.125,
+      "net_gex": -526070.5276096987
+     },
+     {
+      "level": 1.1375,
+      "net_gex": -1185496.7159019946
+     },
+     {
+      "level": 1.1575,
+      "net_gex": -2926483.366134225
+     },
+     {
+      "level": 1.17,
+      "net_gex": 202936.89184607597
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -0.005,
+    "call_put_gamma": 0.33,
+    "dealer_delta_bn": 0.05,
+    "charm_bn": -0.0,
+    "vanna_bn_per_pt": -0.001,
+    "chains": [
+     "FXE"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 1.05,
+     "gex": -794392.0084812699
+    },
+    {
+     "px": 1.06,
+     "gex": -872700.3733726516
+    },
+    {
+     "px": 1.06,
+     "gex": -956866.1920354152
+    },
+    {
+     "px": 1.06,
+     "gex": -1047157.132280481
+    },
+    {
+     "px": 1.06,
+     "gex": -1143864.382750689
+    },
+    {
+     "px": 1.07,
+     "gex": -1247303.0655335719
+    },
+    {
+     "px": 1.07,
+     "gex": -1357807.6037716193
+    },
+    {
+     "px": 1.07,
+     "gex": -1475720.2369625645
+    },
+    {
+     "px": 1.07,
+     "gex": -1601371.0432445812
+    },
+    {
+     "px": 1.07,
+     "gex": -1735048.2759766108
+    },
+    {
+     "px": 1.08,
+     "gex": -1876958.6065939444
+    },
+    {
+     "px": 1.08,
+     "gex": -2027178.0399804465
+    },
+    {
+     "px": 1.08,
+     "gex": -2185595.8826691033
+    },
+    {
+     "px": 1.08,
+     "gex": -2351856.218501725
+    },
+    {
+     "px": 1.09,
+     "gex": -2525303.788567238
+    },
+    {
+     "px": 1.09,
+     "gex": -2704943.626015181
+    },
+    {
+     "px": 1.09,
+     "gex": -2889425.467610855
+    },
+    {
+     "px": 1.09,
+     "gex": -3077063.5600078176
+    },
+    {
+     "px": 1.09,
+     "gex": -3265898.4683804344
+    },
+    {
+     "px": 1.1,
+     "gex": -3453798.8510864023
+    },
+    {
+     "px": 1.1,
+     "gex": -3638588.5000769724
+    },
+    {
+     "px": 1.1,
+     "gex": -3818170.530802968
+    },
+    {
+     "px": 1.1,
+     "gex": -3990612.361464289
+    },
+    {
+     "px": 1.11,
+     "gex": -4154158.816899393
+    },
+    {
+     "px": 1.11,
+     "gex": -4307160.344519712
+    },
+    {
+     "px": 1.11,
+     "gex": -4447936.272825712
+    },
+    {
+     "px": 1.11,
+     "gex": -4574628.22902522
+    },
+    {
+     "px": 1.11,
+     "gex": -4685119.667750203
+    },
+    {
+     "px": 1.12,
+     "gex": -4777089.283694346
+    },
+    {
+     "px": 1.12,
+     "gex": -4848225.100179673
+    },
+    {
+     "px": 1.12,
+     "gex": -4896564.426676694
+    },
+    {
+     "px": 1.12,
+     "gex": -4920867.738884432
+    },
+    {
+     "px": 1.13,
+     "gex": -4920908.6475648545
+    },
+    {
+     "px": 1.13,
+     "gex": -4897582.101174275
+    },
+    {
+     "px": 1.13,
+     "gex": -4852792.60442617
+    },
+    {
+     "px": 1.13,
+     "gex": -4789158.635003075
+    },
+    {
+     "px": 1.13,
+     "gex": -4709627.198519762
+    },
+    {
+     "px": 1.14,
+     "gex": -4617111.085602078
+    },
+    {
+     "px": 1.14,
+     "gex": -4514237.379086848
+    },
+    {
+     "px": 1.14,
+     "gex": -4403244.263387922
+    },
+    {
+     "px": 1.14,
+     "gex": -4286008.595869017
+    },
+    {
+     "px": 1.15,
+     "gex": -4164150.2073883843
+    },
+    {
+     "px": 1.15,
+     "gex": -4039149.906937002
+    },
+    {
+     "px": 1.15,
+     "gex": -3912432.9562610975
+    },
+    {
+     "px": 1.15,
+     "gex": -3785396.4260204015
+    },
+    {
+     "px": 1.15,
+     "gex": -3659384.4000463863
+    },
+    {
+     "px": 1.16,
+     "gex": -3535630.9934443734
+    },
+    {
+     "px": 1.16,
+     "gex": -3415195.4495255225
+    },
+    {
+     "px": 1.16,
+     "gex": -3298908.9550781604
+    },
+    {
+     "px": 1.16,
+     "gex": -3187344.0839300607
+    },
+    {
+     "px": 1.17,
+     "gex": -3080809.2422825894
+    },
+    {
+     "px": 1.17,
+     "gex": -2979364.5976392636
+    },
+    {
+     "px": 1.17,
+     "gex": -2882853.269449229
+    },
+    {
+     "px": 1.17,
+     "gex": -2790941.347825706
+    },
+    {
+     "px": 1.18,
+     "gex": -2703161.461293614
+    },
+    {
+     "px": 1.18,
+     "gex": -2618956.157410878
+    },
+    {
+     "px": 1.18,
+     "gex": -2537718.7042424507
+    },
+    {
+     "px": 1.18,
+     "gex": -2458829.8575852355
+    },
+    {
+     "px": 1.18,
+     "gex": -2381689.705083474
+    },
+    {
+     "px": 1.19,
+     "gex": -2305744.0300695463
+    },
+    {
+     "px": 1.19,
+     "gex": -2230504.8694741707
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "FXE",
+    "days": 14.62,
+    "spot": 103.61,
+    "rows": [
+     {
+      "strike": 102.0,
+      "fut": 1.105,
+      "call_oi": 60,
+      "put_oi": 6
+     },
+     {
+      "strike": 103.0,
+      "fut": 1.115,
+      "call_oi": 54,
+      "put_oi": 131
+     },
+     {
+      "strike": 104.0,
+      "fut": 1.125,
+      "call_oi": 127,
+      "put_oi": 65
+     },
+     {
+      "strike": 105.0,
+      "fut": 1.135,
+      "call_oi": 166,
+      "put_oi": 38
+     },
+     {
+      "strike": 106.0,
+      "fut": 1.145,
+      "call_oi": 21,
+      "put_oi": 62
+     }
+    ],
+    "max_pain": 104.0,
+    "max_pain_fut": 1.1
+   },
+   "gamma_diag": {
+    "FXE all": {
+     "flip": null,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.01,
+     "call_oi": 2379,
+     "put_oi": 6826
+    },
+    "FXE 8-30d": {
+     "flip": 1.1019178011074366,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 564,
+     "put_oi": 383
+    },
+    "FXE 31-60d": {
+     "flip": null,
+     "net_bn": -0.01,
+     "call_bn": 0.0,
+     "put_bn": 0.01,
+     "call_oi": 1815,
+     "put_oi": 6443
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "6B": {
+   "name": "British pound futures",
+   "group": "Currencies",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.44,
+    "raw_score": -0.44,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "6B has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.44,
+    "conviction": "Medium",
+    "ups": 0,
+    "downs": 3,
+    "total": 8,
+    "overall": "For: Policy gap (2Y \u2212 Fed funds), Wall range, Charm into close. Dealers long gamma: expect chop and fades. 6b has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "Futures reversing through their price at the session open",
+    "macro_share": 68,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 2.26. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Pressed into resistance, and long-gamma dealers tend to sell into it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers sell, an afternoon offer.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.097,
+    "delta": -0.343
+   },
+   "expected_range": {
+    "move": 0.02,
+    "low": 1.32,
+    "high": 1.36
+   },
+   "levels": {
+    "price": 1.34,
+    "flip": null,
+    "flip_close": 1.38,
+    "call_wall": 1.345,
+    "put_wall": 1.335,
+    "majors": [
+     {
+      "level": 1.2825,
+      "net_gex": 17508.141352701256
+     },
+     {
+      "level": 1.2925,
+      "net_gex": 33236.08759844679
+     },
+     {
+      "level": 1.325,
+      "net_gex": 142772.85485717692
+     },
+     {
+      "level": 1.335,
+      "net_gex": -33427.78036545523
+     },
+     {
+      "level": 1.345,
+      "net_gex": 19212.113254666998
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": 0.0,
+    "call_put_gamma": 2.26,
+    "dealer_delta_bn": 0.0,
+    "charm_bn": -0.0,
+    "vanna_bn_per_pt": -0.0,
+    "chains": [
+     "FXB"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 1.26,
+     "gex": 107736.83198770507
+    },
+    {
+     "px": 1.26,
+     "gex": 115568.84843336006
+    },
+    {
+     "px": 1.27,
+     "gex": 124139.13152119389
+    },
+    {
+     "px": 1.27,
+     "gex": 133506.33723280075
+    },
+    {
+     "px": 1.27,
+     "gex": 143707.14459841352
+    },
+    {
+     "px": 1.28,
+     "gex": 154747.76969855963
+    },
+    {
+     "px": 1.28,
+     "gex": 166595.76582998192
+    },
+    {
+     "px": 1.28,
+     "gex": 179172.86121636818
+    },
+    {
+     "px": 1.28,
+     "gex": 192349.63285351338
+    },
+    {
+     "px": 1.29,
+     "gex": 205942.78447989695
+    },
+    {
+     "px": 1.29,
+     "gex": 219715.6781122054
+    },
+    {
+     "px": 1.29,
+     "gex": 233382.5620488781
+    },
+    {
+     "px": 1.29,
+     "gex": 246616.65552804345
+    },
+    {
+     "px": 1.3,
+     "gex": 259061.9150638142
+    },
+    {
+     "px": 1.3,
+     "gex": 270347.9537041941
+    },
+    {
+     "px": 1.3,
+     "gex": 280107.2522290344
+    },
+    {
+     "px": 1.31,
+     "gex": 287993.5318847502
+    },
+    {
+     "px": 1.31,
+     "gex": 293699.98790342524
+    },
+    {
+     "px": 1.31,
+     "gex": 296976.03723903926
+    },
+    {
+     "px": 1.31,
+     "gex": 297641.3228120497
+    },
+    {
+     "px": 1.32,
+     "gex": 295595.9326510007
+    },
+    {
+     "px": 1.32,
+     "gex": 290826.1112448901
+    },
+    {
+     "px": 1.32,
+     "gex": 283405.1242745662
+    },
+    {
+     "px": 1.32,
+     "gex": 273489.341117448
+    },
+    {
+     "px": 1.33,
+     "gex": 261309.97599130005
+    },
+    {
+     "px": 1.33,
+     "gex": 247161.23861150502
+    },
+    {
+     "px": 1.33,
+     "gex": 231385.8610165692
+    },
+    {
+     "px": 1.33,
+     "gex": 214359.07599220634
+    },
+    {
+     "px": 1.34,
+     "gex": 196472.12664236902
+    },
+    {
+     "px": 1.34,
+     "gex": 178116.30104741582
+    },
+    {
+     "px": 1.34,
+     "gex": 159668.33374444177
+    },
+    {
+     "px": 1.35,
+     "gex": 141477.8232134176
+    },
+    {
+     "px": 1.35,
+     "gex": 123857.10644720802
+    },
+    {
+     "px": 1.35,
+     "gex": 107073.82814678429
+    },
+    {
+     "px": 1.35,
+     "gex": 91346.2571365449
+    },
+    {
+     "px": 1.36,
+     "gex": 76841.24437279381
+    },
+    {
+     "px": 1.36,
+     "gex": 63674.58900152503
+    },
+    {
+     "px": 1.36,
+     "gex": 51913.4820835411
+    },
+    {
+     "px": 1.36,
+     "gex": 41580.6313222405
+    },
+    {
+     "px": 1.37,
+     "gex": 32659.633455182164
+    },
+    {
+     "px": 1.37,
+     "gex": 25101.152684982182
+    },
+    {
+     "px": 1.37,
+     "gex": 18829.481764246015
+    },
+    {
+     "px": 1.37,
+     "gex": 13749.104056551812
+    },
+    {
+     "px": 1.38,
+     "gex": 9750.935457946745
+    },
+    {
+     "px": 1.38,
+     "gex": 6717.998358891172
+    },
+    {
+     "px": 1.38,
+     "gex": 4530.358737275972
+    },
+    {
+     "px": 1.39,
+     "gex": 3069.2347399869295
+    },
+    {
+     "px": 1.39,
+     "gex": 2220.254298135711
+    },
+    {
+     "px": 1.39,
+     "gex": 1875.895643369493
+    },
+    {
+     "px": 1.39,
+     "gex": 1937.1854079615878
+    },
+    {
+     "px": 1.4,
+     "gex": 2314.7538827957605
+    },
+    {
+     "px": 1.4,
+     "gex": 2929.357478031867
+    },
+    {
+     "px": 1.4,
+     "gex": 3711.977329021276
+    },
+    {
+     "px": 1.4,
+     "gex": 4603.593819300545
+    },
+    {
+     "px": 1.41,
+     "gex": 5554.7230638616
+    },
+    {
+     "px": 1.41,
+     "gex": 6524.786126564102
+    },
+    {
+     "px": 1.41,
+     "gex": 7481.367164729392
+    },
+    {
+     "px": 1.42,
+     "gex": 8399.404155258278
+    },
+    {
+     "px": 1.42,
+     "gex": 9260.345916768065
+    },
+    {
+     "px": 1.42,
+     "gex": 10051.30174541786
+    },
+    {
+     "px": 1.42,
+     "gex": 10764.204686409552
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "FXB",
+    "days": 14.62,
+    "spot": 128.81,
+    "rows": [
+     {
+      "strike": 127.0,
+      "fut": 1.325,
+      "call_oi": 0,
+      "put_oi": 2
+     },
+     {
+      "strike": 128.0,
+      "fut": 1.335,
+      "call_oi": 0,
+      "put_oi": 13
+     },
+     {
+      "strike": 129.0,
+      "fut": 1.345,
+      "call_oi": 2,
+      "put_oi": 0
+     },
+     {
+      "strike": 132.0,
+      "fut": 1.375,
+      "call_oi": 0,
+      "put_oi": 6
+     }
+    ],
+    "max_pain": 132.0,
+    "max_pain_fut": 1.4
+   },
+   "gamma_diag": {
+    "FXB all": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 258,
+     "put_oi": 101
+    },
+    "FXB 8-30d": {
+     "flip": null,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 2,
+     "put_oi": 21
+    },
+    "FXB 31-60d": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 256,
+     "put_oi": 80
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "6J": {
+   "name": "Japanese yen futures",
+   "group": "Currencies",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.381,
+    "raw_score": 0.381,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "6J has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": 0.381,
+    "conviction": "Medium",
+    "ups": 5,
+    "downs": 1,
+    "total": 12,
+    "overall": "For: VIX today, VIX term structure, Wall range. Against: Policy gap (2Y \u2212 Fed funds). Dealers long gamma: expect chop and fades. 6j has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "A 15-minute close below the gamma flip at 0",
+    "macro_share": 67,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For the yen this reads the other way: fear and a yen rally lift yen futures.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.75,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close. For the yen this reads the other way: fear and a yen rally lift yen futures.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. Higher US yields widen the gap over Japanese rates and weigh on the yen.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.25,
+     "text": "33 market headlines in the last 12 hours, tone -0.48 (48 negative vs 17 positive words). Most negative: \u201cJim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight. For the yen this reads the other way: fear and a yen rally lift yen futures.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 0, price 0 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 6.57. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "Put wall 0 / call wall 0: 0 pts up vs 0 down. Near support, and long-gamma dealers tend to defend it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bullish",
+    "prev_score": 0.197,
+    "delta": 0.184
+   },
+   "expected_range": {
+    "move": 0.0,
+    "low": 0.01,
+    "high": 0.01
+   },
+   "levels": {
+    "price": 0.01,
+    "flip": 0.01,
+    "flip_close": 0.01,
+    "call_wall": 0.0066,
+    "put_wall": 0.006350000000000001,
+    "majors": [
+     {
+      "level": 0.00625,
+      "net_gex": -577716.6714310521
+     },
+     {
+      "level": 0.006350000000000001,
+      "net_gex": 489511.20568149537
+     },
+     {
+      "level": 0.006500000000000001,
+      "net_gex": 1439943.685547259
+     },
+     {
+      "level": 0.0066,
+      "net_gex": 8488041.037617883
+     },
+     {
+      "level": 0.0067,
+      "net_gex": 182081.05932557833
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": 0.01,
+    "call_put_gamma": 6.57,
+    "dealer_delta_bn": 0.03,
+    "charm_bn": 0.002,
+    "vanna_bn_per_pt": 0.003,
+    "chains": [
+     "FXY"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 0.01,
+     "gex": -50559.97661726927
+    },
+    {
+     "px": 0.01,
+     "gex": -17550.111742767698
+    },
+    {
+     "px": 0.01,
+     "gex": 25356.038641273466
+    },
+    {
+     "px": 0.01,
+     "gex": 79576.01158034925
+    },
+    {
+     "px": 0.01,
+     "gex": 146595.51443023016
+    },
+    {
+     "px": 0.01,
+     "gex": 227955.25903287556
+    },
+    {
+     "px": 0.01,
+     "gex": 325235.96102435014
+    },
+    {
+     "px": 0.01,
+     "gex": 440041.7312776793
+    },
+    {
+     "px": 0.01,
+     "gex": 573982.0927783755
+    },
+    {
+     "px": 0.01,
+     "gex": 728652.8314331557
+    },
+    {
+     "px": 0.01,
+     "gex": 905615.8321380178
+    },
+    {
+     "px": 0.01,
+     "gex": 1106377.9648486443
+    },
+    {
+     "px": 0.01,
+     "gex": 1332368.9774165447
+    },
+    {
+     "px": 0.01,
+     "gex": 1584918.2358724452
+    },
+    {
+     "px": 0.01,
+     "gex": 1865230.046757629
+    },
+    {
+     "px": 0.01,
+     "gex": 2174357.2215737198
+    },
+    {
+     "px": 0.01,
+     "gex": 2513172.523202974
+    },
+    {
+     "px": 0.01,
+     "gex": 2882337.6892140615
+    },
+    {
+     "px": 0.01,
+     "gex": 3282269.8730462343
+    },
+    {
+     "px": 0.01,
+     "gex": 3713105.588177371
+    },
+    {
+     "px": 0.01,
+     "gex": 4174662.577928163
+    },
+    {
+     "px": 0.01,
+     "gex": 4666400.446519791
+    },
+    {
+     "px": 0.01,
+     "gex": 5187381.343758483
+    },
+    {
+     "px": 0.01,
+     "gex": 5736232.452817397
+    },
+    {
+     "px": 0.01,
+     "gex": 6311112.43646283
+    },
+    {
+     "px": 0.01,
+     "gex": 6909684.297517123
+    },
+    {
+     "px": 0.01,
+     "gex": 7529097.2540409835
+    },
+    {
+     "px": 0.01,
+     "gex": 8165980.179053548
+    },
+    {
+     "px": 0.01,
+     "gex": 8816448.88576918
+    },
+    {
+     "px": 0.01,
+     "gex": 9476129.050735926
+    },
+    {
+     "px": 0.01,
+     "gex": 10140195.880495578
+    },
+    {
+     "px": 0.01,
+     "gex": 10803430.786302004
+    },
+    {
+     "px": 0.01,
+     "gex": 11460294.398301046
+    },
+    {
+     "px": 0.01,
+     "gex": 12105014.299800461
+    },
+    {
+     "px": 0.01,
+     "gex": 12731684.972378504
+    },
+    {
+     "px": 0.01,
+     "gex": 13334376.68773272
+    },
+    {
+     "px": 0.01,
+     "gex": 13907249.524082838
+    },
+    {
+     "px": 0.01,
+     "gex": 14444668.366524622
+    },
+    {
+     "px": 0.01,
+     "gex": 14941314.692158105
+    },
+    {
+     "px": 0.01,
+     "gex": 15392291.13833277
+    },
+    {
+     "px": 0.01,
+     "gex": 15793215.279994732
+    },
+    {
+     "px": 0.01,
+     "gex": 16140299.65577188
+    },
+    {
+     "px": 0.01,
+     "gex": 16430415.825653216
+    },
+    {
+     "px": 0.01,
+     "gex": 16661141.05374391
+    },
+    {
+     "px": 0.01,
+     "gex": 16830787.026315827
+    },
+    {
+     "px": 0.01,
+     "gex": 16938410.78347935
+    },
+    {
+     "px": 0.01,
+     "gex": 16983808.71836292
+    },
+    {
+     "px": 0.01,
+     "gex": 16967495.05014532
+    },
+    {
+     "px": 0.01,
+     "gex": 16890666.590192523
+    },
+    {
+     "px": 0.01,
+     "gex": 16755155.890729895
+    },
+    {
+     "px": 0.01,
+     "gex": 16563375.000991927
+    },
+    {
+     "px": 0.01,
+     "gex": 16318252.073114675
+    },
+    {
+     "px": 0.01,
+     "gex": 16023162.980971487
+    },
+    {
+     "px": 0.01,
+     "gex": 15681859.963814614
+    },
+    {
+     "px": 0.01,
+     "gex": 15298399.106816163
+    },
+    {
+     "px": 0.01,
+     "gex": 14877068.24398792
+    },
+    {
+     "px": 0.01,
+     "gex": 14422316.633537069
+    },
+    {
+     "px": 0.01,
+     "gex": 13938687.525312932
+    },
+    {
+     "px": 0.01,
+     "gex": 13430754.52418758
+    },
+    {
+     "px": 0.01,
+     "gex": 12903062.457627647
+    },
+    {
+     "px": 0.01,
+     "gex": 12360073.282733513
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "FXY",
+    "days": 14.62,
+    "spot": 57.82,
+    "rows": [
+     {
+      "strike": 57.0,
+      "fut": 0.0063,
+      "call_oi": 27,
+      "put_oi": 18
+     },
+     {
+      "strike": 58.0,
+      "fut": 0.0064,
+      "call_oi": 115,
+      "put_oi": 59
+     },
+     {
+      "strike": 59.0,
+      "fut": 0.006500000000000001,
+      "call_oi": 790,
+      "put_oi": 22
+     }
+    ],
+    "max_pain": 58.0,
+    "max_pain_fut": 0.0
+   },
+   "gamma_diag": {
+    "FXY all": {
+     "flip": 0.005991041066475731,
+     "net_bn": 0.01,
+     "call_bn": 0.01,
+     "put_bn": 0.0,
+     "call_oi": 26265,
+     "put_oi": 2969
+    },
+    "FXY 8-30d": {
+     "flip": 0.0060914121430067384,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 2291,
+     "put_oi": 201
+    },
+    "FXY 31-60d": {
+     "flip": 0.0059794137768278775,
+     "net_bn": 0.01,
+     "call_bn": 0.01,
+     "put_bn": 0.0,
+     "call_oi": 23974,
+     "put_oi": 2768
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "6A": {
+   "name": "Australian dollar futures",
+   "group": "Currencies",
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.331,
+    "raw_score": -0.331,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": "6A has 1 graded calls so far, so conviction tops out at Medium until it builds a record",
+    "own_score": -0.331,
+    "conviction": "Medium",
+    "ups": 1,
+    "downs": 4,
+    "total": 12,
+    "overall": "For: Policy gap (2Y \u2212 Fed funds), VIX term structure, VIX today. Against: Charm into close. Dealers short gamma: moves can run. 6a has 1 graded calls so far, so conviction tops out at medium until it builds a record.",
+    "invalidation": "A reclaim and hold of the gamma flip at 1",
+    "macro_share": 67,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.10. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX closed 28.18 (+69.7% on the day). Fear rose into the close. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 1, price 0 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.44. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.207,
+    "delta": -0.124
+   },
+   "expected_range": {
+    "move": 0.01,
+    "low": 0.67,
+    "high": 0.7
+   },
+   "levels": {
+    "price": 0.69,
+    "flip": 0.71,
+    "flip_close": 0.7,
+    "call_wall": 0.6950000000000001,
+    "put_wall": 0.685,
+    "majors": [
+     {
+      "level": 0.675,
+      "net_gex": -20015.82407104555
+     },
+     {
+      "level": 0.685,
+      "net_gex": -88661.66266366234
+     },
+     {
+      "level": 0.6950000000000001,
+      "net_gex": 14201.142074608833
+     },
+     {
+      "level": 0.705,
+      "net_gex": 1658.1101489638495
+     },
+     {
+      "level": 0.725,
+      "net_gex": 2109.7385456476172
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -0.0,
+    "call_put_gamma": 0.44,
+    "dealer_delta_bn": 0.0,
+    "charm_bn": 0.0,
+    "vanna_bn_per_pt": 0.0,
+    "chains": [
+     "FXA"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 0.65,
+     "gex": -19560.843183753055
+    },
+    {
+     "px": 0.65,
+     "gex": -20910.961898933117
+    },
+    {
+     "px": 0.65,
+     "gex": -22275.85931394383
+    },
+    {
+     "px": 0.65,
+     "gex": -23657.493824377318
+    },
+    {
+     "px": 0.65,
+     "gex": -25064.056641233536
+    },
+    {
+     "px": 0.65,
+     "gex": -26511.917656945603
+    },
+    {
+     "px": 0.66,
+     "gex": -28027.589327061163
+    },
+    {
+     "px": 0.66,
+     "gex": -29649.45333863187
+    },
+    {
+     "px": 0.66,
+     "gex": -31428.885575970067
+    },
+    {
+     "px": 0.66,
+     "gex": -33430.31575497352
+    },
+    {
+     "px": 0.66,
+     "gex": -35729.698795969554
+    },
+    {
+     "px": 0.66,
+     "gex": -38410.8913210243
+    },
+    {
+     "px": 0.66,
+     "gex": -41559.55324252749
+    },
+    {
+     "px": 0.67,
+     "gex": -45254.45429428506
+    },
+    {
+     "px": 0.67,
+     "gex": -49556.458155819375
+    },
+    {
+     "px": 0.67,
+     "gex": -54495.948861477846
+    },
+    {
+     "px": 0.67,
+     "gex": -60059.984608254425
+    },
+    {
+     "px": 0.67,
+     "gex": -66180.91038189881
+    },
+    {
+     "px": 0.67,
+     "gex": -72728.41540875398
+    },
+    {
+     "px": 0.67,
+     "gex": -79506.97751003665
+    },
+    {
+     "px": 0.67,
+     "gex": -86260.22809594542
+    },
+    {
+     "px": 0.68,
+     "gex": -92683.0002307968
+    },
+    {
+     "px": 0.68,
+     "gex": -98440.77081671297
+    },
+    {
+     "px": 0.68,
+     "gex": -103195.03602157552
+    },
+    {
+     "px": 0.68,
+     "gex": -106632.0770738894
+    },
+    {
+     "px": 0.68,
+     "gex": -108491.80016637551
+    },
+    {
+     "px": 0.68,
+     "gex": -108593.04640416568
+    },
+    {
+     "px": 0.68,
+     "gex": -106852.05624378863
+    },
+    {
+     "px": 0.69,
+     "gex": -103291.6157301092
+    },
+    {
+     "px": 0.69,
+     "gex": -98039.67398293923
+    },
+    {
+     "px": 0.69,
+     "gex": -91317.68149450494
+    },
+    {
+     "px": 0.69,
+     "gex": -83420.2969800281
+    },
+    {
+     "px": 0.69,
+     "gex": -74689.20463439982
+    },
+    {
+     "px": 0.69,
+     "gex": -65484.3999287883
+    },
+    {
+     "px": 0.69,
+     "gex": -56156.36776358871
+    },
+    {
+     "px": 0.7,
+     "gex": -47022.12778017323
+    },
+    {
+     "px": 0.7,
+     "gex": -38347.28533476663
+    },
+    {
+     "px": 0.7,
+     "gex": -30335.186455520303
+    },
+    {
+     "px": 0.7,
+     "gex": -23123.22700509882
+    },
+    {
+     "px": 0.7,
+     "gex": -16785.478591967618
+    },
+    {
+     "px": 0.7,
+     "gex": -11340.179016203503
+    },
+    {
+     "px": 0.7,
+     "gex": -6760.338104119289
+    },
+    {
+     "px": 0.71,
+     "gex": -2985.71235499697
+    },
+    {
+     "px": 0.71,
+     "gex": 65.36126143945876
+    },
+    {
+     "px": 0.71,
+     "gex": 2485.4004173351723
+    },
+    {
+     "px": 0.71,
+     "gex": 4369.175301927837
+    },
+    {
+     "px": 0.71,
+     "gex": 5807.353606723047
+    },
+    {
+     "px": 0.71,
+     "gex": 6882.344807958154
+    },
+    {
+     "px": 0.71,
+     "gex": 7666.06663447093
+    },
+    {
+     "px": 0.71,
+     "gex": 8219.231947469576
+    },
+    {
+     "px": 0.72,
+     "gex": 8591.719126616747
+    },
+    {
+     "px": 0.72,
+     "gex": 8823.619334063791
+    },
+    {
+     "px": 0.72,
+     "gex": 8946.62358153188
+    },
+    {
+     "px": 0.72,
+     "gex": 8985.498240380464
+    },
+    {
+     "px": 0.72,
+     "gex": 8959.482165903675
+    },
+    {
+     "px": 0.72,
+     "gex": 8883.511123350814
+    },
+    {
+     "px": 0.72,
+     "gex": 8769.230709878379
+    },
+    {
+     "px": 0.73,
+     "gex": 8625.796869219048
+    },
+    {
+     "px": 0.73,
+     "gex": 8460.48556361709
+    },
+    {
+     "px": 0.73,
+     "gex": 8279.143680042489
+    },
+    {
+     "px": 0.73,
+     "gex": 8086.515515241639
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "FXA",
+    "days": 14.62,
+    "spot": 69.36,
+    "rows": [
+     {
+      "strike": 68.0,
+      "fut": 0.675,
+      "call_oi": 0,
+      "put_oi": 2
+     },
+     {
+      "strike": 69.0,
+      "fut": 0.685,
+      "call_oi": 1,
+      "put_oi": 46
+     },
+     {
+      "strike": 70.0,
+      "fut": 0.6950000000000001,
+      "call_oi": 30,
+      "put_oi": 5
+     },
+     {
+      "strike": 71.0,
+      "fut": 0.705,
+      "call_oi": 5,
+      "put_oi": 0
+     }
+    ],
+    "max_pain": 70.0,
+    "max_pain_fut": 0.7
+   },
+   "gamma_diag": {
+    "FXA all": {
+     "flip": 0.7063685270449062,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 106,
+     "put_oi": 175
+    },
+    "FXA 8-30d": {
+     "flip": 0.6987717873860758,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 36,
+     "put_oi": 57
+    },
+    "FXA 31-60d": {
+     "flip": 0.7283624599364481,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 70,
+     "put_oi": 118
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  },
+  "6C": {
+   "name": "Canadian dollar futures",
+   "group": "Currencies",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.016,
+    "raw_score": 0.016,
+    "dampened": [],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": 0.016,
+    "conviction": "Very low",
+    "ups": 1,
+    "downs": 1,
+    "total": 10,
+    "overall": "For: Oil headlines. Against: Policy gap (2Y \u2212 Fed funds). Close to a coin flip. Let price confirm. Dealers short gamma: moves can run.",
+    "invalidation": "A failure to reclaim 1, or a break of the put wall at 1",
+    "macro_share": 62,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 12,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "commodnews",
+     "label": "Oil headlines",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.625,
+     "text": "2 oil headlines in the last 12 hours lean tight (supportive). Top: \u201cRenewed U.S.-Iran tension could push oil past $100: Rapidan Energy\u201d.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 1, price 0 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.90. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Small.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "changed": {
+    "prev_date": "2026-11-05",
+    "prev_bias": "Bearish",
+    "prev_score": -0.186,
+    "delta": 0.202
+   },
+   "expected_range": {
+    "move": 0.01,
+    "low": 0.7,
+    "high": 0.73
+   },
+   "levels": {
+    "price": 0.71,
+    "flip": 0.74,
+    "flip_close": null,
+    "call_wall": 0.7225,
+    "put_wall": 0.7125,
+    "majors": [
+     {
+      "level": 0.6725,
+      "net_gex": 8614.753753448329
+     },
+     {
+      "level": 0.6825,
+      "net_gex": 7390.210053217749
+     },
+     {
+      "level": 0.6925,
+      "net_gex": 26937.882940731695
+     },
+     {
+      "level": 0.7025,
+      "net_gex": -99252.44346997411
+     },
+     {
+      "level": 0.7125,
+      "net_gex": -25410.40574935323
+     }
+    ]
+   },
+   "dealer": {
+    "net_gex_bn": -0.0,
+    "call_put_gamma": 0.9,
+    "dealer_delta_bn": 0.01,
+    "charm_bn": -0.0,
+    "vanna_bn_per_pt": 0.0,
+    "chains": [
+     "FXC"
+    ]
+   },
+   "flow": null,
+   "profile": [
+    {
+     "px": 0.67,
+     "gex": -6940.021405500442
+    },
+    {
+     "px": 0.67,
+     "gex": -7664.002087709359
+    },
+    {
+     "px": 0.67,
+     "gex": -8413.654125116836
+    },
+    {
+     "px": 0.67,
+     "gex": -9186.113750633562
+    },
+    {
+     "px": 0.68,
+     "gex": -9977.423637411586
+    },
+    {
+     "px": 0.68,
+     "gex": -10782.438798137338
+    },
+    {
+     "px": 0.68,
+     "gex": -11594.886350578863
+    },
+    {
+     "px": 0.68,
+     "gex": -12407.66672424816
+    },
+    {
+     "px": 0.68,
+     "gex": -13213.483739548821
+    },
+    {
+     "px": 0.68,
+     "gex": -14005.867246440366
+    },
+    {
+     "px": 0.68,
+     "gex": -14780.596246684428
+    },
+    {
+     "px": 0.69,
+     "gex": -15537.439144521895
+    },
+    {
+     "px": 0.69,
+     "gex": -16282.006596862668
+    },
+    {
+     "px": 0.69,
+     "gex": -17027.379425580628
+    },
+    {
+     "px": 0.69,
+     "gex": -17795.060371175467
+    },
+    {
+     "px": 0.69,
+     "gex": -18614.744730641683
+    },
+    {
+     "px": 0.69,
+     "gex": -19522.452536397912
+    },
+    {
+     "px": 0.69,
+     "gex": -20556.743264752975
+    },
+    {
+     "px": 0.7,
+     "gex": -21753.046391809985
+    },
+    {
+     "px": 0.7,
+     "gex": -23136.55390003896
+    },
+    {
+     "px": 0.7,
+     "gex": -24714.561283044466
+    },
+    {
+     "px": 0.7,
+     "gex": -26469.509120256633
+    },
+    {
+     "px": 0.7,
+     "gex": -28354.15728058568
+    },
+    {
+     "px": 0.7,
+     "gex": -30290.229662407146
+    },
+    {
+     "px": 0.7,
+     "gex": -32171.462919398775
+    },
+    {
+     "px": 0.71,
+     "gex": -33871.31501859702
+    },
+    {
+     "px": 0.71,
+     "gex": -35254.75196924558
+    },
+    {
+     "px": 0.71,
+     "gex": -36192.70362037451
+    },
+    {
+     "px": 0.71,
+     "gex": -36577.15017663653
+    },
+    {
+     "px": 0.71,
+     "gex": -36334.52812331587
+    },
+    {
+     "px": 0.71,
+     "gex": -35435.31166083386
+    },
+    {
+     "px": 0.71,
+     "gex": -33898.217367222496
+    },
+    {
+     "px": 0.72,
+     "gex": -31788.37954089706
+    },
+    {
+     "px": 0.72,
+     "gex": -29209.863074093406
+    },
+    {
+     "px": 0.72,
+     "gex": -26293.806106366046
+    },
+    {
+     "px": 0.72,
+     "gex": -23184.130275965897
+    },
+    {
+     "px": 0.72,
+     "gex": -20023.007915781065
+    },
+    {
+     "px": 0.72,
+     "gex": -16938.113234378754
+    },
+    {
+     "px": 0.72,
+     "gex": -14033.179949964875
+    },
+    {
+     "px": 0.73,
+     "gex": -11382.678113066222
+    },
+    {
+     "px": 0.73,
+     "gex": -9030.671317945205
+    },
+    {
+     "px": 0.73,
+     "gex": -6993.271065637468
+    },
+    {
+     "px": 0.73,
+     "gex": -5263.670891218819
+    },
+    {
+     "px": 0.73,
+     "gex": -3818.561270136726
+    },
+    {
+     "px": 0.73,
+     "gex": -2624.78058536528
+    },
+    {
+     "px": 0.73,
+     "gex": -1645.2873490208963
+    },
+    {
+     "px": 0.74,
+     "gex": -843.8629682248303
+    },
+    {
+     "px": 0.74,
+     "gex": -188.29208595172105
+    },
+    {
+     "px": 0.74,
+     "gex": 347.9440446196233
+    },
+    {
+     "px": 0.74,
+     "gex": 785.2234521513924
+    },
+    {
+     "px": 0.74,
+     "gex": 1138.2451863364208
+    },
+    {
+     "px": 0.74,
+     "gex": 1417.0335800974285
+    },
+    {
+     "px": 0.74,
+     "gex": 1628.1643107327652
+    },
+    {
+     "px": 0.75,
+     "gex": 1775.9692892311425
+    },
+    {
+     "px": 0.75,
+     "gex": 1863.5656060297517
+    },
+    {
+     "px": 0.75,
+     "gex": 1893.634259944833
+    },
+    {
+     "px": 0.75,
+     "gex": 1868.9368194419324
+    },
+    {
+     "px": 0.75,
+     "gex": 1792.5990904619748
+    },
+    {
+     "px": 0.75,
+     "gex": 1668.21189285482
+    },
+    {
+     "px": 0.75,
+     "gex": 1499.8045852110117
+    },
+    {
+     "px": 0.76,
+     "gex": 1291.7423250644408
+    }
+   ],
+   "big_trades": [],
+   "strikes": {
+    "chain": "FXC",
+    "days": 14.62,
+    "spot": 69.98,
+    "rows": [
+     {
+      "strike": 69.0,
+      "fut": 0.705,
+      "call_oi": 102,
+      "put_oi": 514
+     },
+     {
+      "strike": 70.0,
+      "fut": 0.715,
+      "call_oi": 63,
+      "put_oi": 68
+     }
+    ],
+    "max_pain": 69.0,
+    "max_pain_fut": 0.7
+   },
+   "gamma_diag": {
+    "FXC all": {
+     "flip": 0.7378660194285972,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 703,
+     "put_oi": 730
+    },
+    "FXC 8-30d": {
+     "flip": null,
+     "net_bn": -0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 283,
+     "put_oi": 582
+    },
+    "FXC 31-60d": {
+     "flip": null,
+     "net_bn": 0.0,
+     "call_bn": 0.0,
+     "put_bn": 0.0,
+     "call_oi": 420,
+     "put_oi": 148
+    }
+   },
+   "earnings": [],
+   "scorecard": null,
+   "outcome": null
+  }
+ },
+ "divergence": null,
+ "notes": [
+  "No price for ^RVX",
+  "NIKKEI: dealer positioning skipped, no listed options for this market. The read is macro only.",
+  "HSI: dealer positioning skipped, no listed options for this market. The read is macro only.",
+  "HG: dealer positioning skipped, no listed options for this market. The read is macro only."
+ ],
+ "sources": {
+  "Yahoo prices": {
+   "ok": true,
+   "fetched": "2026-11-06T01:00:57-05:00",
+   "data_time": "2026-11-06T01:00:46.565115-05:00",
+   "detail": "34 of 35 tickers \u00b7 1m bars, cut at 1:00 AM ET"
+  },
+  "Economic calendar": {
+   "ok": true,
+   "fetched": "2026-11-06T01:00:57-05:00",
+   "data_time": null,
+   "detail": ""
+  },
+  "Earnings Nov 6": {
+   "ok": true,
+   "fetched": "2026-11-06T01:00:58-05:00",
+   "data_time": null,
+   "detail": "118 companies"
+  },
+  "Earnings Nov 9": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:01-05:00",
+   "data_time": null,
+   "detail": "254 companies"
+  },
+  "CBOE NDX options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:14-05:00",
+   "data_time": "2026-11-06T00:56:47-05:00",
+   "detail": "19,168 contracts"
+  },
+  "CBOE QQQ options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:14-05:00",
+   "data_time": "2026-11-05T21:25:37-05:00",
+   "detail": "10,456 contracts"
+  },
+  "Treasury auctions": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:17-05:00",
+   "data_time": null,
+   "detail": "47 long-end auctions"
+  },
+  "News feeds": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:23-05:00",
+   "data_time": "2026-11-06T01:00:46.565115-05:00",
+   "detail": "6 of 7 feeds"
+  },
+  "CBOE SPX options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:24-05:00",
+   "data_time": "2026-11-06T00:22:26-05:00",
+   "detail": "29,440 contracts"
+  },
+  "CBOE SPY options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:25-05:00",
+   "data_time": "2026-11-05T22:00:34-05:00",
+   "detail": "13,010 contracts"
+  },
+  "CBOE DJX options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:26-05:00",
+   "data_time": "2026-11-05T20:04:30-05:00",
+   "detail": "2,428 contracts"
+  },
+  "CBOE DIA options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:26-05:00",
+   "data_time": "2026-11-05T22:00:28-05:00",
+   "detail": "4,464 contracts"
+  },
+  "CBOE RUT options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:27-05:00",
+   "data_time": "2026-11-05T20:04:31-05:00",
+   "detail": "11,384 contracts"
+  },
+  "CBOE IWM options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:28-05:00",
+   "data_time": "2026-11-05T20:04:37-05:00",
+   "detail": "5,342 contracts"
+  },
+  "CBOE GLD options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:29-05:00",
+   "data_time": "2026-11-05T21:50:54-05:00",
+   "detail": "7,322 contracts"
+  },
+  "CBOE SLV options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:29-05:00",
+   "data_time": "2026-11-05T21:33:32-05:00",
+   "detail": "4,436 contracts"
+  },
+  "CBOE USO options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:30-05:00",
+   "data_time": "2026-11-05T22:35:20-05:00",
+   "detail": "6,286 contracts"
+  },
+  "CBOE UNG options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:31-05:00",
+   "data_time": "2026-11-05T22:35:19-05:00",
+   "detail": "738 contracts"
+  },
+  "CBOE FXE options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:31-05:00",
+   "data_time": "2026-11-05T21:18:06-05:00",
+   "detail": "238 contracts"
+  },
+  "CBOE FXB options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:32-05:00",
+   "data_time": "2026-11-04T22:38:19-05:00",
+   "detail": "180 contracts"
+  },
+  "CBOE FXY options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:32-05:00",
+   "data_time": "2026-11-05T21:18:06-05:00",
+   "detail": "398 contracts"
+  },
+  "CBOE FXA options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:33-05:00",
+   "data_time": "2026-11-05T21:17:55-05:00",
+   "detail": "190 contracts"
+  },
+  "CBOE FXC options": {
+   "ok": true,
+   "fetched": "2026-11-06T01:01:33-05:00",
+   "data_time": "2026-11-05T21:18:41-05:00",
+   "detail": "180 contracts"
+  }
+ }
+}
