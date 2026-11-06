@@ -1084,7 +1084,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 26977.75,
+    "noon": 27256.0,
+    "close": 27256.0,
+    "move": 278.25,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "ES": {
    "name": "S&P 500 futures",
@@ -2090,7 +2098,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 7379.75,
+    "noon": 7445.5,
+    "close": 7445.5,
+    "move": 65.75,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "YM": {
    "name": "Dow futures",
@@ -2851,7 +2867,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 51060.0,
+    "noon": 51640.0,
+    "close": 51640.0,
+    "move": 580.0,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "RTY": {
    "name": "Russell 2000 futures",
@@ -3628,7 +3652,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 2729.10009765625,
+    "noon": 2754.89990234375,
+    "close": 2754.89990234375,
+    "move": 25.8,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "DAX": {
    "name": "DAX (Germany)",
@@ -3917,7 +3949,15 @@
    "gamma_diag": null,
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 26323.189453125,
+    "noon": 25820.359375,
+    "close": 25820.359375,
+    "move": -502.83,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "SX5E": {
    "name": "Euro Stoxx 50",
@@ -4206,7 +4246,15 @@
    "gamma_diag": null,
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 6174.3798828125,
+    "noon": 6170.490234375,
+    "close": 6170.490234375,
+    "move": -3.89,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "FTSE": {
    "name": "FTSE 100 (UK)",
@@ -4495,7 +4543,15 @@
    "gamma_diag": null,
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 10637.599609375,
+    "noon": 10673.9404296875,
+    "close": 10673.9404296875,
+    "move": 36.34,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "GC": {
    "name": "Gold futures",
@@ -5199,7 +5255,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 4062.199951171875,
+    "noon": 4072.10009765625,
+    "close": 4072.10009765625,
+    "move": 9.9,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "SI": {
    "name": "Silver futures",
@@ -5870,7 +5934,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 51.61000061035156,
+    "noon": 52.06999969482422,
+    "close": 52.06999969482422,
+    "move": 0.46,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "HG": {
    "name": "Copper futures",
@@ -6069,7 +6141,15 @@
    "gamma_diag": null,
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 6.216000080108643,
+    "noon": 6.2754998207092285,
+    "close": 6.2754998207092285,
+    "move": 0.06,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "CL": {
    "name": "Crude oil futures",
@@ -6692,7 +6772,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 90.86000061035156,
+    "noon": 90.6500015258789,
+    "close": 90.6500015258789,
+    "move": -0.21,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "NG": {
    "name": "Natural gas futures",
@@ -7125,7 +7213,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 3.0220000743865967,
+    "noon": 2.992000102996826,
+    "close": 2.992000102996826,
+    "move": -0.03,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "6E": {
    "name": "Euro futures",
@@ -7641,7 +7737,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 1.1195000410079956,
+    "noon": 1.1164499521255493,
+    "close": 1.1164499521255493,
+    "move": -0.0,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "6B": {
    "name": "British pound futures",
@@ -8145,7 +8249,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 1.339900016784668,
+    "noon": 1.336400032043457,
+    "close": 1.336400032043457,
+    "move": -0.0,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   },
   "6J": {
    "name": "Japanese yen futures",
@@ -8704,7 +8816,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 0.00634999992325902,
+    "noon": 0.006333500146865845,
+    "close": 0.006333500146865845,
+    "move": -0.0,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "6A": {
    "name": "Australian dollar futures",
@@ -9263,7 +9383,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 0.6868000030517578,
+    "noon": 0.6871500015258789,
+    "close": 0.6871500015258789,
+    "move": 0.0,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "miss"
+   }
   },
   "6C": {
    "name": "Canadian dollar futures",
@@ -9804,7 +9932,15 @@
    },
    "earnings": [],
    "scorecard": null,
-   "outcome": null
+   "outcome": {
+    "open": 0.7121999859809875,
+    "noon": 0.7104499936103821,
+    "close": 0.7104499936103821,
+    "move": -0.0,
+    "start": "2026-11-06T03:00:00-05:00",
+    "end": "2026-11-06T11:30:00-05:00",
+    "result": "hit"
+   }
   }
  },
  "divergence": null,
