@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-06T14:55:09-05:00",
+ "generated": "2026-11-06T15:07:53-05:00",
  "futures": [
   {
    "ticker": "ES=F",
    "name": "S&P 500",
    "code": "/MES",
-   "last": 7421.25,
-   "chg": 0.52,
+   "last": 7427.75,
+   "chg": 0.61,
    "spark": [
     7344.0,
     7350.75,
@@ -67,15 +67,15 @@
     7427.25,
     7433.75,
     7424.5,
-    7421.25
+    7427.75
    ]
   },
   {
    "ticker": "NQ=F",
    "name": "Nasdaq 100",
    "code": "/MNQ",
-   "last": 27169.75,
-   "chg": 1.56,
+   "last": 27211.25,
+   "chg": 1.72,
    "spark": [
     26551.75,
     26591.75,
@@ -136,15 +136,15 @@
     27145.25,
     27209.25,
     27178.75,
-    27169.75
+    27211.25
    ]
   },
   {
    "ticker": "BTC=F",
    "name": "Bitcoin",
    "code": "/MBT",
-   "last": 75790.0,
-   "chg": -0.6,
+   "last": 75950.0,
+   "chg": -0.39,
    "spark": [
     75485.0,
     76030.0,
@@ -205,15 +205,15 @@
     75950.0,
     75820.0,
     75760.0,
-    75790.0
+    75950.0
    ]
   },
   {
    "ticker": "YM=F",
    "name": "Dow",
    "code": "/MYM",
-   "last": 51510.0,
-   "chg": -0.2,
+   "last": 51534.0,
+   "chg": -0.16,
    "spark": [
     51382.0,
     51383.0,
@@ -274,15 +274,15 @@
     51596.0,
     51587.0,
     51526.0,
-    51510.0
+    51534.0
    ]
   },
   {
    "ticker": "RTY=F",
    "name": "Russell 2000",
    "code": "/M2K",
-   "last": 2762.0,
-   "chg": 0.97,
+   "last": 2765.7,
+   "chg": 1.11,
    "spark": [
     2723.8,
     2723.8,
@@ -343,15 +343,15 @@
     2765.4,
     2764.1,
     2763.0,
-    2762.0
+    2765.7
    ]
   },
   {
    "ticker": "CL=F",
    "name": "Crude oil",
    "code": "/MCL",
-   "last": 90.99,
-   "chg": 0.52,
+   "last": 91.08,
+   "chg": 0.62,
    "spark": [
     91.46,
     91.42,
@@ -412,15 +412,15 @@
     89.99,
     90.67,
     90.88,
-    90.99
+    91.08
    ]
   },
   {
    "ticker": "GC=F",
    "name": "Gold",
    "code": "/MGC",
-   "last": 4071.8999,
-   "chg": -1.01,
+   "last": 4073.2,
+   "chg": -0.98,
    "spark": [
     4095.4,
     4106.7,
@@ -481,15 +481,15 @@
     4079.7,
     4081.8,
     4074.2,
-    4071.9
+    4073.2
    ]
   },
   {
    "ticker": "ZN=F",
    "name": "10-year note",
    "code": "/ZN",
-   "last": 107.125,
-   "chg": -0.19,
+   "last": 107.1094,
+   "chg": -0.2,
    "spark": [
     107.33,
     107.36,
@@ -550,7 +550,7 @@
     107.2,
     107.11,
     107.14,
-    107.12
+    107.11
    ]
   }
  ],
@@ -559,8 +559,8 @@
    "rows": [
     {
      "ticker": "NVDA",
-     "chg": 3.49,
-     "last": 187.93,
+     "chg": 3.7,
+     "last": 188.312,
      "weight": 9.0,
      "spark": [
       181.595,
@@ -619,14 +619,15 @@
       187.49,
       187.33,
       187.44,
-      187.93
+      188.46,
+      188.312
      ],
-     "pts": 85.3
+     "pts": 90.5
     },
     {
      "ticker": "MSFT",
-     "chg": -0.73,
-     "last": 532.0,
+     "chg": -0.59,
+     "last": 532.75,
      "weight": 8.0,
      "spark": [
       535.66,
@@ -685,14 +686,15 @@
       533.78,
       532.748,
       532.94,
-      532.0
+      532.48,
+      532.75
      ],
-     "pts": -15.9
+     "pts": -12.8
     },
     {
      "ticker": "AAPL",
-     "chg": -0.22,
-     "last": 343.405,
+     "chg": -0.17,
+     "last": 343.57,
      "weight": 7.8,
      "spark": [
       344.31,
@@ -751,14 +753,15 @@
       344.436,
       344.17,
       344.15,
-      343.405
+      343.2505,
+      343.57
      ],
-     "pts": -4.7
+     "pts": -3.6
     },
     {
      "ticker": "AMZN",
-     "chg": 0.46,
-     "last": 261.415,
+     "chg": 0.77,
+     "last": 262.225,
      "weight": 5.4,
      "spark": [
       260.51,
@@ -817,14 +820,15 @@
       262.42,
       261.84,
       262.075,
-      261.415
+      261.55,
+      262.225
      ],
-     "pts": 6.7
+     "pts": 11.3
     },
     {
      "ticker": "AVGO",
-     "chg": 0.35,
-     "last": 292.55,
+     "chg": 0.84,
+     "last": 293.98,
      "weight": 4.9,
      "spark": [
       291.38,
@@ -883,14 +887,15 @@
       293.39,
       291.985,
       292.34,
-      292.55
+      292.93,
+      293.98
      ],
-     "pts": 4.7
+     "pts": 11.2
     },
     {
      "ticker": "META",
-     "chg": 1.54,
-     "last": 614.4,
+     "chg": 1.99,
+     "last": 617.1,
      "weight": 3.7,
      "spark": [
       605.67,
@@ -949,14 +954,15 @@
       618.08,
       616.705,
       616.03,
-      614.4
+      615.4205,
+      617.1
      ],
-     "pts": 15.5
+     "pts": 20.0
     },
     {
      "ticker": "GOOGL",
-     "chg": 0.92,
-     "last": 285.16,
+     "chg": 1.29,
+     "last": 286.21,
      "weight": 2.9,
      "spark": [
       282.6,
@@ -1015,14 +1021,15 @@
       286.39,
       285.83,
       285.845,
-      285.16
+      285.41,
+      286.21
      ],
-     "pts": 7.2
+     "pts": 10.2
     },
     {
      "ticker": "TSLA",
-     "chg": 4.87,
-     "last": 360.42,
+     "chg": 5.82,
+     "last": 363.685,
      "weight": 3.1,
      "spark": [
       343.57,
@@ -1081,14 +1088,15 @@
       359.89,
       359.885,
       360.5494,
-      360.42
+      361.04,
+      363.685
      ],
-     "pts": 41.0
+     "pts": 49.1
     },
     {
      "ticker": "NFLX",
-     "chg": -2.97,
-     "last": 63.61,
+     "chg": -2.65,
+     "last": 63.825,
      "weight": 1.4,
      "spark": [
       65.55,
@@ -1147,14 +1155,15 @@
       63.8805,
       63.87,
       63.745,
-      63.61
+      63.6382,
+      63.825
      ],
-     "pts": -11.3
+     "pts": -10.1
     },
     {
      "ticker": "AMD",
-     "chg": 10.33,
-     "last": 446.185,
+     "chg": 11.05,
+     "last": 449.07,
      "weight": 1.2,
      "spark": [
       402.51,
@@ -1213,14 +1222,15 @@
       447.6699,
       445.935,
       445.3201,
-      446.185
+      448.145,
+      449.07
      ],
-     "pts": 33.7
+     "pts": 36.1
     },
     {
      "ticker": "PLTR",
-     "chg": 3.97,
-     "last": 161.15,
+     "chg": 4.53,
+     "last": 162.01,
      "weight": 1.3,
      "spark": [
       154.85,
@@ -1279,19 +1289,20 @@
       160.5987,
       160.82,
       161.03,
-      161.15
+      161.335,
+      162.01
      ],
-     "pts": 14.0
+     "pts": 16.0
     }
    ],
-   "total_pts": 176.2
+   "total_pts": 217.9
   },
   "ES": {
    "rows": [
     {
      "ticker": "NVDA",
-     "chg": 3.49,
-     "last": 187.93,
+     "chg": 3.7,
+     "last": 188.312,
      "weight": 7.2,
      "spark": [
       181.595,
@@ -1350,14 +1361,15 @@
       187.49,
       187.33,
       187.44,
-      187.93
+      188.46,
+      188.312
      ],
-     "pts": 18.6
+     "pts": 19.8
     },
     {
      "ticker": "MSFT",
-     "chg": -0.73,
-     "last": 532.0,
+     "chg": -0.59,
+     "last": 532.75,
      "weight": 6.3,
      "spark": [
       535.66,
@@ -1416,14 +1428,15 @@
       533.78,
       532.748,
       532.94,
-      532.0
+      532.48,
+      532.75
      ],
-     "pts": -3.4
+     "pts": -2.8
     },
     {
      "ticker": "AAPL",
-     "chg": -0.22,
-     "last": 343.405,
+     "chg": -0.17,
+     "last": 343.57,
      "weight": 6.2,
      "spark": [
       344.31,
@@ -1482,14 +1495,15 @@
       344.436,
       344.17,
       344.15,
-      343.405
+      343.2505,
+      343.57
      ],
-     "pts": -1.0
+     "pts": -0.8
     },
     {
      "ticker": "AMZN",
-     "chg": 0.46,
-     "last": 261.415,
+     "chg": 0.77,
+     "last": 262.225,
      "weight": 4.0,
      "spark": [
       260.51,
@@ -1548,14 +1562,15 @@
       262.42,
       261.84,
       262.075,
-      261.415
+      261.55,
+      262.225
      ],
-     "pts": 1.4
+     "pts": 2.3
     },
     {
      "ticker": "AVGO",
-     "chg": 0.35,
-     "last": 292.55,
+     "chg": 0.84,
+     "last": 293.98,
      "weight": 2.7,
      "spark": [
       291.38,
@@ -1614,14 +1629,15 @@
       293.39,
       291.985,
       292.34,
-      292.55
+      292.93,
+      293.98
      ],
-     "pts": 0.7
+     "pts": 1.7
     },
     {
      "ticker": "META",
-     "chg": 1.54,
-     "last": 614.4,
+     "chg": 1.99,
+     "last": 617.1,
      "weight": 2.9,
      "spark": [
       605.67,
@@ -1680,14 +1696,15 @@
       618.08,
       616.705,
       616.03,
-      614.4
+      615.4205,
+      617.1
      ],
-     "pts": 3.3
+     "pts": 4.3
     },
     {
      "ticker": "GOOGL",
-     "chg": 0.92,
-     "last": 285.16,
+     "chg": 1.29,
+     "last": 286.21,
      "weight": 2.2,
      "spark": [
       282.6,
@@ -1746,14 +1763,15 @@
       286.39,
       285.83,
       285.845,
-      285.16
+      285.41,
+      286.21
      ],
-     "pts": 1.5
+     "pts": 2.1
     },
     {
      "ticker": "TSLA",
-     "chg": 4.87,
-     "last": 360.42,
+     "chg": 5.82,
+     "last": 363.685,
      "weight": 2.1,
      "spark": [
       343.57,
@@ -1812,14 +1830,15 @@
       359.89,
       359.885,
       360.5494,
-      360.42
+      361.04,
+      363.685
      ],
-     "pts": 7.6
+     "pts": 9.1
     },
     {
      "ticker": "NFLX",
-     "chg": -2.97,
-     "last": 63.61,
+     "chg": -2.65,
+     "last": 63.825,
      "weight": 0.9,
      "spark": [
       65.55,
@@ -1878,14 +1897,15 @@
       63.8805,
       63.87,
       63.745,
-      63.61
+      63.6382,
+      63.825
      ],
-     "pts": -2.0
+     "pts": -1.8
     },
     {
      "ticker": "BRK-B",
-     "chg": 0.27,
-     "last": 573.85,
+     "chg": 0.28,
+     "last": 573.93,
      "weight": 1.6,
      "spark": [
       572.04,
@@ -1942,15 +1962,16 @@
       574.91,
       574.24,
       574.67,
-      573.71,
-      573.85
+      573.66,
+      574.1337,
+      573.93
      ],
      "pts": 0.3
     },
     {
      "ticker": "JPM",
-     "chg": -0.19,
-     "last": 336.71,
+     "chg": -0.14,
+     "last": 336.88,
      "weight": 1.5,
      "spark": [
       337.35,
@@ -2005,15 +2026,16 @@
       337.26,
       337.44,
       336.63,
-      336.72,
-      336.71
+      336.735,
+      336.655,
+      336.88
      ],
      "pts": -0.2
     },
     {
      "ticker": "LLY",
-     "chg": -0.24,
-     "last": 1361.48,
+     "chg": -0.02,
+     "last": 1364.48,
      "weight": 1.2,
      "spark": [
       1367.6899,
@@ -2071,214 +2093,215 @@
       1365.9373,
       1364.9,
       1362.285,
-      1361.48
+      1363.17,
+      1364.48
      ],
-     "pts": -0.2
+     "pts": -0.0
     }
    ],
-   "total_pts": 26.6
+   "total_pts": 34.0
   }
  },
  "heatmap": [
   {
    "ticker": "NVDA",
    "weight": 9.0,
-   "chg": 3.49
+   "chg": 3.7
   },
   {
    "ticker": "MSFT",
    "weight": 8.0,
-   "chg": -0.73
+   "chg": -0.59
   },
   {
    "ticker": "AAPL",
    "weight": 7.8,
-   "chg": -0.22
+   "chg": -0.17
   },
   {
    "ticker": "AMZN",
    "weight": 5.4,
-   "chg": 0.46
+   "chg": 0.77
   },
   {
    "ticker": "AVGO",
    "weight": 4.9,
-   "chg": 0.35
+   "chg": 0.84
   },
   {
    "ticker": "META",
    "weight": 3.7,
-   "chg": 1.54
+   "chg": 1.99
   },
   {
    "ticker": "TSLA",
    "weight": 3.1,
-   "chg": 4.87
+   "chg": 5.82
   },
   {
    "ticker": "GOOGL",
    "weight": 2.9,
-   "chg": 0.92
+   "chg": 1.29
   },
   {
    "ticker": "GOOG",
    "weight": 2.7,
-   "chg": 0.78
+   "chg": 1.17
   },
   {
    "ticker": "NFLX",
    "weight": 1.4,
-   "chg": -2.97
+   "chg": -2.65
   },
   {
    "ticker": "COST",
    "weight": 1.4,
-   "chg": -1.06
+   "chg": -0.89
   },
   {
    "ticker": "PLTR",
    "weight": 1.3,
-   "chg": 3.97
+   "chg": 4.53
   },
   {
    "ticker": "AMD",
    "weight": 1.2,
-   "chg": 10.33
+   "chg": 11.05
   },
   {
    "ticker": "CSCO",
    "weight": 1.0,
-   "chg": -1.63
+   "chg": -1.21
   },
   {
    "ticker": "TMUS",
    "weight": 0.9,
-   "chg": 1.18
+   "chg": 1.31
   },
   {
    "ticker": "LIN",
    "weight": 0.8,
-   "chg": -0.68
+   "chg": -0.61
   },
   {
    "ticker": "INTU",
    "weight": 0.8,
-   "chg": -3.92
+   "chg": -3.86
   },
   {
    "ticker": "PEP",
    "weight": 0.7,
-   "chg": -1.1
+   "chg": -1.07
   },
   {
    "ticker": "QCOM",
    "weight": 0.7,
-   "chg": 6.41
+   "chg": 6.62
   },
   {
    "ticker": "ISRG",
    "weight": 0.7,
-   "chg": -3.7
+   "chg": -3.48
   },
   {
    "ticker": "TXN",
    "weight": 0.7,
-   "chg": 0.04
+   "chg": 0.52
   },
   {
    "ticker": "BKNG",
    "weight": 0.7,
-   "chg": -3.58
+   "chg": -3.65
   },
   {
    "ticker": "MU",
    "weight": 0.7,
-   "chg": 5.24
+   "chg": 5.92
   },
   {
    "ticker": "ADBE",
    "weight": 0.6,
-   "chg": -2.68
+   "chg": -2.85
   },
   {
    "ticker": "AMGN",
    "weight": 0.6,
-   "chg": 0.32
+   "chg": 0.28
   },
   {
    "ticker": "AMAT",
    "weight": 0.6,
-   "chg": 4.15
+   "chg": 4.49
   },
   {
    "ticker": "LRCX",
    "weight": 0.6,
-   "chg": 7.82
+   "chg": 8.7
   },
   {
    "ticker": "SHOP",
    "weight": 0.6,
-   "chg": 3.36
+   "chg": 3.37
   },
   {
    "ticker": "APP",
    "weight": 0.6,
-   "chg": 11.56
+   "chg": 11.54
   },
   {
    "ticker": "GILD",
    "weight": 0.5,
-   "chg": 0.19
+   "chg": 0.2
   },
   {
    "ticker": "PANW",
    "weight": 0.5,
-   "chg": 1.07
+   "chg": 0.68
   },
   {
    "ticker": "HON",
    "weight": 0.5,
-   "chg": 1.89
+   "chg": 2.09
   },
   {
    "ticker": "KLAC",
    "weight": 0.5,
-   "chg": 5.6
+   "chg": 6.12
   },
   {
    "ticker": "INTC",
    "weight": 0.5,
-   "chg": 8.43
+   "chg": 9.11
   },
   {
    "ticker": "CMCSA",
    "weight": 0.5,
-   "chg": -1.46
+   "chg": -1.68
   },
   {
    "ticker": "CRWD",
    "weight": 0.5,
-   "chg": 0.73
+   "chg": 0.47
   },
   {
    "ticker": "ADI",
    "weight": 0.5,
-   "chg": 0.96
+   "chg": 1.52
   },
   {
    "ticker": "MELI",
    "weight": 0.4,
-   "chg": -1.28
+   "chg": -0.99
   },
   {
    "ticker": "VRTX",
    "weight": 0.4,
-   "chg": 0.77
+   "chg": 0.91
   },
   {
    "ticker": "SBUX",
    "weight": 0.4,
-   "chg": -0.66
+   "chg": -0.73
   }
  ],
  "world": [
@@ -2669,9 +2692,9 @@
    "ticker": "^GSPC",
    "name": "S&P 500",
    "city": "New York",
-   "last": 7397.3301,
-   "chg": 0.59,
-   "ts": "2026-11-06T14:45-05:00",
+   "last": 7412.8101,
+   "chg": 0.8,
+   "ts": "2026-11-06T15:00-05:00",
    "spark": [
     7356.73,
     7410.2598,
@@ -2695,16 +2718,17 @@
     7410.6099,
     7402.0298,
     7401.2798,
-    7397.3301
+    7403.6099,
+    7412.8101
    ]
   },
   {
    "ticker": "^NDX",
    "name": "Nasdaq 100",
    "city": "New York",
-   "last": 27063.1152,
-   "chg": 1.63,
-   "ts": "2026-11-06T14:45-05:00",
+   "last": 27141.584,
+   "chg": 1.92,
+   "ts": "2026-11-06T15:00-05:00",
    "spark": [
     26647.8555,
     27161.3945,
@@ -2728,16 +2752,17 @@
     27103.8789,
     27076.627,
     27079.4863,
-    27063.1152
+    27101.7832,
+    27141.584
    ]
   },
   {
    "ticker": "^DJI",
    "name": "Dow",
    "city": "New York",
-   "last": 51419.2891,
-   "chg": -0.2,
-   "ts": "2026-11-06T14:45-05:00",
+   "last": 51480.3594,
+   "chg": -0.08,
+   "ts": "2026-11-06T15:00-05:00",
    "spark": [
     51524.1289,
     51297.2812,
@@ -2761,16 +2786,17 @@
     51503.8984,
     51445.2695,
     51447.7188,
-    51419.2891
+    51439.7383,
+    51480.3594
    ]
   },
   {
    "ticker": "^RUT",
    "name": "Russell 2000",
    "city": "New York",
-   "last": 2755.2251,
-   "chg": 0.93,
-   "ts": "2026-11-06T14:30-05:00",
+   "last": 2755.5205,
+   "chg": 0.94,
+   "ts": "2026-11-06T14:45-05:00",
    "spark": [
     2729.1995,
     2734.1821,
@@ -2793,16 +2819,17 @@
     2758.594,
     2757.199,
     2755.9648,
-    2755.2251
+    2756.0818,
+    2755.5205
    ]
   },
   {
    "ticker": "^GSPTSE",
    "name": "TSX",
    "city": "Toronto",
-   "last": 35808.3086,
-   "chg": 0.57,
-   "ts": "2026-11-06T14:45-05:00",
+   "last": 35845.0586,
+   "chg": 0.67,
+   "ts": "2026-11-06T15:00-05:00",
    "spark": [
     35592.5781,
     35472.0312,
@@ -2826,16 +2853,17 @@
     35843.5586,
     35815.7695,
     35833.6016,
-    35808.3086
+    35818.6602,
+    35845.0586
    ]
   },
   {
    "ticker": "^BVSP",
    "name": "Bovespa",
    "city": "Sao Paulo",
-   "last": 168422.0312,
-   "chg": 1.34,
-   "ts": "2026-11-06T14:30-05:00",
+   "last": 168355.8438,
+   "chg": 1.3,
+   "ts": "2026-11-06T14:45-05:00",
    "spark": [
     166361.7188,
     166645.4688,
@@ -2863,7 +2891,8 @@
     168514.9531,
     168293.9375,
     168240.5938,
-    168422.0312
+    168327.4062,
+    168355.8438
    ]
   }
  ],
@@ -2871,19 +2900,19 @@
   {
    "ticker": "VIX9D",
    "term": "9 days",
-   "now": 26.33,
+   "now": 26.35,
    "week_ago": 19.25
   },
   {
    "ticker": "VIX",
    "term": "30 days",
-   "now": 24.7,
+   "now": 24.73,
    "week_ago": 19.420000076293945
   },
   {
    "ticker": "VIX3M",
    "term": "3 months",
-   "now": 23.86,
+   "now": 23.85,
    "week_ago": 20.780000686645508
   },
   {
@@ -2906,18 +2935,18 @@
     "days": 41.8,
     "volume": 455,
     "oi": 2460,
-    "premium_m": 42.94,
-    "mid": 943.75
+    "premium_m": 42.68,
+    "mid": 938.1
    },
    {
     "chain": "QQQ",
     "strike": 660.0,
     "side": "put",
     "days": 0.0,
-    "volume": 169899,
+    "volume": 172291,
     "oi": 9024,
-    "premium_m": 37.97,
-    "mid": 2.24
+    "premium_m": 39.63,
+    "mid": 2.3
    },
    {
     "chain": "NDX",
@@ -2926,58 +2955,48 @@
     "days": 41.8,
     "volume": 596,
     "oi": 651,
-    "premium_m": 37.44,
-    "mid": 628.25
+    "premium_m": 37.26,
+    "mid": 625.15
    },
    {
     "chain": "QQQ",
     "strike": 640.0,
     "side": "put",
     "days": 42.0,
-    "volume": 14953,
+    "volume": 14958,
     "oi": 41504,
-    "premium_m": 26.0,
-    "mid": 17.38
+    "premium_m": 25.96,
+    "mid": 17.36
    },
    {
     "chain": "QQQ",
     "strike": 659.0,
     "side": "put",
     "days": 0.0,
-    "volume": 141015,
+    "volume": 149543,
     "oi": 654,
-    "premium_m": 23.13,
-    "mid": 1.64
+    "premium_m": 24.82,
+    "mid": 1.66
    },
    {
     "chain": "QQQ",
     "strike": 658.0,
     "side": "put",
     "days": 0.0,
-    "volume": 184561,
+    "volume": 203968,
     "oi": 1839,
-    "premium_m": 21.78,
-    "mid": 1.18
-   },
-   {
-    "chain": "QQQ",
-    "strike": 658.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 122297,
-    "oi": 3474,
-    "premium_m": 20.18,
-    "mid": 1.65
+    "premium_m": 23.86,
+    "mid": 1.17
    },
    {
     "chain": "QQQ",
     "strike": 661.0,
     "side": "put",
     "days": 0.0,
-    "volume": 67920,
+    "volume": 68563,
     "oi": 820,
-    "premium_m": 20.1,
-    "mid": 2.96
+    "premium_m": 20.98,
+    "mid": 3.06
    },
    {
     "chain": "NDX",
@@ -2986,18 +3005,18 @@
     "days": 41.8,
     "volume": 715,
     "oi": 677,
-    "premium_m": 19.85,
-    "mid": 277.65
+    "premium_m": 19.67,
+    "mid": 275.1
    },
    {
     "chain": "QQQ",
-    "strike": 660.0,
+    "strike": 658.0,
     "side": "call",
     "days": 0.0,
-    "volume": 268845,
-    "oi": 12912,
-    "premium_m": 18.95,
-    "mid": 0.7
+    "volume": 132270,
+    "oi": 3474,
+    "premium_m": 19.25,
+    "mid": 1.46
    },
    {
     "chain": "QQQ",
@@ -3006,28 +3025,28 @@
     "days": 42.0,
     "volume": 5298,
     "oi": 7757,
-    "premium_m": 18.72,
-    "mid": 35.33
+    "premium_m": 18.63,
+    "mid": 35.16
    },
    {
     "chain": "QQQ",
     "strike": 660.0,
     "side": "call",
     "days": 42.0,
-    "volume": 6739,
+    "volume": 6745,
     "oi": 20993,
-    "premium_m": 17.36,
-    "mid": 25.76
+    "premium_m": 17.27,
+    "mid": 25.61
    },
    {
     "chain": "QQQ",
     "strike": 660.0,
     "side": "put",
     "days": 3.0,
-    "volume": 23657,
+    "volume": 23799,
     "oi": 1326,
-    "premium_m": 16.22,
-    "mid": 6.86
+    "premium_m": 16.36,
+    "mid": 6.88
    },
    {
     "chain": "NDX",
@@ -3036,28 +3055,38 @@
     "days": 41.8,
     "volume": 78,
     "oi": 1105,
-    "premium_m": 16.18,
-    "mid": 2074.35
+    "premium_m": 16.11,
+    "mid": 2065.45
+   },
+   {
+    "chain": "QQQ",
+    "strike": 660.0,
+    "side": "call",
+    "days": 0.0,
+    "volume": 277754,
+    "oi": 12912,
+    "premium_m": 16.11,
+    "mid": 0.58
    },
    {
     "chain": "QQQ",
     "strike": 660.0,
     "side": "put",
     "days": 14.0,
-    "volume": 9372,
+    "volume": 9402,
     "oi": 23538,
-    "premium_m": 15.56,
-    "mid": 16.61
+    "premium_m": 15.55,
+    "mid": 16.54
    },
    {
     "chain": "QQQ",
-    "strike": 656.0,
-    "side": "call",
+    "strike": 662.0,
+    "side": "put",
     "days": 0.0,
-    "volume": 50358,
-    "oi": 2349,
-    "premium_m": 15.36,
-    "mid": 3.05
+    "volume": 38516,
+    "oi": 1041,
+    "premium_m": 15.02,
+    "mid": 3.9
    },
    {
     "chain": "NDX",
@@ -3066,8 +3095,8 @@
     "days": 41.8,
     "volume": 64,
     "oi": 932,
-    "premium_m": 9.07,
-    "mid": 1417.15
+    "premium_m": 9.01,
+    "mid": 1407.95
    },
    {
     "chain": "NDX",
@@ -3076,8 +3105,8 @@
     "days": 13.8,
     "volume": 253,
     "oi": 49,
-    "premium_m": 6.09,
-    "mid": 240.6
+    "premium_m": 6.01,
+    "mid": 237.55
    },
    {
     "chain": "NDX",
@@ -3086,8 +3115,8 @@
     "days": 13.8,
     "volume": 28,
     "oi": 185,
-    "premium_m": 5.71,
-    "mid": 2038.6
+    "premium_m": 5.69,
+    "mid": 2033.5
    },
    {
     "chain": "NDX",
@@ -3096,8 +3125,8 @@
     "days": 41.8,
     "volume": 46,
     "oi": 311,
-    "premium_m": 5.13,
-    "mid": 1115.85
+    "premium_m": 5.11,
+    "mid": 1111.9
    }
   ],
   "ES": [
@@ -3106,20 +3135,20 @@
     "strike": 8000.0,
     "side": "put",
     "days": 41.8,
-    "volume": 31059,
+    "volume": 31061,
     "oi": 335419,
-    "premium_m": 1804.99,
-    "mid": 581.15
+    "premium_m": 1808.06,
+    "mid": 582.1
    },
    {
     "chain": "SPX",
     "strike": 7000.0,
     "side": "call",
     "days": 41.8,
-    "volume": 31845,
+    "volume": 31847,
     "oi": 416658,
-    "premium_m": 1609.76,
-    "mid": 505.5
+    "premium_m": 1601.9,
+    "mid": 503.0
    },
    {
     "chain": "SPX",
@@ -3128,8 +3157,8 @@
     "days": 41.8,
     "volume": 750,
     "oi": 6397,
-    "premium_m": 479.37,
-    "mid": 6391.6
+    "premium_m": 479.12,
+    "mid": 6388.25
    },
    {
     "chain": "SPX",
@@ -3138,8 +3167,8 @@
     "days": 13.8,
     "volume": 7000,
     "oi": 87194,
-    "premium_m": 413.98,
-    "mid": 591.4
+    "premium_m": 415.27,
+    "mid": 593.25
    },
    {
     "chain": "SPX",
@@ -3148,18 +3177,18 @@
     "days": 13.8,
     "volume": 7203,
     "oi": 94577,
-    "premium_m": 316.43,
-    "mid": 439.3
+    "premium_m": 314.66,
+    "mid": 436.85
    },
    {
     "chain": "SPX",
     "strike": 7000.0,
     "side": "put",
     "days": 41.8,
-    "volume": 34816,
+    "volume": 35193,
     "oi": 435229,
-    "premium_m": 293.5,
-    "mid": 84.3
+    "premium_m": 294.74,
+    "mid": 83.75
    },
    {
     "chain": "SPX",
@@ -3168,38 +3197,38 @@
     "days": 41.8,
     "volume": 750,
     "oi": 818,
-    "premium_m": 266.82,
-    "mid": 3557.6
+    "premium_m": 267.04,
+    "mid": 3560.5
    },
    {
     "chain": "SPX",
     "strike": 7400.0,
     "side": "put",
     "days": 41.8,
-    "volume": 10580,
+    "volume": 11148,
     "oi": 41470,
-    "premium_m": 186.95,
-    "mid": 176.7
+    "premium_m": 196.26,
+    "mid": 176.05
    },
    {
     "chain": "SPX",
     "strike": 7400.0,
     "side": "call",
     "days": 41.8,
-    "volume": 8683,
+    "volume": 9183,
     "oi": 25386,
-    "premium_m": 173.49,
-    "mid": 199.8
+    "premium_m": 181.13,
+    "mid": 197.25
    },
    {
     "chain": "SPX",
     "strike": 7650.0,
     "side": "put",
     "days": 55.0,
-    "volume": 4432,
+    "volume": 4501,
     "oi": 12425,
-    "premium_m": 136.15,
-    "mid": 307.2
+    "premium_m": 137.87,
+    "mid": 306.3
    },
    {
     "chain": "SPX",
@@ -3208,98 +3237,98 @@
     "days": 41.8,
     "volume": 5972,
     "oi": 20745,
-    "premium_m": 116.51,
-    "mid": 195.1
+    "premium_m": 116.24,
+    "mid": 194.65
    },
    {
     "chain": "SPX",
     "strike": 6000.0,
     "side": "call",
     "days": 41.8,
-    "volume": 722,
+    "volume": 723,
     "oi": 131832,
-    "premium_m": 103.72,
-    "mid": 1436.6
+    "premium_m": 103.69,
+    "mid": 1434.2
    },
    {
     "chain": "SPY",
     "strike": 740.0,
     "side": "put",
     "days": 0.0,
-    "volume": 195426,
+    "volume": 198192,
     "oi": 17122,
-    "premium_m": 50.32,
-    "mid": 2.58
+    "premium_m": 54.21,
+    "mid": 2.74
    },
    {
     "chain": "SPY",
     "strike": 739.0,
     "side": "put",
     "days": 0.0,
-    "volume": 234731,
+    "volume": 238046,
     "oi": 3160,
-    "premium_m": 43.31,
-    "mid": 1.85
+    "premium_m": 46.42,
+    "mid": 1.95
    },
    {
     "chain": "SPY",
     "strike": 738.0,
     "side": "put",
     "days": 0.0,
-    "volume": 321135,
+    "volume": 339385,
     "oi": 5633,
-    "premium_m": 40.3,
-    "mid": 1.25
+    "premium_m": 44.29,
+    "mid": 1.31
    },
    {
     "chain": "SPY",
     "strike": 741.0,
     "side": "put",
     "days": 0.0,
-    "volume": 81059,
+    "volume": 81539,
     "oi": 4743,
-    "premium_m": 27.8,
-    "mid": 3.43
+    "premium_m": 29.72,
+    "mid": 3.65
    },
    {
     "chain": "SPY",
     "strike": 737.0,
     "side": "put",
     "days": 0.0,
-    "volume": 273329,
+    "volume": 298110,
     "oi": 4236,
-    "premium_m": 22.55,
-    "mid": 0.82
+    "premium_m": 24.89,
+    "mid": 0.83
    },
    {
     "chain": "SPY",
     "strike": 740.0,
     "side": "put",
     "days": 14.0,
-    "volume": 15996,
+    "volume": 16041,
     "oi": 113612,
-    "premium_m": 19.8,
-    "mid": 12.38
-   },
-   {
-    "chain": "SPY",
-    "strike": 738.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 196125,
-    "oi": 3505,
-    "premium_m": 19.12,
-    "mid": 0.97
+    "premium_m": 19.82,
+    "mid": 12.36
    },
    {
     "chain": "SPY",
     "strike": 737.0,
     "side": "call",
     "days": 0.0,
-    "volume": 122688,
+    "volume": 128189,
     "oi": 5117,
-    "premium_m": 18.96,
-    "mid": 1.54
+    "premium_m": 16.73,
+    "mid": 1.31
+   },
+   {
+    "chain": "SPY",
+    "strike": 738.0,
+    "side": "call",
+    "days": 0.0,
+    "volume": 214977,
+    "oi": 3505,
+    "premium_m": 16.55,
+    "mid": 0.77
    }
   ],
   "YM": [
@@ -3311,17 +3340,17 @@
     "volume": 287,
     "oi": 95,
     "premium_m": 0.92,
-    "mid": 32.02
+    "mid": 32.05
    },
    {
     "chain": "DIA",
     "strike": 515.0,
     "side": "call",
     "days": 7.0,
-    "volume": 1139,
+    "volume": 1142,
     "oi": 157,
-    "premium_m": 0.6,
-    "mid": 5.3
+    "premium_m": 0.58,
+    "mid": 5.1
    },
    {
     "chain": "DIA",
@@ -3330,18 +3359,8 @@
     "days": 0.0,
     "volume": 1824,
     "oi": 29,
-    "premium_m": 0.54,
-    "mid": 2.94
-   },
-   {
-    "chain": "DIA",
-    "strike": 506.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 618,
-    "oi": 118,
-    "premium_m": 0.49,
-    "mid": 7.85
+    "premium_m": 0.47,
+    "mid": 2.6
    },
    {
     "chain": "DIA",
@@ -3350,8 +3369,18 @@
     "days": 7.0,
     "volume": 747,
     "oi": 55,
-    "premium_m": 0.48,
-    "mid": 6.45
+    "premium_m": 0.47,
+    "mid": 6.25
+   },
+   {
+    "chain": "DIA",
+    "strike": 506.0,
+    "side": "call",
+    "days": 0.0,
+    "volume": 618,
+    "oi": 118,
+    "premium_m": 0.46,
+    "mid": 7.5
    },
    {
     "chain": "DIA",
@@ -3360,8 +3389,8 @@
     "days": 14.0,
     "volume": 530,
     "oi": 492,
-    "premium_m": 0.38,
-    "mid": 7.22
+    "premium_m": 0.37,
+    "mid": 7.0
    },
    {
     "chain": "DIA",
@@ -3370,8 +3399,8 @@
     "days": 0.0,
     "volume": 192,
     "oi": 1,
-    "premium_m": 0.29,
-    "mid": 14.85
+    "premium_m": 0.28,
+    "mid": 14.48
    },
    {
     "chain": "DIA",
@@ -3380,8 +3409,8 @@
     "days": 14.0,
     "volume": 986,
     "oi": 1156,
-    "premium_m": 0.28,
-    "mid": 2.83
+    "premium_m": 0.27,
+    "mid": 2.78
    },
    {
     "chain": "DIA",
@@ -3390,18 +3419,8 @@
     "days": 0.0,
     "volume": 192,
     "oi": 22,
-    "premium_m": 0.27,
-    "mid": 13.88
-   },
-   {
-    "chain": "DIA",
-    "strike": 512.0,
-    "side": "call",
-    "days": 14.0,
-    "volume": 284,
-    "oi": 55,
     "premium_m": 0.26,
-    "mid": 9.05
+    "mid": 13.48
    },
    {
     "chain": "DIA",
@@ -3415,13 +3434,23 @@
    },
    {
     "chain": "DIA",
+    "strike": 512.0,
+    "side": "call",
+    "days": 14.0,
+    "volume": 284,
+    "oi": 55,
+    "premium_m": 0.25,
+    "mid": 8.78
+   },
+   {
+    "chain": "DIA",
     "strike": 511.0,
     "side": "call",
     "days": 14.0,
     "volume": 262,
     "oi": 261,
     "premium_m": 0.25,
-    "mid": 9.68
+    "mid": 9.43
    },
    {
     "chain": "DJX",
@@ -3431,7 +3460,7 @@
     "volume": 122,
     "oi": 445,
     "premium_m": 0.12,
-    "mid": 9.88
+    "mid": 9.93
    },
    {
     "chain": "DJX",
@@ -3441,7 +3470,7 @@
     "volume": 10,
     "oi": 5,
     "premium_m": 0.03,
-    "mid": 26.68
+    "mid": 26.3
    },
    {
     "chain": "DJX",
@@ -3458,10 +3487,10 @@
     "strike": 505.0,
     "side": "put",
     "days": 14.0,
-    "volume": 37,
+    "volume": 39,
     "oi": 405,
     "premium_m": 0.02,
-    "mid": 4.15
+    "mid": 4.35
    },
    {
     "chain": "DJX",
@@ -3471,7 +3500,7 @@
     "volume": 16,
     "oi": 124,
     "premium_m": 0.01,
-    "mid": 7.05
+    "mid": 7.1
    },
    {
     "chain": "DJX",
@@ -3481,7 +3510,7 @@
     "volume": 45,
     "oi": 3259,
     "premium_m": 0.01,
-    "mid": 2.27
+    "mid": 2.14
    },
    {
     "chain": "DJX",
@@ -3491,7 +3520,7 @@
     "volume": 5,
     "oi": 143,
     "premium_m": 0.01,
-    "mid": 13.93
+    "mid": 14.03
    },
    {
     "chain": "DJX",
@@ -3501,7 +3530,7 @@
     "volume": 4,
     "oi": 17,
     "premium_m": 0.01,
-    "mid": 16.73
+    "mid": 17.0
    }
   ],
   "RTY": [
@@ -3512,8 +3541,8 @@
     "days": 42.0,
     "volume": 35812,
     "oi": 85065,
-    "premium_m": 30.44,
-    "mid": 8.5
+    "premium_m": 30.33,
+    "mid": 8.47
    },
    {
     "chain": "IWM",
@@ -3522,38 +3551,38 @@
     "days": 14.0,
     "volume": 30461,
     "oi": 39967,
-    "premium_m": 19.24,
-    "mid": 6.31
+    "premium_m": 19.13,
+    "mid": 6.28
    },
    {
     "chain": "RUT",
     "strike": 2650.0,
     "side": "put",
     "days": 21.0,
-    "volume": 4311,
+    "volume": 4313,
     "oi": 422,
-    "premium_m": 11.06,
-    "mid": 25.65
+    "premium_m": 10.96,
+    "mid": 25.4
    },
    {
     "chain": "RUT",
     "strike": 2660.0,
     "side": "put",
     "days": 21.0,
-    "volume": 3965,
+    "volume": 3967,
     "oi": 66,
-    "premium_m": 10.9,
-    "mid": 27.5
+    "premium_m": 10.81,
+    "mid": 27.25
    },
    {
     "chain": "RUT",
     "strike": 2820.0,
     "side": "call",
     "days": 21.0,
-    "volume": 3892,
+    "volume": 3894,
     "oi": 12,
-    "premium_m": 10.82,
-    "mid": 27.8
+    "premium_m": 10.59,
+    "mid": 27.2
    },
    {
     "chain": "IWM",
@@ -3562,18 +3591,18 @@
     "days": 21.0,
     "volume": 30437,
     "oi": 1972,
-    "premium_m": 10.03,
-    "mid": 3.29
+    "premium_m": 9.94,
+    "mid": 3.27
    },
    {
     "chain": "RUT",
     "strike": 2830.0,
     "side": "call",
     "days": 21.0,
-    "volume": 4046,
+    "volume": 4048,
     "oi": 10,
-    "premium_m": 9.77,
-    "mid": 24.15
+    "premium_m": 9.53,
+    "mid": 23.55
    },
    {
     "chain": "IWM",
@@ -3582,48 +3611,38 @@
     "days": 14.0,
     "volume": 30899,
     "oi": 45591,
-    "premium_m": 8.33,
-    "mid": 2.7
+    "premium_m": 8.2,
+    "mid": 2.66
    },
    {
     "chain": "IWM",
     "strike": 270.0,
     "side": "put",
     "days": 14.0,
-    "volume": 17210,
+    "volume": 17227,
     "oi": 167514,
-    "premium_m": 5.97,
-    "mid": 3.47
+    "premium_m": 5.9,
+    "mid": 3.42
    },
    {
     "chain": "IWM",
     "strike": 275.0,
     "side": "call",
     "days": 42.0,
-    "volume": 7019,
+    "volume": 7035,
     "oi": 29898,
-    "premium_m": 5.48,
-    "mid": 7.81
-   },
-   {
-    "chain": "IWM",
-    "strike": 273.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 49273,
-    "oi": 1815,
-    "premium_m": 5.1,
-    "mid": 1.04
+    "premium_m": 5.45,
+    "mid": 7.74
    },
    {
     "chain": "IWM",
     "strike": 280.0,
     "side": "put",
     "days": 42.0,
-    "volume": 4456,
+    "volume": 4467,
     "oi": 48584,
     "premium_m": 4.9,
-    "mid": 11.0
+    "mid": 10.98
    },
    {
     "chain": "RUT",
@@ -3632,18 +3651,18 @@
     "days": 42.0,
     "volume": 642,
     "oi": 8209,
-    "premium_m": 4.83,
-    "mid": 75.2
+    "premium_m": 4.82,
+    "mid": 75.05
    },
    {
     "chain": "IWM",
-    "strike": 272.5,
+    "strike": 273.0,
     "side": "call",
     "days": 0.0,
-    "volume": 27771,
-    "oi": 1269,
-    "premium_m": 4.08,
-    "mid": 1.47
+    "volume": 49652,
+    "oi": 1815,
+    "premium_m": 4.77,
+    "mid": 0.96
    },
    {
     "chain": "RUT",
@@ -3652,18 +3671,18 @@
     "days": 42.0,
     "volume": 452,
     "oi": 3139,
-    "premium_m": 3.98,
-    "mid": 88.05
+    "premium_m": 3.95,
+    "mid": 87.3
    },
    {
     "chain": "IWM",
-    "strike": 259.0,
-    "side": "put",
-    "days": 14.0,
-    "volume": 26625,
-    "oi": 54508,
-    "premium_m": 3.85,
-    "mid": 1.44
+    "strike": 272.5,
+    "side": "call",
+    "days": 0.0,
+    "volume": 27805,
+    "oi": 1269,
+    "premium_m": 3.86,
+    "mid": 1.39
    },
    {
     "chain": "RUT",
@@ -3672,38 +3691,48 @@
     "days": 14.0,
     "volume": 840,
     "oi": 1302,
-    "premium_m": 3.8,
-    "mid": 45.2
+    "premium_m": 3.78,
+    "mid": 45.05
    },
    {
     "chain": "IWM",
-    "strike": 274.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 97111,
-    "oi": 2841,
-    "premium_m": 3.54,
-    "mid": 0.36
+    "strike": 259.0,
+    "side": "put",
+    "days": 14.0,
+    "volume": 26625,
+    "oi": 54508,
+    "premium_m": 3.78,
+    "mid": 1.42
    },
    {
     "chain": "IWM",
     "strike": 272.0,
     "side": "call",
     "days": 0.0,
-    "volume": 16935,
+    "volume": 16963,
     "oi": 1672,
-    "premium_m": 3.28,
-    "mid": 1.94
+    "premium_m": 3.18,
+    "mid": 1.88
+   },
+   {
+    "chain": "IWM",
+    "strike": 250.0,
+    "side": "put",
+    "days": 14.0,
+    "volume": 38489,
+    "oi": 70145,
+    "premium_m": 3.08,
+    "mid": 0.8
    },
    {
     "chain": "RUT",
     "strike": 2750.0,
     "side": "call",
     "days": 7.0,
-    "volume": 770,
+    "volume": 773,
     "oi": 756,
-    "premium_m": 3.06,
-    "mid": 39.75
+    "premium_m": 3.01,
+    "mid": 38.9
    }
   ],
   "GC": [
@@ -3714,38 +3743,38 @@
     "days": 14.0,
     "volume": 5590,
     "oi": 12338,
-    "premium_m": 3.16,
-    "mid": 5.65
-   },
-   {
-    "chain": "GLD",
-    "strike": 385.0,
-    "side": "call",
-    "days": 42.0,
-    "volume": 2171,
-    "oi": 8556,
-    "premium_m": 1.56,
-    "mid": 7.17
+    "premium_m": 3.17,
+    "mid": 5.68
    },
    {
     "chain": "GLD",
     "strike": 380.0,
     "side": "call",
     "days": 42.0,
-    "volume": 1715,
+    "volume": 1726,
     "oi": 25265,
     "premium_m": 1.56,
-    "mid": 9.07
+    "mid": 9.02
+   },
+   {
+    "chain": "GLD",
+    "strike": 385.0,
+    "side": "call",
+    "days": 42.0,
+    "volume": 2173,
+    "oi": 8556,
+    "premium_m": 1.55,
+    "mid": 7.15
    },
    {
     "chain": "GLD",
     "strike": 360.0,
     "side": "put",
     "days": 42.0,
-    "volume": 2379,
+    "volume": 2380,
     "oi": 5061,
-    "premium_m": 1.49,
-    "mid": 6.25
+    "premium_m": 1.5,
+    "mid": 6.3
    },
    {
     "chain": "GLD",
@@ -3754,17 +3783,17 @@
     "days": 42.0,
     "volume": 2560,
     "oi": 21248,
-    "premium_m": 1.44,
-    "mid": 5.62
+    "premium_m": 1.43,
+    "mid": 5.6
    },
    {
     "chain": "GLD",
     "strike": 350.0,
     "side": "put",
     "days": 14.0,
-    "volume": 10393,
+    "volume": 10394,
     "oi": 11545,
-    "premium_m": 1.34,
+    "premium_m": 1.35,
     "mid": 1.29
    },
    {
@@ -3772,10 +3801,10 @@
     "strike": 400.0,
     "side": "call",
     "days": 42.0,
-    "volume": 3501,
+    "volume": 3503,
     "oi": 127518,
-    "premium_m": 1.18,
-    "mid": 3.38
+    "premium_m": 1.17,
+    "mid": 3.35
    },
    {
     "chain": "GLD",
@@ -3784,8 +3813,8 @@
     "days": 35.0,
     "volume": 649,
     "oi": 5,
-    "premium_m": 0.77,
-    "mid": 11.8
+    "premium_m": 0.76,
+    "mid": 11.78
    },
    {
     "chain": "GLD",
@@ -3795,17 +3824,17 @@
     "volume": 658,
     "oi": 21,
     "premium_m": 0.74,
-    "mid": 11.28
+    "mid": 11.2
    },
    {
     "chain": "GLD",
     "strike": 371.0,
     "side": "call",
     "days": 0.0,
-    "volume": 4925,
+    "volume": 4928,
     "oi": 697,
-    "premium_m": 0.73,
-    "mid": 1.48
+    "premium_m": 0.66,
+    "mid": 1.34
    },
    {
     "chain": "GLD",
@@ -3819,13 +3848,13 @@
    },
    {
     "chain": "GLD",
-    "strike": 375.0,
-    "side": "call",
-    "days": 35.0,
-    "volume": 541,
-    "oi": 43,
-    "premium_m": 0.55,
-    "mid": 10.25
+    "strike": 385.0,
+    "side": "put",
+    "days": 0.0,
+    "volume": 449,
+    "oi": 52,
+    "premium_m": 0.57,
+    "mid": 12.6
    }
   ],
   "SI": [
@@ -3837,17 +3866,27 @@
     "volume": 2243,
     "oi": 16954,
     "premium_m": 0.37,
-    "mid": 1.66
+    "mid": 1.67
    },
    {
     "chain": "SLV",
     "strike": 50.0,
     "side": "call",
     "days": 42.0,
-    "volume": 2515,
+    "volume": 2516,
     "oi": 14753,
     "premium_m": 0.36,
     "mid": 1.42
+   },
+   {
+    "chain": "SLV",
+    "strike": 15.0,
+    "side": "call",
+    "days": 0.0,
+    "volume": 84,
+    "oi": 17,
+    "premium_m": 0.27,
+    "mid": 31.8
    },
    {
     "chain": "SLV",
@@ -3856,18 +3895,28 @@
     "days": 14.0,
     "volume": 162,
     "oi": 52,
-    "premium_m": 0.23,
-    "mid": 13.93
+    "premium_m": 0.22,
+    "mid": 13.88
    },
    {
     "chain": "SLV",
     "strike": 60.0,
     "side": "call",
     "days": 42.0,
-    "volume": 8751,
+    "volume": 8758,
     "oi": 48081,
     "premium_m": 0.21,
     "mid": 0.24
+   },
+   {
+    "chain": "SLV",
+    "strike": 20.0,
+    "side": "call",
+    "days": 0.0,
+    "volume": 75,
+    "oi": 18,
+    "premium_m": 0.2,
+    "mid": 26.8
    },
    {
     "chain": "SLV",
@@ -3877,17 +3926,7 @@
     "volume": 154,
     "oi": 36,
     "premium_m": 0.2,
-    "mid": 12.93
-   },
-   {
-    "chain": "SLV",
-    "strike": 15.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 61,
-    "oi": 17,
-    "premium_m": 0.19,
-    "mid": 31.82
+    "mid": 12.9
    },
    {
     "chain": "SLV",
@@ -3907,7 +3946,7 @@
     "volume": 682,
     "oi": 378,
     "premium_m": 0.16,
-    "mid": 2.32
+    "mid": 2.3
    },
    {
     "chain": "SLV",
@@ -3917,17 +3956,7 @@
     "volume": 176,
     "oi": 25,
     "premium_m": 0.16,
-    "mid": 8.88
-   },
-   {
-    "chain": "SLV",
-    "strike": 42.0,
-    "side": "call",
-    "days": 21.0,
-    "volume": 282,
-    "oi": 130,
-    "premium_m": 0.15,
-    "mid": 5.33
+    "mid": 8.82
    },
    {
     "chain": "SLV",
@@ -3937,17 +3966,17 @@
     "volume": 152,
     "oi": 26,
     "premium_m": 0.15,
-    "mid": 9.88
+    "mid": 9.82
    },
    {
     "chain": "SLV",
-    "strike": 39.0,
+    "strike": 42.0,
     "side": "call",
-    "days": 3.0,
-    "volume": 189,
-    "oi": 30,
+    "days": 21.0,
+    "volume": 282,
+    "oi": 130,
     "premium_m": 0.15,
-    "mid": 7.83
+    "mid": 5.28
    }
   ],
   "CL": [
@@ -3956,10 +3985,10 @@
     "strike": 120.0,
     "side": "call",
     "days": 0.0,
-    "volume": 1048,
+    "volume": 1049,
     "oi": 149,
-    "premium_m": 2.97,
-    "mid": 28.35
+    "premium_m": 3.02,
+    "mid": 28.8
    },
    {
     "chain": "USO",
@@ -3973,53 +4002,53 @@
    },
    {
     "chain": "USO",
-    "strike": 121.0,
-    "side": "call",
-    "days": 0.0,
-    "volume": 611,
-    "oi": 94,
-    "premium_m": 1.67,
-    "mid": 27.27
-   },
-   {
-    "chain": "USO",
     "strike": 122.0,
     "side": "call",
     "days": 0.0,
-    "volume": 601,
+    "volume": 642,
     "oi": 89,
-    "premium_m": 1.58,
-    "mid": 26.27
+    "premium_m": 1.72,
+    "mid": 26.82
+   },
+   {
+    "chain": "USO",
+    "strike": 121.0,
+    "side": "call",
+    "days": 0.0,
+    "volume": 612,
+    "oi": 94,
+    "premium_m": 1.7,
+    "mid": 27.77
    },
    {
     "chain": "USO",
     "strike": 200.0,
     "side": "call",
     "days": 14.0,
-    "volume": 23969,
+    "volume": 24304,
     "oi": 5014,
-    "premium_m": 1.05,
-    "mid": 0.44
-   },
-   {
-    "chain": "USO",
-    "strike": 149.0,
-    "side": "call",
-    "days": 14.0,
-    "volume": 1408,
-    "oi": 280,
-    "premium_m": 0.91,
-    "mid": 6.47
+    "premium_m": 1.08,
+    "mid": 0.45
    },
    {
     "chain": "USO",
     "strike": 135.0,
     "side": "call",
     "days": 14.0,
-    "volume": 576,
+    "volume": 598,
     "oi": 285,
-    "premium_m": 0.91,
-    "mid": 15.73
+    "premium_m": 0.94,
+    "mid": 15.8
+   },
+   {
+    "chain": "USO",
+    "strike": 149.0,
+    "side": "call",
+    "days": 14.0,
+    "volume": 1418,
+    "oi": 280,
+    "premium_m": 0.93,
+    "mid": 6.53
    },
    {
     "chain": "USO",
@@ -4046,10 +4075,10 @@
     "strike": 151.0,
     "side": "call",
     "days": 7.0,
-    "volume": 2066,
+    "volume": 2071,
     "oi": 313,
-    "premium_m": 0.75,
-    "mid": 3.62
+    "premium_m": 0.77,
+    "mid": 3.7
    },
    {
     "chain": "USO",
@@ -4458,8 +4487,8 @@
  "strikes": {
   "NQ": {
    "chain": "NDX",
-   "days": 0.05,
-   "spot": 27110.03,
+   "days": 0.04,
+   "spot": 27134.48,
    "rows": [
     {
      "strike": 26500.0,
@@ -4608,8 +4637,8 @@
     {
      "strike": 27770.0,
      "fut": 27850.0,
-     "call_oi": 3,
-     "put_oi": 9
+     "call_oi": 43,
+     "put_oi": 34
     }
    ],
    "max_pain": 28075.0,
@@ -4617,8 +4646,8 @@
   },
   "ES": {
    "chain": "SPX",
-   "days": 0.05,
-   "spot": 7400.1,
+   "days": 0.04,
+   "spot": 7402.59,
    "rows": [
     {
      "strike": 7220.0,
@@ -4854,8 +4883,8 @@
   },
   "YM": {
    "chain": "DJX",
-   "days": 0.05,
-   "spot": 514.69,
+   "days": 0.04,
+   "spot": 514.67,
    "rows": [
     {
      "strike": 505.0,
@@ -4923,15 +4952,9 @@
   },
   "RTY": {
    "chain": "RUT",
-   "days": 0.05,
-   "spot": 2758.96,
+   "days": 0.04,
+   "spot": 2761.36,
    "rows": [
-    {
-     "strike": 2690.0,
-     "fut": 2690.0,
-     "call_oi": 5,
-     "put_oi": 347
-    },
     {
      "strike": 2695.0,
      "fut": 2700.0,
@@ -5013,8 +5036,8 @@
     {
      "strike": 2825.0,
      "fut": 2830.0,
-     "call_oi": 156,
-     "put_oi": 128
+     "call_oi": 504,
+     "put_oi": 231
     }
    ],
    "max_pain": 2800.0,
@@ -5022,8 +5045,8 @@
   },
   "GC": {
    "chain": "GLD",
-   "days": 0.05,
-   "spot": 372.5,
+   "days": 0.04,
+   "spot": 372.46,
    "rows": [
     {
      "strike": 364.0,
@@ -5091,8 +5114,8 @@
   },
   "SI": {
    "chain": "SLV",
-   "days": 0.05,
-   "spot": 46.86,
+   "days": 0.04,
+   "spot": 46.9,
    "rows": [
     {
      "strike": 46.0,
@@ -5130,8 +5153,8 @@
   },
   "CL": {
    "chain": "USO",
-   "days": 0.05,
-   "spot": 148.68,
+   "days": 0.04,
+   "spot": 148.7,
    "rows": [
     {
      "strike": 145.0,
@@ -5169,8 +5192,8 @@
   },
   "NG": {
    "chain": "UNG",
-   "days": 0.05,
-   "spot": 9.41,
+   "days": 0.04,
+   "spot": 9.42,
    "rows": [
     {
      "strike": 9.5,
@@ -5184,8 +5207,8 @@
   },
   "6E": {
    "chain": "FXE",
-   "days": 14.05,
-   "spot": 102.8,
+   "days": 14.04,
+   "spot": 102.77,
    "rows": [
     {
      "strike": 101.0,
@@ -5223,8 +5246,8 @@
   },
   "6B": {
    "chain": "FXB",
-   "days": 14.05,
-   "spot": 127.88,
+   "days": 14.04,
+   "spot": 127.86,
    "rows": [
     {
      "strike": 127.0,
@@ -5250,8 +5273,8 @@
   },
   "6J": {
    "chain": "FXY",
-   "days": 14.05,
-   "spot": 57.8,
+   "days": 14.04,
+   "spot": 57.79,
    "rows": [
     {
      "strike": 57.0,
@@ -5277,7 +5300,7 @@
   },
   "6A": {
    "chain": "FXA",
-   "days": 14.05,
+   "days": 14.04,
    "spot": 67.94,
    "rows": [
     {
@@ -5298,7 +5321,7 @@
   },
   "6C": {
    "chain": "FXC",
-   "days": 14.05,
+   "days": 14.04,
    "spot": 69.38,
    "rows": [
     {
@@ -5332,7 +5355,7 @@
   },
   {
    "name": "Bitcoin",
-   "c20": 0.73,
+   "c20": 0.74,
    "c60": 0.54
   },
   {
@@ -5347,12 +5370,12 @@
   },
   {
    "name": "US dollar",
-   "c20": 0.21,
-   "c60": 0.03
+   "c20": 0.22,
+   "c60": 0.04
   },
   {
    "name": "USD/JPY",
-   "c20": 0.17,
+   "c20": 0.18,
    "c60": 0.18
   }
  ]
