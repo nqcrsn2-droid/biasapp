@@ -1,0 +1,4238 @@
+{
+ "date": "2026-11-06",
+ "as_of": "2026-11-06T06:32:32-05:00",
+ "window": {
+  "name": "London",
+  "start": "2026-11-06T03:00:00-05:00",
+  "end": "2026-11-06T11:30:00-05:00"
+ },
+ "markets": {
+  "NQ": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.09,
+    "raw_score": -0.151,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.128,
+    "conviction": "Low",
+    "ups": 14,
+    "downs": 14,
+    "total": 34,
+    "overall": "For: 10-year yield, Global equities, VIX term structure. Against: Pre-market volatility, Megacaps (earnings & pre-market). Dealers short gamma: moves can run. ES agrees. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A reclaim and hold of the gamma flip at 28,395",
+    "macro_share": 88,
+    "conv_cuts": [
+     0.066,
+     0.164,
+     0.254
+    ],
+    "conv_basis": 241,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -0.7349,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. This input has leaned bearish most days lately, so only the change from its usual level counts (-0.73).",
+     "group": "Macro",
+     "level": -1,
+     "norm": -0.2651
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": -1,
+     "raw": -0.0421,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0421
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": -1,
+     "raw": -0.0416,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0416
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1.0931,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.0931
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 1,
+     "raw": 0.0015,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.0015
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 1,
+     "raw": 0.0186,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.0186
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 1,
+     "raw": 0.1088,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.1088
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0.0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 1,
+     "raw": 0.0163,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility",
+     "level": 0,
+     "norm": -0.0163
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1.2909,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.29).",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.2909
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 1,
+     "raw": 0.7,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.70).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.7
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -0.9622,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro",
+     "level": -1,
+     "norm": -0.0378
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 1,
+     "raw": 0.15,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.15
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 1,
+     "raw": 0.05,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.05
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 0.2,
+     "weight": 0.4,
+     "text": "Implied vol 38.3 vs realized 30.9 over the past month: premium +7.3 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought. This input has leaned bullish most days lately, so only the change from its usual level counts (+0.20).",
+     "group": "Volatility",
+     "level": 1,
+     "norm": 0.8
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": -1,
+     "raw": -0.4375,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.44).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4375
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1.1368,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.1368
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1.2828,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.28).",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.2828
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": -1,
+     "raw": -0.1,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility",
+     "level": 0,
+     "norm": 0.1
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1.19,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.19
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": -1,
+     "raw": -0.4562,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.46).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4562
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": -1,
+     "raw": -0.3,
+     "weight": 1.0,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.30).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.3
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 1,
+     "raw": 0.25,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.25).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.25
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 1,
+     "raw": 0.15,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.15
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0.0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0
+    },
+    {
+     "key": "megacap",
+     "label": "Megacaps (earnings & pre-market)",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.25,
+     "text": "The biggest NQ stocks alone are worth +0.64% on the index: NVDA +4.5%, AVGO +4.8%, AMD +7.6%. Heavyweights are rallying, a direct lift to the index.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -0.9346,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro",
+     "level": -1,
+     "norm": -0.0654
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 28,395, price 1,268 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.59. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 26,800 / call wall 28,050: 923 pts up vs 327 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $1.60B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.39 pts pre-market, worth about $0.42B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 8.06. Heavy put buying: crowded hedging tends to unwind, a contrarian lean up. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "ES": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.102,
+    "raw_score": -0.17,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.193,
+    "conviction": "Low",
+    "ups": 13,
+    "downs": 14,
+    "total": 34,
+    "overall": "For: Global equities, VIX term structure, 10-year yield. Against: Pre-market volatility, Credit (HYG). Dealers short gamma: moves can run. NQ agrees. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A reclaim and hold of the gamma flip at 7,642",
+    "macro_share": 88,
+    "conv_cuts": [
+     0.064,
+     0.166,
+     0.251
+    ],
+    "conv_basis": 241,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -0.7349,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. This input has leaned bearish most days lately, so only the change from its usual level counts (-0.73).",
+     "group": "Macro",
+     "level": -1,
+     "norm": -0.2651
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": -1,
+     "raw": -0.0421,
+     "weight": 0.9375,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0421
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": -1,
+     "raw": -0.0416,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0416
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1.0931,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.0931
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 1,
+     "raw": 0.0015,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.0015
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 1,
+     "raw": 0.0186,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.0186
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 1,
+     "raw": 0.1088,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.1088
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0.0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 1,
+     "raw": 0.0163,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility",
+     "level": 0,
+     "norm": -0.0163
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1.2909,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.29).",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.2909
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 1,
+     "raw": 0.7,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.70).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.7
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -0.9622,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro",
+     "level": -1,
+     "norm": -0.0378
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 1,
+     "raw": 0.15,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.15
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 1,
+     "raw": 0.05,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.05
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 0.1,
+     "weight": 0.4,
+     "text": "Implied vol 27.8 vs realized 19.8 over the past month: premium +8.0 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought. This input has leaned bullish most days lately, so only the change from its usual level counts (+0.10).",
+     "group": "Volatility",
+     "level": 1,
+     "norm": 0.9
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": -1,
+     "raw": -0.4375,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.44).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4375
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1.1368,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility",
+     "level": -1,
+     "norm": 0.1368
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1.2828,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. This input has leaned bullish most days lately, so only the change from its usual level counts (-1.28).",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.2828
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": -1,
+     "raw": -0.1,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility",
+     "level": 0,
+     "norm": 0.1
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1.19,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro",
+     "level": -1,
+     "norm": 0.19
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": -1,
+     "raw": -0.4562,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.46).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.4562
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": -1,
+     "raw": -0.3,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady. This input has leaned bullish most days lately, so only the change from its usual level counts (-0.30).",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.3
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 1,
+     "raw": 0.25,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady. This input has leaned bearish most days lately, so only the change from its usual level counts (+0.25).",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.25
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 1,
+     "raw": 0.15,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro",
+     "level": 0,
+     "norm": -0.15
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0.0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro",
+     "level": 0,
+     "norm": 0.0
+    },
+    {
+     "key": "megacap",
+     "label": "Megacaps (earnings & pre-market)",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "The biggest ES stocks alone are worth +0.31% on the index: NVDA +4.5%, AVGO +4.8%, MSFT -1.1%. No big megacap move.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -0.9346,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro",
+     "level": -1,
+     "norm": -0.0654
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 7,642, price 239 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.60. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 7,020 / call wall 7,720: 317 pts up vs 383 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $19.15B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $6.07B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 8.17. Heavy put buying: crowded hedging tends to unwind, a contrarian lean up. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "YM": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.116,
+    "raw_score": -0.194,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.194,
+    "conviction": "Low",
+    "ups": 4,
+    "downs": 8,
+    "total": 33,
+    "overall": "For: Global equities, VIX term structure, US dollar. Against: Volatility risk premium, Charm into close. Dealers short gamma: moves can run. ES agrees. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A reclaim and hold of the gamma flip at 52,048",
+    "macro_share": 87,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol 27.8 vs realized 19.3 over the past month: premium +8.5 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.6,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 52,048, price 915 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.69. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 50,150 / call wall 52,550: 1,417 pts up vs 983 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.03B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $0.01B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 32.35. Heavy put buying: crowded hedging tends to unwind, a contrarian lean up. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "RTY": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.13,
+    "raw_score": -0.217,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.23,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 8,
+    "total": 31,
+    "overall": "For: Global equities, VIX term structure, US dollar. Against: Charm into close, VIX shock. Dealers short gamma: moves can run. ES agrees. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A reclaim and hold of the gamma flip at 2,840",
+    "macro_share": 89,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.5625,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 2,840, price 104 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.59. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 2,725 / call wall 2,775: 40 pts up vs 10 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.21B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 10.30. Heavy put buying: crowded hedging tends to unwind, a contrarian lean up. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "DAX": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.13,
+    "raw_score": -0.216,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.216,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 7,
+    "total": 26,
+    "overall": "For: VIX term structure, US dollar, Policy gap (2Y \u2212 Fed funds). Against: Volatility risk premium, VIX shock. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 7,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.625,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol 27.8 vs realized 14.9 over the past month: premium +12.9 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    }
+   ],
+   "outcome": null
+  },
+  "SX5E": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.13,
+    "raw_score": -0.216,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.216,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 7,
+    "total": 26,
+    "overall": "For: VIX term structure, US dollar, Policy gap (2Y \u2212 Fed funds). Against: Volatility risk premium, VIX shock. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 7,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.625,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol 27.8 vs realized 14.8 over the past month: premium +13.0 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    }
+   ],
+   "outcome": null
+  },
+  "FTSE": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.132,
+    "raw_score": -0.219,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.219,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 7,
+    "total": 26,
+    "overall": "For: VIX term structure, US dollar, Policy gap (2Y \u2212 Fed funds). Against: Volatility risk premium, VIX shock. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 7,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "vrp",
+     "label": "Volatility risk premium",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol 27.8 vs realized 11.7 over the past month: premium +16.1 pts. Protection is expensive relative to actual moves, a backdrop where dips get bought.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "vxroll",
+     "label": "VIX futures roll",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Front VIX future 24.54 vs VIX 28.18, 9 sessions to settlement: roll -0.40 a day. Backwardation: near-term fear is priced above spot, a stress backdrop.",
+     "group": "Volatility"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fomccycle",
+     "label": "FOMC cycle week",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Week 1 of the cycle from the Oct 28 Fed meeting. Odd weeks have historically been flat, so no vote.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight.",
+     "group": "Macro"
+    }
+   ],
+   "outcome": null
+  },
+  "GC": {
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.044,
+    "raw_score": 0.074,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": 0.074,
+    "conviction": "Low",
+    "ups": 7,
+    "downs": 3,
+    "total": 29,
+    "overall": "For: Global equities, VIX term structure, Wall range. Against: US dollar, Policy gap (2Y \u2212 Fed funds). Close to a coin flip. Let price confirm. Dealers long gamma: expect chop and fades. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A 15-minute close below the gamma flip at 4,003",
+    "macro_share": 82,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.125,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For gold: higher yields, a firmer dollar and a hawkish Fed raise the cost of holding a metal that pays no interest.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.938,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For gold: higher yields, a firmer dollar and a hawkish Fed raise the cost of holding a metal that pays no interest.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.15,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.15,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Volatility"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.5,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.375,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight. For gold this reads the other way: fear and risk-off flows send money into gold.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 4,003, price 75 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 1.46. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "Put wall 4,050 / call wall 4,150: 71 pts up vs 29 down. Near support, and long-gamma dealers tend to defend it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.10B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.26 pts pre-market, worth about $0.08B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 0.70. Heavy call buying: crowded upside chasing tends to fade, a contrarian lean down. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "SI": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.019,
+    "raw_score": -0.032,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.032,
+    "conviction": "Very low",
+    "ups": 5,
+    "downs": 5,
+    "total": 30,
+    "overall": "For: US dollar, Policy gap (2Y \u2212 Fed funds), Global equities. Against: VIX term structure, Charm into close. Close to a coin flip. Let price confirm. Dealers long gamma: expect chop and fades. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A hold above 51, or a push through the call wall at 54",
+    "macro_share": 79,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For silver: yields, the dollar and the Fed weigh on precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.0,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.6,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.9,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For silver: yields, the dollar and the Fed weigh on precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.12,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.45,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.45,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For silver: yields, the dollar and the Fed weigh on precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.24,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.12,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "move",
+     "label": "Bond volatility (MOVE)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "MOVE 98, +5% over 5 sessions (below its 1-month average of 100). Bond vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.2,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. For silver: yields, the dollar and the Fed weigh on precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.12,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Volatility"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.2,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.3,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight. For silver this reads the other way: fear tends to lift precious metals.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 51, price 1 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 1.19. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 50 / call wall 54: 2 pts up vs 2 down. Mid-range.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.01B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.26 pts pre-market, worth about $0.00B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 2.27. Heavy put buying: crowded hedging tends to unwind, a contrarian lean up. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "HG": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.201,
+    "raw_score": -0.335,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.335,
+    "conviction": "Low",
+    "ups": 1,
+    "downs": 4,
+    "total": 16,
+    "overall": "For: Global equities, US dollar, VIX term structure. Against: VIX shock. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 100,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.6,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.625,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.15,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.15,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For copper: growth, China and a weaker dollar drive industrial demand.",
+     "group": "Volatility"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    }
+   ],
+   "outcome": null
+  },
+  "CL": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.037,
+    "raw_score": -0.062,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.062,
+    "conviction": "Low",
+    "ups": 4,
+    "downs": 5,
+    "total": 24,
+    "overall": "For: Global equities, US dollar, VIX term structure. Against: Oil headlines, Charm into close. Close to a coin flip. Let price confirm. Dealers long gamma: expect chop and fades. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A hold above 88, or a push through the call wall at 94",
+    "macro_share": 76,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.625,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "stress",
+     "label": "Financial stress",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "St. Louis Fed stress index -0.58 (below normal), +0.22 over 4 weeks. Stress is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.2,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "funding",
+     "label": "Funding stress",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.15,
+     "text": "Commercial paper minus T-bills +6 bp (-0.5\u03c3 vs the past year), its day-to-day swings +3.5\u03c3. Funding markets are getting tight and jumpy, which has led higher vol and weaker stocks. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Macro"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Macro"
+    },
+    {
+     "key": "vixshock",
+     "label": "VIX shock",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.15,
+     "text": "VIX jumped +6.9\u03c3 yesterday to 28.2, in a high-volatility market. A spike when fear is already high has been followed by rebounds as forced selling reverses. For oil: growth, risk appetite and a weaker dollar lift demand and prices.",
+     "group": "Volatility"
+    },
+    {
+     "key": "hyoas",
+     "label": "High-yield spreads",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield spread 3.43%, +13 bp over 5 sessions. Credit spreads are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "nfci",
+     "label": "Financial conditions",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Chicago Fed NFCI -0.49 (looser than average), +0.03 over 4 weeks. Conditions are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "liquidity",
+     "label": "Fed net liquidity",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "Fed balance sheet minus the Treasury account and reverse repo: $5.75T, -37B over 4 weeks. Liquidity is roughly flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "commodnews",
+     "label": "Oil headlines",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.25,
+     "text": "2 oil headlines in the last 12 hours lean tight (supportive). Top: \u201cRenewed U.S.-Iran tension could push oil past $100: Rapidan Energy\u201d.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 88, price 3 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 1.20. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 89 / call wall 94: 3 pts up vs 2 down. Mid-range.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.04B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.61 pts pre-market, worth about $0.01B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 0.15. Heavy call buying: crowded upside chasing tends to fade, a contrarian lean down. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "NG": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.065,
+    "raw_score": -0.108,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.108,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 3,
+    "total": 7,
+    "overall": "For: Wall range, Global equities, US dollar. Against: Charm into close, Vanna. Close to a coin flip. Let price confirm. Dealers long gamma: expect chop and fades. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 23,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. Natural gas trades mostly on weather and storage; macro inputs count for little.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.225,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. Natural gas trades mostly on weather and storage; macro inputs count for little.",
+     "group": "Macro"
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 3.29. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "Put wall 3 / call wall 3: -0 pts up vs 0 down. Pressed into resistance, and long-gamma dealers tend to sell into it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.61 pts pre-market, worth about $0.00B of dealer buying.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "flow",
+     "label": "Options flow (contrarian)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Short-dated premium put/call 0.26. Heavy call buying: crowded upside chasing tends to fade, a contrarian lean down. Muted until Average Hourly Earnings m/m at 8:30 AM: flow before scheduled news isn't informative.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "6E": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.2,
+    "raw_score": -0.334,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.334,
+    "conviction": "Low",
+    "ups": 0,
+    "downs": 4,
+    "total": 13,
+    "overall": "For: US dollar, Policy gap (2Y \u2212 Fed funds), Vanna. Dealers short gamma: moves can run. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 79,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.125,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.30. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Small.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $0.00B of dealer selling.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "6B": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.158,
+    "raw_score": -0.264,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.264,
+    "conviction": "Low",
+    "ups": 1,
+    "downs": 4,
+    "total": 13,
+    "overall": "For: US dollar, Policy gap (2Y \u2212 Fed funds), Vanna. Against: Wall range. Dealers long gamma: expect chop and fades. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "Price reversing through the London session open",
+    "macro_share": 79,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.3,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.125,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 2.51. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Near support, and long-gamma dealers tend to defend it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Small.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $0.00B of dealer selling.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "6J": {
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.064,
+    "raw_score": 0.107,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": 0.107,
+    "conviction": "Low",
+    "ups": 6,
+    "downs": 2,
+    "total": 19,
+    "overall": "For: Global equities, VIX term structure, Wall range. Against: US dollar, Policy gap (2Y \u2212 Fed funds). Close to a coin flip. Let price confirm. Dealers long gamma: expect chop and fades. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A 15-minute close below the gamma flip at 0",
+    "macro_share": 80,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.75,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For the yen this reads the other way: fear and a yen rally lift yen futures.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.125,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. Higher US yields widen the gap over Japanese rates and weigh on the yen.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yen",
+     "label": "Yen (USD/JPY)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "USD/JPY 158.25 (+0.27%). The yen is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.938,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. For the yen this reads the other way: fear and a yen rally lift yen futures.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. Higher US yields widen the gap over Japanese rates and weigh on the yen.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "news",
+     "label": "News tone",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.25,
+     "text": "25 market headlines in the last 12 hours, tone -0.32 (25 negative vs 13 positive words). Most negative: \u201cAsian stock markets plunge as Japan Nikkei, South Korea KOSPI and Taiwan stocks fall\u201d. Coverage is pessimistic, which has preceded downward pressure. The market already fell -6.4% last session, so bad news is largely priced: half weight. For the yen this reads the other way: fear and a yen rally lift yen futures.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 0, price 0 pts above (options with 1+ day to expiry; the dealer side is an assumption). Long gamma: expect smaller moves that tend to reverse.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 7.05. Call-heavy book.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.5,
+     "text": "Put wall 0 / call wall 0: 0 pts up vs 0 down. Near support, and long-gamma dealers tend to defend it.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Dealers buy back hedges, an afternoon bid.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $0.00B of dealer buying.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "6A": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.236,
+    "raw_score": -0.393,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.393,
+    "conviction": "Low",
+    "ups": 0,
+    "downs": 6,
+    "total": 19,
+    "overall": "For: US dollar, Global equities, Policy gap (2Y \u2212 Fed funds). Dealers short gamma: moves can run. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A reclaim and hold of the gamma flip at 1",
+    "macro_share": 79,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.125,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "yuan",
+     "label": "Chinese yuan (USD/CNH)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "USD/CNH 6.6681 (+0.06%). The yuan is steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "volpre",
+     "label": "Pre-market volatility",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.625,
+     "text": "VXX -2.0% pre-market. Vol is steady.",
+     "group": "Volatility"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 1.09. Backwardation: near-term fear exceeds longer-term, and rallies tend to get sold. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "copgold",
+     "label": "Copper vs gold",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Copper/gold ratio -3.1% over 10 sessions. Gold is beating copper: markets are pricing fear over growth. The Aussie dollar trades with growth, China and risk appetite, and against a firm US dollar.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 1, price 0 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.38. Put-heavy book: hedges sit below price.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Small.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $0.00B of dealer selling.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  },
+  "6C": {
+   "bias": {
+    "bias": "Bearish",
+    "score": -0.106,
+    "raw_score": -0.177,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "held": false,
+    "model": "v2",
+    "conviction_capped": null,
+    "own_score": -0.177,
+    "conviction": "Low",
+    "ups": 1,
+    "downs": 3,
+    "total": 17,
+    "overall": "For: US dollar, Policy gap (2Y \u2212 Fed funds), Global equities. Against: Oil headlines. Dealers short gamma: moves can run. On deck: Average Hourly Earnings m/m 8:30 AM, Non-Farm Employment Change 8:30 AM, Unemployment Rate 8:30 AM. Reassess after.",
+    "invalidation": "A reclaim and hold of the gamma flip at 1",
+    "macro_share": 77,
+    "conv_cuts": [
+     0.06,
+     0.15,
+     0.22
+    ],
+    "conv_basis": 16,
+    "regime": "stressed"
+   },
+   "signals": [
+    {
+     "key": "global",
+     "label": "Global equities",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "Nikkei -6.0%, DAX -2.3%, Hang Seng -1.3%. Overseas selling is a headwind going into the open. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.10% \u2248 +1.6 bp in yield (from 4.84%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "2Y futures -0.038% \u2248 +2.0 bp. Fed expectations are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.125,
+     "text": "DXY 101.96 (+0.34%). A firmer dollar tightens global financial conditions. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 90.96 (+0.3%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.375,
+     "text": "High-yield bonds -0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.562,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 194.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot); ISM manufacturing 54.5 (in range); ISM services 54.9 (in range); Chicago PMI 58.8 (hot); Consumer confidence 81.9 (cool). The data is mixed, so the Fed has no strong push either way.",
+     "group": "Macro"
+    },
+    {
+     "key": "policygap",
+     "label": "Policy gap (2Y \u2212 Fed funds)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.562,
+     "text": "2-year yield minus Fed funds +71 bp, -9 bp over 5 sessions. The market is pricing in more cuts. The 10Y minus 3M curve is +0.74%. But stocks and yields have been moving together lately (correlation +0.51), so this reads the other way: falling yields mean fear, rising yields mean growth. For a currency future quoted in dollars, a firmer dollar or hawkish US rates push it down.",
+     "group": "Macro"
+    },
+    {
+     "key": "macroz",
+     "label": "Macro z-score (hawk + dove)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Hawkish lens +0.6\u03c3 (bullish), dovish lens -1.0\u03c3 (bearish), together -0.2\u03c3. Biggest mover: High-yield spreads (+1.1\u03c3 over 5 sessions).",
+     "group": "Macro"
+    },
+    {
+     "key": "fedwatch",
+     "label": "FedWatch (fed funds futures)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.3,
+     "text": "Dec 9 Fed meeting: 66% odds of a 25 bp hike. The priced rate moved -2 bp over 5 sessions: steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "realyield",
+     "label": "Real 10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "10-year TIPS yield 2.62%, -4 bp over the last 5 sessions. Real rates are steady.",
+     "group": "Macro"
+    },
+    {
+     "key": "commodnews",
+     "label": "Oil headlines",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.625,
+     "text": "2 oil headlines in the last 12 hours lean tight (supportive). Top: \u201cRenewed U.S.-Iran tension could push oil past $100: Rapidan Energy\u201d.",
+     "group": "Macro"
+    },
+    {
+     "key": "flip",
+     "label": "Gamma regime",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "Estimated gamma flip 1, price 0 pts below (options with 1+ day to expiry; the dealer side is an assumption). Short gamma: expect bigger moves that tend to run, in either direction.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "tilt",
+     "label": "Gamma tilt",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.25,
+     "text": "Call \u00f7 put gamma 0.90. Balanced.",
+     "group": "Dealer positioning",
+     "directional": false
+    },
+    {
+     "key": "walls",
+     "label": "Wall range",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "Put wall 1 / call wall 1: 0 pts up vs 0 down. Dealers are short gamma, so walls don't hold reliably: no vote.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "charm",
+     "label": "Charm into close",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Time decay shifts dealer hedges by $0.00B by 4 PM. Small.",
+     "group": "Dealer positioning"
+    },
+    {
+     "key": "vanna",
+     "label": "Vanna",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.4,
+     "text": "Implied vol \u2248 -0.28 pts pre-market, worth about $0.00B of dealer selling.",
+     "group": "Dealer positioning"
+    }
+   ],
+   "outcome": null
+  }
+ }
+}
