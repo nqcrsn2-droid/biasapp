@@ -1,0 +1,415 @@
+{
+ "view": "overnight",
+ "session": "overnight",
+ "date": "2026-10-28",
+ "window": {
+  "name": "Asia + London",
+  "start": "2026-10-28T18:00:00-04:00",
+  "end": "2026-10-29T09:30:00-04:00"
+ },
+ "mode": "point-in-time",
+ "as_of": "2026-10-28T18:00:00-04:00",
+ "generated": "2026-10-29T17:17:49-04:00",
+ "events": [
+  {
+   "time": "8:30 AM",
+   "ts": "2026-10-29T08:30:00-04:00",
+   "title": "Advance GDP q/q",
+   "impact": "High",
+   "forecast": "3.2%",
+   "previous": "1.5%"
+  },
+  {
+   "time": "8:30 AM",
+   "ts": "2026-10-29T08:30:00-04:00",
+   "title": "Core PCE Price Index m/m",
+   "impact": "High",
+   "forecast": "0.3%",
+   "previous": "0.2%"
+  },
+  {
+   "time": "8:30 AM",
+   "ts": "2026-10-29T08:30:00-04:00",
+   "title": "Advance GDP Price Index q/q",
+   "impact": "Medium",
+   "forecast": "3.2%",
+   "previous": "6.2%"
+  },
+  {
+   "time": "8:30 AM",
+   "ts": "2026-10-29T08:30:00-04:00",
+   "title": "Unemployment Claims",
+   "impact": "Medium",
+   "forecast": "198K",
+   "previous": "194K"
+  }
+ ],
+ "macro": {
+  "NQ=F": {
+   "last": 29773.75,
+   "chg_pct": -0.12,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "ES=F": {
+   "last": 7764.75,
+   "chg_pct": 0.1,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "ZN=F": {
+   "last": 105.9375,
+   "chg_pct": -0.09,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "ZT=F": {
+   "last": 102.0547,
+   "chg_pct": 0.06,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "DX-Y.NYB": {
+   "last": 102.13,
+   "chg_pct": -0.17,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "CL=F": {
+   "last": 101.98,
+   "chg_pct": 1.59,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "HYG": {
+   "last": 77.65,
+   "chg_pct": 0.06,
+   "ts": "2026-10-28T17:28:00-04:00"
+  },
+  "BTC-USD": {
+   "last": 81224.8203,
+   "chg_pct": 0.65,
+   "ts": "2026-10-28T18:00:00-04:00"
+  },
+  "VXX": {
+   "last": 17.9711,
+   "chg_pct": -1.09,
+   "ts": "2026-10-28T17:58:00-04:00"
+  },
+  "^N225": {
+   "last": 64042.0586,
+   "chg_pct": 1.25,
+   "ts": "2026-10-28T02:29:00-04:00"
+  },
+  "^GDAXI": {
+   "last": 25697.1992,
+   "chg_pct": 0.35,
+   "ts": "2026-10-28T12:29:00-04:00"
+  },
+  "^HSI": {
+   "last": 22958.6504,
+   "chg_pct": -0.36,
+   "ts": "2026-10-28T04:10:00-04:00"
+  },
+  "^VIX": {
+   "last": 16.89,
+   "chg_pct": -4.36,
+   "ts": "2026-10-28T16:14:00-04:00"
+  },
+  "^VIX3M": {
+   "last": 19.15,
+   "chg_pct": -2.35,
+   "ts": "2026-10-28T15:59:00-04:00"
+  },
+  "^VXN": {
+   "last": 23.72,
+   "chg_pct": -5.12,
+   "ts": "2026-10-28T15:59:00-04:00"
+  },
+  "^TNX": {
+   "last": 5.045,
+   "chg_pct": 1.04,
+   "ts": "2026-10-28T14:59:00-04:00"
+  }
+ },
+ "markets": {
+  "NQ": {
+   "name": "Nasdaq-100 futures",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.09,
+    "raw_score": 0.151,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "own_score": 0.148,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 1,
+    "total": 8,
+    "overall": "For: VIX today, 2-year / Fed path. Against: Fed pressure (official data). ES agrees. On deck: Advance GDP q/q 8:30 AM, Core PCE Price Index m/m 8:30 AM. Reassess after.",
+    "invalidation": "Futures reversing through today's 4 PM close in Asia",
+    "macro_share": 100
+   },
+   "signals": [
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.25,
+     "text": "10Y futures -0.09% \u2248 +1.4 bp in yield (from 4.99%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.75,
+     "text": "2Y futures +0.061% \u2248 -3.2 bp. The market is pricing in easier policy.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "DXY 102.13 (-0.17%). Flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 101.98 (+1.6%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds +0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 0.90. A flat-ish curve. Mild caution.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.0,
+     "text": "VIX 16.89 (-4.4% on the day). Fear came out of the market today.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 195.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot). Most of the data runs hot, which keeps the Fed leaning tight: a headwind.",
+     "group": "Macro"
+    }
+   ],
+   "changed": null,
+   "expected_range": {
+    "move": 468.89,
+    "low": 29304.86,
+    "high": 30242.64
+   },
+   "levels": {
+    "price": 29773.75
+   },
+   "dealer": null,
+   "flow": null,
+   "profile": [],
+   "earnings": [],
+   "scorecard": null,
+   "outcome": {
+    "open": 29598.5,
+    "noon": 29562.25,
+    "close": 29562.25,
+    "move": -36.25,
+    "start": "2026-10-29T04:00:00-04:00",
+    "end": "2026-10-29T12:30:00-04:00",
+    "result": "miss"
+   }
+  },
+  "ES": {
+   "name": "S&P 500 futures",
+   "bias": {
+    "bias": "Bullish",
+    "score": 0.092,
+    "raw_score": 0.153,
+    "dampened": [
+     "high-impact release later today"
+    ],
+    "own_score": 0.155,
+    "conviction": "Low",
+    "ups": 2,
+    "downs": 1,
+    "total": 8,
+    "overall": "For: VIX today, 2-year / Fed path. Against: Fed pressure (official data). NQ agrees. On deck: Advance GDP q/q 8:30 AM, Core PCE Price Index m/m 8:30 AM. Reassess after.",
+    "invalidation": "Futures reversing through today's 4 PM close in Asia",
+    "macro_share": 100
+   },
+   "signals": [
+    {
+     "key": "rates",
+     "label": "10-year yield",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.9375,
+     "text": "10Y futures -0.09% \u2248 +1.4 bp in yield (from 4.99%). Rates are not in play.",
+     "group": "Macro"
+    },
+    {
+     "key": "fed",
+     "label": "2-year / Fed path",
+     "score": 1,
+     "raw": 1,
+     "weight": 0.75,
+     "text": "2Y futures +0.061% \u2248 -3.2 bp. The market is pricing in easier policy.",
+     "group": "Macro"
+    },
+    {
+     "key": "dollar",
+     "label": "US dollar",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "DXY 102.13 (-0.17%). Flat.",
+     "group": "Macro"
+    },
+    {
+     "key": "oil",
+     "label": "Crude oil",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.5,
+     "text": "WTI 101.98 (+1.6%). No energy shock.",
+     "group": "Macro"
+    },
+    {
+     "key": "credit",
+     "label": "Credit (HYG)",
+     "score": 0,
+     "raw": 0,
+     "weight": 0.75,
+     "text": "High-yield bonds +0.06%. Credit is calm.",
+     "group": "Macro"
+    },
+    {
+     "key": "term",
+     "label": "VIX term structure",
+     "score": 0,
+     "raw": 0,
+     "weight": 1.0,
+     "text": "VIX \u00f7 VIX3M at yesterday's close = 0.90. A flat-ish curve. Mild caution.",
+     "group": "Volatility"
+    },
+    {
+     "key": "vixday",
+     "label": "VIX today",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.0,
+     "text": "VIX 16.89 (-4.4% on the day). Fear came out of the market today.",
+     "group": "Volatility"
+    },
+    {
+     "key": "fedpressure",
+     "label": "Fed pressure (official data)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.75,
+     "text": "Unemployment rate 4.2% (in range); Initial jobless claims 195.0K (hot); Payrolls (3-mo avg change) 50.7K (cool); CPI y/y 4.0% (hot); Core CPI y/y 2.8% (hot); PPI m/m 1.3% (hot). Most of the data runs hot, which keeps the Fed leaning tight: a headwind.",
+     "group": "Macro"
+    }
+   ],
+   "changed": null,
+   "expected_range": {
+    "move": 86.38,
+    "low": 7678.37,
+    "high": 7851.13
+   },
+   "levels": {
+    "price": 7764.75
+   },
+   "dealer": null,
+   "flow": null,
+   "profile": [],
+   "earnings": [
+    {
+     "symbol": "LLY",
+     "when": "tomorrow before open",
+     "date": "2026-10-29",
+     "eps_est": 5.38,
+     "eps": null,
+     "surprise": null
+    }
+   ],
+   "scorecard": null,
+   "outcome": {
+    "open": 7747.75,
+    "noon": 7752.0,
+    "close": 7752.0,
+    "move": 4.25,
+    "start": "2026-10-29T04:00:00-04:00",
+    "end": "2026-10-29T12:30:00-04:00",
+    "result": "hit"
+   }
+  }
+ },
+ "divergence": null,
+ "notes": [
+  "NQ: dealer positioning skipped, option snapshot is from Oct 29, after this session. The read is macro only.",
+  "ES: dealer positioning skipped, option snapshot is from Oct 29, after this session. The read is macro only."
+ ],
+ "sources": {
+  "Yahoo prices": {
+   "ok": true,
+   "fetched": "2026-10-29T17:18:16-04:00",
+   "data_time": "2026-10-28T18:00:00-04:00",
+   "detail": "16 of 16 tickers \u00b7 1m bars, cut at 6:00 PM ET"
+  },
+  "Economic calendar": {
+   "ok": true,
+   "fetched": "2026-10-29T17:18:16-04:00",
+   "data_time": null,
+   "detail": ""
+  },
+  "Earnings Oct 28": {
+   "ok": true,
+   "fetched": "2026-10-29T17:18:19-04:00",
+   "data_time": null,
+   "detail": "250 companies"
+  },
+  "Earnings Oct 29": {
+   "ok": true,
+   "fetched": "2026-10-29T17:18:22-04:00",
+   "data_time": null,
+   "detail": "303 companies"
+  },
+  "CBOE NDX options": {
+   "ok": true,
+   "fetched": "2026-10-29T17:18:22-04:00",
+   "data_time": "2026-10-29T17:17:26-04:00",
+   "detail": "15,468 contracts"
+  },
+  "CBOE SPX options": {
+   "ok": true,
+   "fetched": "2026-10-29T17:18:24-04:00",
+   "data_time": "2026-10-29T17:17:41-04:00",
+   "detail": "28,872 contracts"
+  }
+ }
+}

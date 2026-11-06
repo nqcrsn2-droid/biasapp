@@ -1,0 +1,128 @@
+{
+ "sunday": "2026-11-01",
+ "friday": "2026-10-30",
+ "as_of": "2026-11-01T17:55:00-05:00",
+ "locked": true,
+ "btc_pct": 1.52,
+ "tasi_pct": -0.88,
+ "news": {
+  "n": 19,
+  "tone": 0.167,
+  "shock_n": 1,
+  "mult": 1.25
+ },
+ "markets": {
+  "NQ": {
+   "name": "Nasdaq-100 futures",
+   "bias": "Bullish",
+   "conviction": "Medium",
+   "friday_close": 28534.0,
+   "pred_pts": 102.7,
+   "pred_pct": 0.36,
+   "typical_pts": 65.8,
+   "typical_pct": 0.231,
+   "beta_btc": 0.223,
+   "weekends": 57,
+   "score": 0.143,
+   "signals": [
+    {
+     "key": "btc",
+     "label": "Bitcoin over the weekend",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.0,
+     "text": "Bitcoin +1.5% since Friday's futures close. It trades all weekend, so it is the live read on risk appetite.",
+     "group": "Weekend"
+    },
+    {
+     "key": "tasi",
+     "label": "Saudi market (Sunday)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "Tadawul -0.9% in its Sunday session (intraday bars), the first big equity market to trade after the weekend's news.",
+     "group": "Weekend"
+    },
+    {
+     "key": "wnews",
+     "label": "Weekend news",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.0,
+     "text": "19 market headlines since Friday's close, tone +0.17 (10 negative vs 14 positive words). Most positive: \u201cCrocs stock jumped 25% after earnings. Here's why that might be just the beginning\u201d. 1 market-moving headline (e.g. \u201cIran, Qatari mediators hold third day of talks to end U.S.-Iran war\u201d), so the expected size is widened \u00d71.25.",
+     "group": "Weekend"
+    },
+    {
+     "key": "friday",
+     "label": "Friday macro read",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "The model's last Friday read scored -0.22 on macro and options, before the weekend.",
+     "group": "Weekend"
+    }
+   ],
+   "outcome": {
+    "open": 28636.25,
+    "gap_pts": 102.25,
+    "result": "hit"
+   }
+  },
+  "ES": {
+   "name": "S&P 500 futures",
+   "bias": "Bullish",
+   "conviction": "Medium",
+   "friday_close": 7614.0,
+   "pred_pts": 18.0,
+   "pred_pct": 0.237,
+   "typical_pts": 11.5,
+   "typical_pct": 0.15,
+   "beta_btc": 0.18,
+   "weekends": 57,
+   "score": 0.143,
+   "signals": [
+    {
+     "key": "btc",
+     "label": "Bitcoin over the weekend",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.0,
+     "text": "Bitcoin +1.5% since Friday's futures close. It trades all weekend, so it is the live read on risk appetite.",
+     "group": "Weekend"
+    },
+    {
+     "key": "tasi",
+     "label": "Saudi market (Sunday)",
+     "score": -1,
+     "raw": -1,
+     "weight": 0.5,
+     "text": "Tadawul -0.9% in its Sunday session (intraday bars), the first big equity market to trade after the weekend's news.",
+     "group": "Weekend"
+    },
+    {
+     "key": "wnews",
+     "label": "Weekend news",
+     "score": 1,
+     "raw": 1,
+     "weight": 1.0,
+     "text": "19 market headlines since Friday's close, tone +0.17 (10 negative vs 14 positive words). Most positive: \u201cCrocs stock jumped 25% after earnings. Here's why that might be just the beginning\u201d. 1 market-moving headline (e.g. \u201cIran, Qatari mediators hold third day of talks to end U.S.-Iran war\u201d), so the expected size is widened \u00d71.25.",
+     "group": "Weekend"
+    },
+    {
+     "key": "friday",
+     "label": "Friday macro read",
+     "score": -1,
+     "raw": -1,
+     "weight": 1.0,
+     "text": "The model's last Friday read scored -0.24 on macro and options, before the weekend.",
+     "group": "Weekend"
+    }
+   ],
+   "outcome": {
+    "open": 7632.0,
+    "gap_pts": 18.0,
+    "result": "hit"
+   }
+  }
+ }
+}
