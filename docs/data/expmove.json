@@ -1,161 +1,161 @@
 {
- "generated": "2026-11-06T08:50:13-05:00",
+ "generated": "2026-11-06T09:21:39-05:00",
  "markets": {
   "NQ": {
    "etf": "QQQ",
-   "spot": 656.82,
-   "fut": 27077.25,
-   "as_of": "2026-11-06T08:17:41-05:00",
-   "vol_sd": 750.5,
+   "spot": 656.24,
+   "fut": 27117.5,
+   "as_of": "2026-11-06T09:21:10-05:00",
+   "vol_sd": 751.6,
    "vol_name": "VXN",
    "expiries": [
     {
      "date": "2026-11-06",
      "dte": 0,
-     "strike": 657.0,
-     "straddle": 11.52,
-     "pct": 1.754,
-     "iv": 70.7,
-     "pts": 474.9,
-     "sigma_pts": 593.6
+     "strike": 656.0,
+     "straddle": 11.15,
+     "pct": 1.699,
+     "iv": 73.2,
+     "pts": 460.7,
+     "sigma_pts": 575.9
     },
     {
      "date": "2026-11-09",
      "dte": 3,
-     "strike": 657.0,
-     "straddle": 19.93,
-     "pct": 3.034,
-     "iv": 39.6,
-     "pts": 821.6,
-     "sigma_pts": 1027.0
+     "strike": 656.0,
+     "straddle": 19.48,
+     "pct": 2.968,
+     "iv": 39.0,
+     "pts": 804.8,
+     "sigma_pts": 1005.9
     },
     {
      "date": "2026-11-10",
      "dte": 4,
-     "strike": 657.0,
-     "straddle": 23.64,
-     "pct": 3.599,
-     "iv": 41.2,
-     "pts": 974.6,
-     "sigma_pts": 1218.2
+     "strike": 656.0,
+     "straddle": 23.04,
+     "pct": 3.51,
+     "iv": 40.5,
+     "pts": 951.9,
+     "sigma_pts": 1189.8
     }
    ]
   },
   "ES": {
    "etf": "SPY",
-   "spot": 734.43,
-   "fut": 7390.5,
-   "as_of": "2026-11-06T08:16:11-05:00",
-   "vol_sd": 143.5,
+   "spot": 733.75,
+   "fut": 7389.75,
+   "as_of": "2026-11-06T09:21:05-05:00",
+   "vol_sd": 144.7,
    "vol_name": "VIX",
    "expiries": [
     {
      "date": "2026-11-06",
      "dte": 0,
      "strike": 734.0,
-     "straddle": 8.79,
-     "pct": 1.196,
-     "iv": 48.1,
-     "pts": 88.4,
-     "sigma_pts": 110.5
+     "straddle": 7.85,
+     "pct": 1.07,
+     "iv": 46.1,
+     "pts": 79.1,
+     "sigma_pts": 98.8
     },
     {
      "date": "2026-11-09",
      "dte": 3,
      "strike": 734.0,
-     "straddle": 14.14,
-     "pct": 1.926,
-     "iv": 25.1,
-     "pts": 142.3,
-     "sigma_pts": 177.9
+     "straddle": 13.38,
+     "pct": 1.824,
+     "iv": 24.0,
+     "pts": 134.8,
+     "sigma_pts": 168.5
     },
     {
      "date": "2026-11-10",
      "dte": 4,
      "strike": 734.0,
-     "straddle": 16.99,
-     "pct": 2.313,
-     "iv": 26.5,
-     "pts": 171.0,
-     "sigma_pts": 213.7
+     "straddle": 16.2,
+     "pct": 2.208,
+     "iv": 25.4,
+     "pts": 163.2,
+     "sigma_pts": 203.9
     }
    ]
   },
   "YM": {
    "etf": "DIA",
-   "spot": 509.98,
-   "fut": 51122.0,
-   "as_of": "2026-11-06T06:06:18-05:00",
-   "vol_sd": 992.9,
+   "spot": 508.87,
+   "fut": 51085.0,
+   "as_of": "2026-11-06T09:21:16-05:00",
+   "vol_sd": 1000.3,
    "vol_name": "VIX",
    "expiries": [
     {
      "date": "2026-11-06",
      "dte": 0,
-     "strike": 510.0,
-     "straddle": 7.51,
-     "pct": 1.473,
-     "iv": 33.0,
-     "pts": 752.8,
-     "sigma_pts": 941.0
+     "strike": 509.0,
+     "straddle": 7.89,
+     "pct": 1.55,
+     "iv": 33.4,
+     "pts": 792.1,
+     "sigma_pts": 990.1
     },
     {
      "date": "2026-11-13",
      "dte": 7,
-     "strike": 510.0,
-     "straddle": 15.47,
-     "pct": 3.034,
-     "iv": 25.2,
-     "pts": 1551.3,
-     "sigma_pts": 1939.1
+     "strike": 509.0,
+     "straddle": 15.8,
+     "pct": 3.105,
+     "iv": 25.4,
+     "pts": 1586.1,
+     "sigma_pts": 1982.7
     },
     {
      "date": "2026-11-20",
      "dte": 14,
-     "strike": 510.0,
-     "straddle": 19.07,
-     "pct": 3.74,
-     "iv": 22.7,
-     "pts": 1912.1,
-     "sigma_pts": 2390.2
+     "strike": 509.0,
+     "straddle": 19.48,
+     "pct": 3.827,
+     "iv": 23.0,
+     "pts": 1955.1,
+     "sigma_pts": 2443.8
     }
    ]
   },
   "RTY": {
    "etf": "IWM",
-   "spot": 271.2,
+   "spot": 271.52,
    "fut": null,
-   "as_of": "2026-11-06T06:01:43-05:00",
+   "as_of": "2026-11-06T09:21:11-05:00",
    "vol_sd": null,
    "vol_name": null,
    "expiries": [
     {
      "date": "2026-11-06",
      "dte": 0,
-     "strike": 271.0,
-     "straddle": 4.75,
-     "pct": 1.751,
-     "iv": 41.7,
+     "strike": 272.0,
+     "straddle": 3.44,
+     "pct": 1.267,
+     "iv": 54.1,
      "pts": null,
      "sigma_pts": null
     },
     {
      "date": "2026-11-09",
      "dte": 3,
-     "strike": 271.0,
-     "straddle": 6.48,
-     "pct": 2.389,
-     "iv": 28.5,
+     "strike": 272.0,
+     "straddle": 5.55,
+     "pct": 2.046,
+     "iv": 26.8,
      "pts": null,
      "sigma_pts": null
     },
     {
      "date": "2026-11-10",
      "dte": 4,
-     "strike": 271.0,
-     "straddle": 7.56,
-     "pct": 2.789,
-     "iv": 29.8,
+     "strike": 272.0,
+     "straddle": 6.76,
+     "pct": 2.49,
+     "iv": 28.6,
      "pts": null,
      "sigma_pts": null
     }
@@ -163,79 +163,79 @@
   },
   "GC": {
    "etf": "GLD",
-   "spot": 372.65,
-   "fut": 4062.9,
-   "as_of": "2026-11-06T06:02:18-05:00",
-   "vol_sd": 56.2,
+   "spot": 370.47,
+   "fut": 4049.7,
+   "as_of": "2026-11-06T09:21:15-05:00",
+   "vol_sd": 56.0,
    "vol_name": "GVZ",
    "expiries": [
     {
      "date": "2026-11-06",
      "dte": 0,
-     "strike": 373.0,
-     "straddle": 5.65,
-     "pct": 1.516,
+     "strike": 370.0,
+     "straddle": 2.84,
+     "pct": 0.768,
      "iv": 35.1,
-     "pts": 61.6,
-     "sigma_pts": 77.0
+     "pts": 31.1,
+     "sigma_pts": 38.9
     },
     {
      "date": "2026-11-09",
      "dte": 3,
-     "strike": 373.0,
-     "straddle": 7.17,
-     "pct": 1.924,
-     "iv": 22.5,
-     "pts": 78.2,
-     "sigma_pts": 97.7
+     "strike": 370.0,
+     "straddle": 4.13,
+     "pct": 1.115,
+     "iv": 14.6,
+     "pts": 45.1,
+     "sigma_pts": 56.4
     },
     {
      "date": "2026-11-10",
      "dte": 4,
-     "strike": 373.0,
-     "straddle": 9.03,
-     "pct": 2.422,
-     "iv": 25.5,
-     "pts": 98.4,
-     "sigma_pts": 123.0
+     "strike": 370.0,
+     "straddle": 7.8,
+     "pct": 2.105,
+     "iv": 24.2,
+     "pts": 85.3,
+     "sigma_pts": 106.6
     }
    ]
   },
   "SI": {
    "etf": "SLV",
-   "spot": 46.92,
-   "fut": 52.1,
-   "as_of": "2026-11-06T06:03:18-05:00",
+   "spot": 46.53,
+   "fut": 51.6,
+   "as_of": "2026-11-06T09:21:11-05:00",
    "vol_sd": 0.7,
    "vol_name": "GVZ",
    "expiries": [
     {
      "date": "2026-11-06",
      "dte": 0,
-     "strike": 47.0,
-     "straddle": 1.27,
-     "pct": 2.717,
-     "iv": 64.2,
+     "strike": 46.5,
+     "straddle": 1.29,
+     "pct": 2.783,
+     "iv": 64.8,
      "pts": 1.4,
      "sigma_pts": 1.8
     },
     {
      "date": "2026-11-09",
      "dte": 3,
-     "strike": 47.0,
-     "straddle": 1.69,
-     "pct": 3.591,
-     "iv": 42.6,
+     "strike": 46.5,
+     "straddle": 1.7,
+     "pct": 3.654,
+     "iv": 43.3,
      "pts": 1.9,
-     "sigma_pts": 2.3
+     "sigma_pts": 2.4
     },
     {
      "date": "2026-11-11",
      "dte": 5,
-     "strike": 47.0,
-     "straddle": 2.22,
-     "pct": 4.742,
-     "iv": 46.2,
+     "strike": 46.5,
+     "straddle": 2.25,
+     "pct": 4.825,
+     "iv": 46.8,
      "pts": 2.5,
      "sigma_pts": 3.1
     }
@@ -243,9 +243,9 @@
   },
   "CL": {
    "etf": "USO",
-   "spot": 148.27,
-   "fut": 90.98,
-   "as_of": "2026-11-06T06:03:48-05:00",
+   "spot": 148.43,
+   "fut": 91.05,
+   "as_of": "2026-11-06T09:21:06-05:00",
    "vol_sd": 2.9,
    "vol_name": "OVX",
    "expiries": [
@@ -254,7 +254,7 @@
      "dte": 0,
      "strike": 148.5,
      "straddle": 4.06,
-     "pct": 2.742,
+     "pct": 2.739,
      "iv": 64.8,
      "pts": 2.5,
      "sigma_pts": 3.1
@@ -264,7 +264,7 @@
      "dte": 5,
      "strike": 148.0,
      "straddle": 8.5,
-     "pct": 5.733,
+     "pct": 5.727,
      "iv": 56.0,
      "pts": 5.2,
      "sigma_pts": 6.5
@@ -274,7 +274,7 @@
      "dte": 7,
      "strike": 148.5,
      "straddle": 10.12,
-     "pct": 6.829,
+     "pct": 6.821,
      "iv": 57.7,
      "pts": 6.2,
      "sigma_pts": 7.8
@@ -284,7 +284,7 @@
   "NG": {
    "etf": "UNG",
    "spot": 9.27,
-   "fut": 2.99,
+   "fut": 2.98,
    "as_of": "2026-11-05T22:35:19-05:00",
    "vol_sd": 0.1,
    "vol_name": "OVX",
