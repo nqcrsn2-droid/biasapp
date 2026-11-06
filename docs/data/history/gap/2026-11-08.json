@@ -1,13 +1,13 @@
 {
  "sunday": "2026-11-08",
  "friday": "2026-11-06",
- "as_of": "2026-11-06T16:44:34-05:00",
+ "as_of": "2026-11-06T17:44:48-05:00",
  "locked": false,
  "btc_pct": 0.0,
  "tasi_pct": null,
  "news": {
-  "n": 0,
-  "tone": null,
+  "n": 3,
+  "tone": -1.0,
   "shock_n": 0,
   "mult": 1.0
  },
@@ -16,13 +16,13 @@
    "name": "Nasdaq-100 futures",
    "bias": "Bearish",
    "conviction": "Medium",
-   "friday_close": 27076.25,
-   "pred_pts": -39.1,
-   "pred_pct": -0.145,
-   "typical_pts": 62.6,
+   "friday_close": 27107.5,
+   "pred_pts": -36.5,
+   "pred_pct": -0.135,
+   "typical_pts": 62.5,
    "typical_pct": 0.231,
    "beta_btc": 0.224,
-   "weekends": 58,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -40,7 +40,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -59,13 +59,13 @@
    "name": "S&P 500 futures",
    "bias": "Bearish",
    "conviction": "High",
-   "friday_close": 7401.25,
-   "pred_pts": -11.0,
-   "pred_pct": -0.148,
-   "typical_pts": 11.6,
-   "typical_pct": 0.157,
+   "friday_close": 7404.0,
+   "pred_pts": -10.4,
+   "pred_pct": -0.14,
+   "typical_pts": 11.1,
+   "typical_pct": 0.15,
    "beta_btc": 0.181,
-   "weekends": 58,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -83,7 +83,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -102,13 +102,13 @@
    "name": "Dow futures",
    "bias": "Bearish",
    "conviction": "High",
-   "friday_close": 51383.0,
-   "pred_pts": -92.0,
-   "pred_pct": -0.179,
-   "typical_pts": 88.5,
-   "typical_pct": 0.172,
-   "beta_btc": 0.173,
-   "weekends": 58,
+   "friday_close": 51390.0,
+   "pred_pts": -93.1,
+   "pred_pct": -0.181,
+   "typical_pts": 86.9,
+   "typical_pct": 0.169,
+   "beta_btc": 0.174,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -126,7 +126,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -145,13 +145,13 @@
    "name": "Russell 2000 futures",
    "bias": "Bearish",
    "conviction": "High",
-   "friday_close": 2760.3,
-   "pred_pts": -6.6,
-   "pred_pct": -0.24,
-   "typical_pts": 8.1,
-   "typical_pct": 0.294,
-   "beta_btc": 0.258,
-   "weekends": 58,
+   "friday_close": 2761.2,
+   "pred_pts": -6.1,
+   "pred_pct": -0.221,
+   "typical_pts": 7.4,
+   "typical_pct": 0.269,
+   "beta_btc": 0.259,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -169,7 +169,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -188,13 +188,13 @@
    "name": "Gold futures",
    "bias": "Bearish",
    "conviction": "Medium",
-   "friday_close": 4074.5,
-   "pred_pts": -3.5,
-   "pred_pct": -0.086,
-   "typical_pts": 11.0,
-   "typical_pct": 0.27,
-   "beta_btc": 0.004,
-   "weekends": 59,
+   "friday_close": 4079.5,
+   "pred_pts": -3.9,
+   "pred_pct": -0.095,
+   "typical_pts": 11.4,
+   "typical_pct": 0.278,
+   "beta_btc": 0.0,
+   "weekends": 58,
    "score": -0.5,
    "signals": [
     {
@@ -212,7 +212,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -230,14 +230,14 @@
   "SI": {
    "name": "Silver futures",
    "bias": "Bearish",
-   "conviction": "Medium",
-   "friday_close": 51.93,
+   "conviction": "Low",
+   "friday_close": 51.97,
    "pred_pts": -0.1,
-   "pred_pct": -0.168,
+   "pred_pct": -0.157,
    "typical_pts": 0.3,
-   "typical_pct": 0.53,
-   "beta_btc": 0.115,
-   "weekends": 59,
+   "typical_pct": 0.551,
+   "beta_btc": 0.085,
+   "weekends": 58,
    "score": -0.5,
    "signals": [
     {
@@ -255,7 +255,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -276,11 +276,11 @@
    "conviction": "Medium",
    "friday_close": 6.26,
    "pred_pts": -0.0,
-   "pred_pct": -0.15,
+   "pred_pct": -0.138,
    "typical_pts": 0.0,
-   "typical_pct": 0.278,
-   "beta_btc": 0.168,
-   "weekends": 59,
+   "typical_pct": 0.271,
+   "beta_btc": 0.161,
+   "weekends": 58,
    "score": -0.5,
    "signals": [
     {
@@ -298,7 +298,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -317,13 +317,13 @@
    "name": "Crude oil futures",
    "bias": "Bullish",
    "conviction": "Low",
-   "friday_close": 90.43,
-   "pred_pts": 0.7,
-   "pred_pct": 0.726,
-   "typical_pts": 0.8,
-   "typical_pct": 0.831,
-   "beta_btc": -0.692,
-   "weekends": 58,
+   "friday_close": 90.34,
+   "pred_pts": 0.6,
+   "pred_pct": 0.666,
+   "typical_pts": 0.7,
+   "typical_pct": 0.83,
+   "beta_btc": -0.677,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -341,7 +341,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -360,13 +360,13 @@
    "name": "Natural gas futures",
    "bias": "Bearish",
    "conviction": "Low",
-   "friday_close": 2.97,
+   "friday_close": 3.0,
    "pred_pts": -0.0,
-   "pred_pct": -0.311,
+   "pred_pct": -0.306,
    "typical_pts": 0.0,
-   "typical_pct": 1.369,
-   "beta_btc": -0.171,
-   "weekends": 58,
+   "typical_pct": 1.375,
+   "beta_btc": -0.169,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -384,7 +384,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -405,11 +405,11 @@
    "conviction": "High",
    "friday_close": 1.12,
    "pred_pts": -0.0,
-   "pred_pct": -0.073,
+   "pred_pct": -0.068,
    "typical_pts": 0.0,
-   "typical_pct": 0.072,
-   "beta_btc": 0.009,
-   "weekends": 58,
+   "typical_pct": 0.064,
+   "beta_btc": 0.011,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -427,7 +427,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -446,13 +446,13 @@
    "name": "British pound futures",
    "bias": "Bearish",
    "conviction": "High",
-   "friday_close": 1.33,
+   "friday_close": 1.34,
    "pred_pts": -0.0,
-   "pred_pct": -0.084,
+   "pred_pct": -0.081,
    "typical_pts": 0.0,
-   "typical_pct": 0.063,
-   "beta_btc": 0.015,
-   "weekends": 58,
+   "typical_pct": 0.06,
+   "beta_btc": 0.016,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -470,7 +470,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -491,11 +491,11 @@
    "conviction": "Low",
    "friday_close": 0.01,
    "pred_pts": -0.0,
-   "pred_pct": -0.032,
+   "pred_pct": -0.028,
    "typical_pts": 0.0,
-   "typical_pct": 0.089,
+   "typical_pct": 0.087,
    "beta_btc": -0.016,
-   "weekends": 58,
+   "weekends": 57,
    "score": 0.0,
    "signals": [
     {
@@ -513,7 +513,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -534,11 +534,11 @@
    "conviction": "High",
    "friday_close": 0.69,
    "pred_pts": -0.0,
-   "pred_pct": -0.088,
+   "pred_pct": -0.083,
    "typical_pts": 0.0,
-   "typical_pct": 0.088,
+   "typical_pct": 0.086,
    "beta_btc": 0.052,
-   "weekends": 58,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -556,7 +556,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
@@ -577,11 +577,11 @@
    "conviction": "High",
    "friday_close": 0.71,
    "pred_pts": -0.0,
-   "pred_pct": -0.046,
+   "pred_pct": -0.047,
    "typical_pts": 0.0,
    "typical_pct": 0.042,
-   "beta_btc": 0.014,
-   "weekends": 58,
+   "beta_btc": 0.015,
+   "weekends": 57,
    "score": -0.5,
    "signals": [
     {
@@ -599,7 +599,7 @@
      "score": 0,
      "raw": 0,
      "weight": 0.0,
-     "text": "No market headlines since Friday's close in the feeds, so no news vote and no size change.",
+     "text": "3 market headlines since Friday's close, tone -1.00 (1 negative vs 0 positive words). Most negative: \u201cAs tech swoon roils market, US inflation data on tap\u201d. No market-moving shock headlines, so size is left as is.",
      "group": "Weekend"
     },
     {
